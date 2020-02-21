@@ -1,6 +1,15 @@
 ## Eray Rafet
 
+```diff
 Just testing stuff here
+```
+<font color="blue"> Some green text </font>
+<span style="color: blue"> Some green text </span>
+<p style='color:blue'>This is some red text.</p>
+
+<font color="blue">This is some text!</font>
+
+These are <b style='color:red'>red words</b>.
 
 ### Markdown
 
