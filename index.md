@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+>>>>>>> parent of 8ec3590... Add favicons
 # Eray Rafet
 
 ```diff
