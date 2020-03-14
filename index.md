@@ -1,16 +1,18 @@
+<body>
 <img src="profile_photo.jpg" width="384" height="384" />
 <h1> <b style='color:#1a73e8'>Eray Rafet</b></h1>
-<body style="background-color:black;">
+<b style="background-color:black"</b>
 <font color="white">
 
 ---
 
 <h2>About me</h2>
 
+WIP
 
 ---
 
-<h2>Contact info</h2>
+<h2>Contact details</h2>
 
 <ul>
   <li><b style='color:red'>Email: </b><a href="mailto:erayrafet@gmail.com">erayrafet@gmail.com</a></li>
@@ -19,5 +21,5 @@
   <li><b style='color:blue'>Twitter: </b><a href="https://twitter.com/eray_rafet">@eray_rafet</a></li>
 </ul>
 
-
+</body>
 
