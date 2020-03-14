@@ -1,8 +1,5 @@
 # <b style='color:#1a73e8'>Eray Rafet</b>
 
-```diff
-Just testing stuff here
-```
 
 ### Markdown
 
