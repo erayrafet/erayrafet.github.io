@@ -30,7 +30,10 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 ## Socials
 
 * <b style='color:red'>Email:</b> [erayrafet@gmail.com](erayrafet@gmail.com)
+
 * <b style='color:grey'>GitHub:</b> [erayrafet](https://github.com/erayrafet)
+
 * <b style='color:cyan'>Telegram:</b> [@erayrafet](https://t.me/erayrafet)
+
 * <b style='color:blue'>Twitter:</b> [@eray_rafet](https://twitter.com/eray_rafet)
 
