@@ -1,4 +1,4 @@
-![Image](src:favicon.ico)
+![Image](src:/favicon.ico)
 
 # <b style='color:#1a73e8'>Eray Rafet</b>
 
