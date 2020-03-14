@@ -1,4 +1,4 @@
-![Image](src="profile_photo.jpg" sizes="196x196")
+![Image](src="profile_photo.jpg" size="196x196")
 
 # <b style='color:#1a73e8'>Eray Rafet</b>
 
