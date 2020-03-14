@@ -1,5 +1,7 @@
 <img src="profile_photo.jpg" width="384" height="384" />
 <h1> <b style='color:#1a73e8'>Eray Rafet</b></h1>
+<body style="background-color:black;">
+<font color="white">
 
 ---
 
