@@ -1,19 +1,10 @@
 <img src="profile_photo.jpg" width="384" height="384" />
 <h1> <b style='color:#1a73e8'>Eray Rafet</b></h1>
 
-### Markdown
+---
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### About me
 
-```markdown
-Syntax highlighted code block
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ---
 
