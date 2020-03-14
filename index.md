@@ -1,4 +1,4 @@
-## Eray Rafet
+# Eray Rafet
 
 ```diff
 Just testing stuff here
@@ -35,6 +35,8 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Socials
+
+# Socials
+* Email: [erayrafet@gmail.com](erayrafet@gmail.com)
 * Telegram: [@erayrafet](https://t.me/erayrafet)
 * Twitter: [@eray_rafet](https://twitter.com/eray_rafet)
