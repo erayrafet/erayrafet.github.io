@@ -5,12 +5,12 @@
 
 ---
 
-### About me
+<h2>About me</h2>
 
 
 ---
 
-## **Socials**
+<h2>Contact info</h2>
 
 * <b style='color:red'>Email:</b> [erayrafet@gmail.com](mailto:erayrafet@gmail.com)
 
