@@ -12,10 +12,9 @@
 
 <h2>Contact info</h2>
 
-* <b style='color:red'>Email:</b> [erayrafet@gmail.com](mailto:erayrafet@gmail.com)
-
-* <b style='color:grey'>GitHub:</b> [erayrafet](https://github.com/erayrafet)
-
-* <b style='color:cyan'>Telegram:</b> [@erayrafet](https://t.me/erayrafet)
-
-* <b style='color:blue'>Twitter:</b> [@eray_rafet](https://twitter.com/eray_rafet)
+<ul>
+  <li><b style='color:red'>Email:</b> [erayrafet@gmail.com](mailto:erayrafet@gmail.com)</li>
+  <li><b style='color:grey'>GitHub:</b> [erayrafet](https://github.com/erayrafet)</li>
+  <li><b style='color:cyan'>Telegram:</b> [@erayrafet](https://t.me/erayrafet)</li>
+  <li><b style='color:blue'>Twitter:</b> [@eray_rafet](https://twitter.com/eray_rafet)</li>
+</ul>
