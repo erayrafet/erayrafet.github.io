@@ -1,7 +1,9 @@
+<body>
+```
 <img src="profile_photo.jpg" width="384" height="384" />
-
-# <b style='color:#1a73e8'>Eray Rafet</b>
-
+<h1 <b style='color:#1a73e8'>Eray Rafet</b></h1>
+```
+</body>
 
 ### Markdown
 
