@@ -29,6 +29,6 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ### Socials
 
-* <b style='color:red'>Email:</b> [erayrafet@gmail.com](erayrafet@gmail.com)
+<b style='color:red'>* Email:</b> [erayrafet@gmail.com](erayrafet@gmail.com)
 * Telegram: [@erayrafet](https://t.me/erayrafet)
 * Twitter: [@eray_rafet](https://twitter.com/eray_rafet)
