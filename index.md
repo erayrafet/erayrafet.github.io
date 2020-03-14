@@ -1,3 +1,5 @@
+![Image](src:favicon.ico)
+
 # <b style='color:#1a73e8'>Eray Rafet</b>
 
 
@@ -19,7 +21,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ## **Socials**
 
-* <b style='color:red'>Email:</b> [erayrafet@gmail.com](erayrafet@gmail.com)
+* <b style='color:red'>Email:</b> [erayrafet@gmail.com](mailto:erayrafet@gmail.com)
 
 * <b style='color:grey'>GitHub:</b> [erayrafet](https://github.com/erayrafet)
 
