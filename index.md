@@ -27,7 +27,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ---
 
-# Socials
+### Socials
 
 * Email: [erayrafet@gmail.com](erayrafet@gmail.com)
 * Telegram: [@erayrafet](https://t.me/erayrafet)
