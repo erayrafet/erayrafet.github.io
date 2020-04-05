@@ -1,15 +1,15 @@
 {
   "background_color": "#000000",
   "display": "standalone",
+  "icons": [
+    {
+      "src": "apple-touch-icon.png"
+    }
+  ],
   "lang": "en-US",
   "name": "Eray Rafet Mustafa",
   "orientation": "any",
   "short_name": "Eray Rafet",
   "start_url": "erayrafet.github.io",
   "theme_color": "#000000"
-  "icons": [
-    {
-      "src": "apple-touch-icon.png"
-    }
-  ]
 }
