@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <body style=background-color:black>
-    <body text="white">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="icon" href="apple-touch-icon.png">
     <link rel="manifest" href="https://erayrafet.github.io/manifest.webmanifest">
@@ -19,11 +17,17 @@
     <meta charset="utf-8">
     <title>Eray Rafet Mustafa</title>
 <style>
+@media (prefers-color-scheme: dark) {
+	body { background: #000; color: #fff; }
+}
+@media (prefers-color-scheme: light) {
+	body { background: #fff; color: #000; }
+}
     a:link {
-        color: white;
+        color: @body:color;
     }
     a:visited {
-        color: white;
+        color: @body:color;
     }
     a:hover {
         color: #1a73e8;
