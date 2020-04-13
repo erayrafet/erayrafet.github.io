@@ -23,17 +23,14 @@
     @media (prefers-color-scheme: light) {
         body { background: #fff; color: #000; }
     }
-    a:link {
-        color: @body:color;
+    a:link, a:visited {
+        color: rgb(0, 0, 0);
+        mix-blend-mode: difference;
+        text-decoration: none;
     }
-    a:visited {
-        color: @body:color;
-    }
-    a:hover {
+    a:hover; a:active {
         color: #1a73e8;
-    }
-    a:active {
-        color: #1a73e8;
+        text-decoration: none;
     }
     .footer {
         font-family: "Open Sans";
