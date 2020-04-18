@@ -45,6 +45,13 @@
         margin-top: 4%;
         text-align: center;
     }
+    h1:hover {
+        transform: scale(1.04);
+    }
+    h1::selection {
+        background-color: #1a73e8;
+        color: #fff;
+    }
     h2, hr, ul {
         font-family: "Open Sans";
         margin-left: 6%;
@@ -64,8 +71,8 @@
     img:hover {
         box-shadow: 0 0 0 4px #1a73e8;
         transform: scale(1.04);
-        transition: transform 0.6s;
         transition-timing-function: ease-out;
+        transition: transform 0.6s;
     }
     ::selection {
         background: #1a73e8;
