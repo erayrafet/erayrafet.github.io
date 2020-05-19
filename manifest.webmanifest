@@ -1,3 +1,21 @@
 {
-  "background_color": "#000000"
+  "background_color": "#000000",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.pn",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],  "lang": "en-US",
+  "name": "Eray Rafet Mustafa",
+  "orientation": "any",
+  "short_name": "Eray Rafet",
+  "start_url": "/",
+  "theme_color": "#000000"
 }
