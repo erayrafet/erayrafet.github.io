@@ -12,10 +12,11 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],  "lang": "en-US",
+  ],
+  "lang": "en-US",
   "name": "Eray Rafet Mustafa",
   "orientation": "any",
   "short_name": "Eray Rafet",
-  "start_url": "./",
-  "theme_color": "#000000",
+  "start_url": "/erayrafet.github.io",
+  "theme_color": "#000000"
 }
