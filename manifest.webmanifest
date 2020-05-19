@@ -16,6 +16,6 @@
   "name": "Eray Rafet Mustafa",
   "orientation": "any",
   "short_name": "Eray Rafet",
-  "start_url": "/",
+  "start_url": "./",
   "theme_color": "#000000"
 }
