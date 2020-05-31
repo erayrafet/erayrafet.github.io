@@ -10,40 +10,39 @@
     @media (prefers-color-scheme: light) {
         body { background: #fff; color: #000; }
     }
-    h1 {
-        color: #1a73e8;
-        font-family: "Open Sans";
-        font-weight: bold;
-        margin-left: 2%;
-        margin-top: 2%;
-        text-decoration: underline;
-    }
-    textarea[name=writer] {
-        min-width: 98%;
-        min-height: 98%;
-        max-width: 98%;
-        max-height: 98%;
-        overflow: hidden;
-        padding: 1%;
-        resize: none;
-    }
     textarea[name=title] {
-        box-sizing:border-box;
+        background-color: var(--body-background);
+        border: none;
+        color: var(--body-color);
         font-size: 20px;
         font-weight: bold;
-        max-height: 98%;
+        min-height: 98%;
         min-width: 98%;
         overflow: hidden;
         padding: 1%;
+        margin-top: 4%;
         resize: none;
+    }
+    textarea[name=title]:focus {
+        outline: none;
+    }
+    textarea[name=writer] {
+        background-color: var(--body-background);
+        border: none;
+        color: var(--body-color);
+        min-width: 98%;
+        min-height: 98%;
+        overflow: hidden;
+        padding: 1%;
+        resize: none;
+    }
+    textarea[name=writer]:focus {
+        outline: none;
     }
 </style>
 </head>
 <body>
-  <h1>Writer</h1>
-  <textarea type="text" autofocus rows="2" id="title" name="title" placeholder="Add title here..." wrap="soft">
-  </textarea>
-  <textarea  id="writer" name="writer" placeholder="Write here..." wrap="soft">
-  </textarea>
+  <textarea type="text" rows="2" id="title" name="title" placeholder="Add title here..." wrap="soft"></textarea>
+  <textarea  id="writer" name="writer" placeholder="Write here..." wrap="soft"></textarea>
 </body>
 </html>
