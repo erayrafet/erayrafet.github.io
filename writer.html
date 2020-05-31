@@ -18,14 +18,12 @@
         margin-top: 2%;
         text-decoration: underline;
     }
-    .scroll::-webkit-scrollbar {
-        display: none;
-    }
     textarea[name=writer] {
         min-width: 98%;
         min-height: 98%;
         max-width: 98%;
         max-height: 98%;
+        overflow: hidden;
         padding: 1%;
         resize: none;
     }
@@ -35,6 +33,7 @@
         font-weight: bold;
         max-height: 98%;
         min-width: 98%;
+        overflow: hidden;
         padding: 1%;
         resize: none;
     }
@@ -42,9 +41,8 @@
 </head>
 <body>
   <h1>Writer</h1>
-    <textarea type="text" autofocus rows="2" id="title" name="title" placeholder="Add title here..." wrap="soft">
+  <textarea type="text" autofocus rows="2" id="title" name="title" placeholder="Add title here..." wrap="soft">
   </textarea>
-  <br>
   <textarea  id="writer" rows="2000" name="writer" placeholder="Write here..." wrap="soft">
   </textarea>
 </body>
