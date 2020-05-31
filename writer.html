@@ -14,7 +14,7 @@
         background-color: var(--body-background);
         border: none;
         color: var(--body-color);
-        font-size: 20px;
+        font-size: 22px;
         font-weight: bold;
         min-height: 98%;
         min-width: 98%;
@@ -42,7 +42,7 @@
 </style>
 </head>
 <body>
-  <textarea type="text" rows="2" id="title" name="title" placeholder="Add title here..." wrap="soft"></textarea>
-  <textarea  id="writer" name="writer" placeholder="Write here..." wrap="soft"></textarea>
+  <textarea id="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Add title here..." wrap="soft"></textarea>
+  <textarea id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..." wrap="soft"></textarea>
 </body>
 </html>
