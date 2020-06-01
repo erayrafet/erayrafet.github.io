@@ -41,9 +41,7 @@
         color: var(--body-color);
         display: inline-block;
         float: right;
-        font-family: "Open Sans";
         font-weight: 700;
-        margin-right: 6%;
         padding: 8px 24px;
         text-align: center;
         text-decoration: none;
@@ -52,29 +50,26 @@
         font-size: small;
         text-align: center;
     }
-    .footer, h1, h2, hr.bottom, img, p, .tab, ul {
+    .button, .footer, .header, h2, hr.bottom, img, p, .tab, ul {
         font-family: "Open Sans";
         margin-left: 6%;
         margin-right: 6%;
     }
-    .footer, h1, hr {
+    .footer, hr {
         border-color: #1a73e8;
         border-width: 2px;
         margin-top: 2%;
-    }
-    h1 {
-        color: #1a73e8;
-        font-weight: bold;
-        text-align: center;
     }
     h1:hover, img:hover {
         transform: scale(1.08);
         transition: transform 0.6s;
         transition-timing-function: ease-out;
     }
-
     .header {
-        background: #000;
+        background: #1a73e8;
+        border-radius: 54px;
+        padding: 1px;
+        text-align: center;
     }
     img {
         border-radius: 50%;
@@ -90,11 +85,6 @@
         background: #1a73e8;
         color: #fff;
     }
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%
-  }
     .tab {
         background-color: var(--body-background);
         float: center;
@@ -245,7 +235,7 @@
       </ul>
     </div>
 
-  <hr class="bottom">
+    <hr class="bottom">
     <div class="footer">
             <p>® 2020 Eray Rafet Mustafa</p>
             <p>All rights reserved.</p>
@@ -253,17 +243,6 @@
     <script src="register-sw.js"></script>
     <script src="sw.js"></script>
     <script>
-	window.onscroll = function() {myFunction()};
-	var header = document.getElementById("myHeader");
-	var sticky = header.offsetTop;
-	function myFunction() {
-  	if (window.pageYOffset > sticky) {
-  	  header.classList.add("sticky");
-	  } else {
-	    header.classList.remove("sticky");
-  	}
-	}
-      
         function tab(evt, cityName) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
