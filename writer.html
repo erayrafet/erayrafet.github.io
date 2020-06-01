@@ -12,6 +12,9 @@
     @media (prefers-color-scheme: light) {
         body { background: #fff; color: #000; }
     }
+    label {
+        visibility: hidden;
+    }
     textarea[name=title] {
         background-color: var(--body-background);
         border: none;
@@ -44,9 +47,9 @@
 </style>
 </head>
 <body>
-  <label for="title"></label>
-  <textarea id="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Add title here..." type="text"></textarea>
-  <label for="writer"></label>
-  <textarea id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..." type="text"></textarea>
+  <label for="title">Title</label>
+  <textarea id="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Add title here..."></textarea>
+  <label for="writer">Writer</label>
+  <textarea id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..."></textarea>
 </body>
 </html>
