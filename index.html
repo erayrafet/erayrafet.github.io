@@ -94,37 +94,35 @@
         overflow: hidden;
         background-color: var(--body-background);
         float: center;
-
     }  
-.tab button, .tab button.active {
-  background-color: var(--body-background);
-  float: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-.tab button:hover {
-  background-color: #1a73e8;
-}
-.tab button.active {
+    .tab button, .tab button.active {
+        background-color: var(--body-background);
+        float: center;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+    }
+    .tab button:hover {
+        background-color: #1a73e8;
+        color: var(--body-color);
+    }
+    .tab button.active {
         color: #1a73e8;
-      font-weight: 700;// bold
-  }
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-    float: center;
-  }
-  .tabcontent {
-  animation: fadeEffect 1s; 
-  }
-  @keyframes fadeEffect {
+        font-weight: 700;// bold
+    }
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+    }
+    .tabcontent {
+        animation: fadeEffect 1s; 
+    }
+    @keyframes fadeEffect {
       from {opacity: 0;}
       to {opacity: 1;}
-  }
+    }
 </style>
 </head>
 <body>
