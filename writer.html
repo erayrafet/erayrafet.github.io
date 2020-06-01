@@ -16,37 +16,27 @@
         visibility: hidden;
     }
     textarea[name=title] {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 4%;
+    }
+    textarea[name=title], textarea[name=writer] {
         background-color: var(--body-background);
         border: none;
         color: var(--body-color);
-        font-size: 22px;
-        font-weight: bold;
-        min-height: 98%;
         min-width: 98%;
+        min-height: 98%;
         overflow: hidden;
         padding: 1%;
-        margin-top: 4%;
         resize: none;
     }
     textarea[name=title]:focus, textarea[name=writer]:focus {
         outline: none;
     }
-    textarea[name=writer] {
-        background-color: var(--body-background);
-        border: none;
-        color: var(--body-color);
-        min-width: 98%;
-        min-height: 98%;
-        overflow: hidden;
-        padding: 1%;
-        resize: none;
-    }
 </style>
 </head>
 <body>
-  <label for="title">Title</label>
-  <textarea id="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Add title here..."></textarea>
-  <label for="writer">Writer</label>
-  <textarea id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..."></textarea>
+  <textarea id="title" label="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Add title here..."></textarea>
+  <textarea id="writer" label="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..."></textarea>
 </body>
 </html>
