@@ -57,7 +57,7 @@
         margin-left: 6%;
         margin-right: 6%;
     }
-    .footer, h1 {
+    .footer, h1, hr {
         border-color: #1a73e8;
         border-width: 2px;
         margin-top: 2%;
@@ -71,10 +71,6 @@
         transform: scale(1.08);
         transition: transform 0.6s;
         transition-timing-function: ease-out;
-    }
-    hr {
-        border-color: #1a73e8;
-        border-width: 2px;
     }
     img {
         border-radius: 50%;
@@ -123,30 +119,34 @@
 </style>
 </head>
 <body>
-  <h1>Eray Rafet Mustafa</h1>
-  <div class="tab">
+    
+    <h1>Eray Rafet Mustafa</h1>
+    
+    <div class="tab">
     <button class="tablinks" id="defaultOpen" onclick="tab(event, 'about')">About me</button>
     <button class="tablinks" onclick="tab(event, 'contacts')">Contact details</button>
     <button class="tablinks" onclick="tab(event, 'projects')">Projects</button>
     <button class="tablinks" onclick="tab(event, 'writer')">Writer web app</button>
-  </div>
-  <div id="about" class="tabcontent">
+    <button class="tablinks" onclick="tab(event, 'donate')">Donate</button>
+    </div>
+
+    <div id="about" class="tabcontent">
     <hr>
     <img src="/profile_photo.webp" alt="Profile photo">
     <ul><li><b>Age: </b>20</li></ul>
-        <ul>
-            <li><b>Languages and proficiency:</b>
+    <ul>
+        <li><b>Languages and proficiency:</b>
                 <ul>
                     <li>Bulgarian - native</li>
                     <li>English - advanced</li>
                     <li>Turkish - native</li>
                 </ul>
-        </ul>
+    </ul>
     <ul>
      	 <li><b>Occupaion: </b>Freelance Content Writer/Editor at <a href="https://www.testingcatalog.com/" <span style=font-weight:bold;color:#a4c639>TestingCatalog.com</span></a> (July 2018 - Present)</li>
     </ul></div>
-    
-  <div id="contacts" class="tabcontent">
+
+    <div id="contacts" class="tabcontent">
     <hr>
     <ul>
             <li>
@@ -184,12 +184,12 @@
     	    <a href="https://twitter.com/eray_rafet">@eray_rafet</a>
             </li>
     </ul>
-    <div class="footer">
+      <div class="footer">
         <p>Please, feel free to contact me at any given time in case you have an inquiry, or a job offer to make.</p>
+      </div>
     </div>
-  </div>
     
-  <div id="projects" class="tabcontent">
+    <div id="projects" class="tabcontent">
       <hr>
     <ul>
             <li><a style="font-weight:bold" href="https://github.com/erayrafet/Black-Pixel-Theme-for-Chrome">Black Pixel theme for Google Chrome / Chrome OS / Microsoft Edge</a>
@@ -203,12 +203,17 @@
             <li><a style="font-weight:bold" href="https://t.me/poco_mods">Eray's Mods Telegram channel</a>
             <p>As I own a Xiaomi POCOPHONE F1, here I mostly do share my self-made Magisk modules, boot logos, and themes for it, aside from general phone stuff every now and then.</p>
     </ul>
-  </div>
-  <div id="writer" class="tabcontent">
+    </div>
+    <div id="writer" class="tabcontent">
     <hr>
     <a href="/writer" class="button">Try it</a>
     <p>A very minimal text writing page, part of this web app.</p>
   </div>
+  
+    </div>
+    <hr>
+    <div id="donate" class="tabcontent">
+  
   <hr>
   <div class="footer">
             <p>® 2020 Eray Rafet Mustafa</p>
