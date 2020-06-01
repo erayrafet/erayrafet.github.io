@@ -45,15 +45,4 @@
   <textarea id="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Add title here..." wrap="soft"></textarea>
   <textarea id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..." wrap="soft"></textarea>
 </body>
-<script>
-taid.addEventListener("change", () => {
-    var text = taid.value;
-    localStorage.setItem("text", text);
-});
-
-window.onload = () => {
-    var savedText = localStorage.getItem("text") || "";
-    taid.value = savedText;
-};
-</script>
 </html>
