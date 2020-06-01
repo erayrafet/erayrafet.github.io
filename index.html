@@ -69,7 +69,8 @@
         transition: transform 0.6s;
         transition-timing-function: ease-out;
     }
-    h1::selection, h1::-moz-selection, ::-moz-selection {
+    h1::selection, h1::-moz-selection, ::-moz-selection, ::selection {
+        background: #1a73e8;
         color: var(--body-color);
     }
     img {
@@ -79,13 +80,6 @@
     }
     img:hover {
         box-shadow: 0 0 20px 4px #1a73e8;
-    }
-    ::-moz-selection {
-        color: var(--body-color);
-    }
-    ::selection {
-        background: #1a73e8;
-        color: var(--body-color);
     }
 </style>
 </head>
