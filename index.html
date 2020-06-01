@@ -69,10 +69,6 @@
         transition: transform 0.6s;
         transition-timing-function: ease-out;
     }
-    ::-moz-selection, ::selection {
-        background: #1a73e8;
-        color: var(--body-color);
-    }
     img {
         border-radius: 50%;
         float: right;
@@ -80,6 +76,14 @@
     }
     img:hover {
         box-shadow: 0 0 20px 4px #1a73e8;
+    }
+    ::-moz-selection {
+        background: #1a73e8;
+        color: var(--body-color);
+    }
+    ::selection {
+        background: #1a73e8;
+        color: var(--body-color);
     }
 </style>
 </head>
