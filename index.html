@@ -52,7 +52,7 @@
         font-size: small;
         text-align: center;
     }
-    .footer, h1, h2, hr, img, p, ul {
+    .footer, h1, h2, hr, img, p, .tab, ul {
         font-family: "Open Sans";
         margin-left: 6%;
         margin-right: 6%;
@@ -72,6 +72,9 @@
         transition: transform 0.6s;
         transition-timing-function: ease-out;
     }
+    .header {
+    background: #000;
+    }
     img {
         border-radius: 50%;
         float: right;
@@ -86,10 +89,14 @@
         background: #1a73e8;
         color: #fff;
     }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%
+  }
     .tab {
         background-color: var(--body-background);
         float: center;
-        font-family: "Open Sans";
         text-align: center;
     }  
     .tab button, .tab button.active {
@@ -119,8 +126,7 @@
 </style>
 </head>
 <body>
-    
-    <h1>Eray Rafet Mustafa</h1>
+    <div class="header" id="myHeader"><h1>Eray Rafet Mustafa</h1><hr></div>
     
     <div class="tab">
     <button class="tablinks" id="defaultOpen" onclick="tab(event, 'about')">About me</button>
@@ -249,6 +255,24 @@
     <script src="register-sw.js"></script>
     <script src="sw.js"></script>
     <script>
+      // When the user scrolls the page, execute myFunction
+	window.onscroll = function() {myFunction()};
+
+// Get the header
+	var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+	var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function myFunction() {
+  	if (window.pageYOffset > sticky) {
+  	  header.classList.add("sticky");
+	  } else {
+	    header.classList.remove("sticky");
+  	}
+	}
+      
         function tab(evt, cityName) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
