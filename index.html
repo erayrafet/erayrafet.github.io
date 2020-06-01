@@ -52,7 +52,7 @@
         font-size: small;
         text-align: center;
     }
-    .footer, h1, h2, hr, img, p, .tab, ul {
+    .footer, h1, h2, hr.bottom, img, p, .tab, ul {
         font-family: "Open Sans";
         margin-left: 6%;
         margin-right: 6%;
@@ -72,8 +72,9 @@
         transition: transform 0.6s;
         transition-timing-function: ease-out;
     }
+
     .header {
-    background: #000;
+        background: #000;
     }
     img {
         border-radius: 50%;
@@ -126,18 +127,19 @@
 </style>
 </head>
 <body>
-    <div class="header" id="myHeader"><h1>Eray Rafet Mustafa</h1><hr></div>
+    <div class="header" id="myHeader"><h1>Eray Rafet Mustafa</h1></div>
     
     <div class="tab">
+    <hr>
     <button class="tablinks" id="defaultOpen" onclick="tab(event, 'about')">About me</button>
     <button class="tablinks" onclick="tab(event, 'contacts')">Contact details</button>
     <button class="tablinks" onclick="tab(event, 'projects')">Projects</button>
     <button class="tablinks" onclick="tab(event, 'writer')">Writer web app</button>
     <button class="tablinks" onclick="tab(event, 'donate')">Donate</button>
+    <hr>
     </div>
 
     <div id="about" class="tabcontent">
-    <hr>
     <img src="/profile_photo.webp" alt="Profile photo">
     <ul><li><b>Age: </b>20</li></ul>
     <ul><li><b>Country of residance: </b>Bulgaria</li></ul>
@@ -174,7 +176,6 @@
     </div>
 
     <div id="contacts" class="tabcontent">
-    <hr>
     <ul>
             <li>
     	    <b style=color:#D44638>Email: </b>
@@ -210,7 +211,6 @@
     </div>
     
     <div id="projects" class="tabcontent">
-      <hr>
     <ul>
             <li><a style="font-weight:bold" href="https://github.com/erayrafet/Black-Pixel-Theme-for-Chrome">Black Pixel theme for Google Chrome / Chrome OS / Microsoft Edge</a>
             <p>Black Pixel is a theme made especially for Google Chrome, but supports Microsoft's new Chromium-based Edge browser as well. It combines the almighty black color with white text/icons and my favorite #1a73e8 blue color (used on my website) from Google's past Material Design Color Palette.</p>
@@ -225,14 +225,12 @@
     </ul>
     </div>
     <div id="writer" class="tabcontent">
-    <hr>
     <a href="/writer" class="button">Try it</a>
     <p>A very minimal text writing page, part of this web app.</p>
   </div>
   
     </div>
     <div id="donate" class="tabcontent">
-    <hr>
           <ul>
             <li>
     	    <b style=color:#0079C1>PayPal: </b>
@@ -247,7 +245,7 @@
       </ul>
     </div>
 
-    <hr>
+  <hr class="bottom">
     <div class="footer">
             <p>® 2020 Eray Rafet Mustafa</p>
             <p>All rights reserved.</p>
