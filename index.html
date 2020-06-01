@@ -42,6 +42,7 @@
         display: inline-block;
         float: right;
         font-family: "Open Sans";
+        font-weight: 700;
         padding: 8px 32px;
         text-align: center;
         text-decoration: none;
@@ -50,12 +51,12 @@
         font-size: small;
         text-align: center;
     }
-    .footer, h1, h2, hr, img, ul {
+    .footer, h1, h2, hr, img, p, ul {
         font-family: "Open Sans";
         margin-left: 6%;
         margin-right: 6%;
     }
-    .footer, h1, hr {
+    .footer, h1 {
         border-color: #1a73e8;
         border-width: 2px;
         margin-top: 4%;
@@ -70,6 +71,10 @@
         transition: transform 0.6s;
         transition-timing-function: ease-out;
     }
+   hr {
+        border-color: #1a73e8;
+        border-width: 2px;
+    }
     img {
         border-radius: 50%;
         float: right;
@@ -82,12 +87,86 @@
         background: #1a73e8;
         color: #fff;
     }
+    .tab {
+        text-align: center;
+        font-family: "Open Sans";
+        overflow: hidden;
+        background-color: var(--body-background);
+        float: center;
+
+    }  
+.tab button, .tab button.active {
+  background-color: var(--body-background);
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #1a73e8;
+}
+.tab button.active {
+        color: #1a73e8;
+      font-weight: 700;// bold
+  }
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+    float: center;
+  }
+  .tabcontent {
+  animation: fadeEffect 1s; 
+  }
+  @keyframes fadeEffect {
+      from {opacity: 0;}
+      to {opacity: 1;}
+  }
 </style>
 </head>
 <body>
-    <h1>Eray Rafet Mustafa</h1>
+  <h1>Eray Rafet Mustafa</h1>
+  <div class="tab">
+    <button class="tablinks" id="defaultOpen" onclick="tab(event, 'about')">About Me</button>
+    <button class="tablinks" onclick="tab(event, 'projects')">Projects</button>
+    <button class="tablinks" onclick="tab(event, 'contacts')">Contact info</button>
+    <button class="tablinks" onclick="tab(event, 'writer')">Writer</button>
+  </div>
+  <div id="about" class="tabcontent">
+    <hr>
     <img src="/profile_photo.webp" alt="Profile photo">
-    <a href="/writer" class="button">Writer</a>
+    <ul><li><b>Age: </b>20</li></ul>
+        <ul>
+            <li><b>Languages and proficiency:</b>
+                <ul>
+                    <li>Bulgarian - native</li>
+                    <li>English - advanced</li>
+                    <li>Turkish - native</li>
+                </ul>
+        </ul>
+    <ul>
+     	 <li><b>Occupaion: </b>Freelance Content Writer/Editor at <a href="https://www.testingcatalog.com/" <span style=font-weight:bold;color:#a4c639>TestingCatalog.com</span><a/> (July 2018 - Present)</li>
+    </ul></div>
+  <div id="projects" class="tabcontent">
+      <hr>
+    <ul>
+            <li><a style="font-weight:bold" href="https://github.com/erayrafet/Black-Pixel-Theme-for-Chrome">Black Pixel theme for Google Chrome / Chrome OS / Microsoft Edge</a>
+            <p>Black Pixel is a theme made especially for Google Chrome, but supports Microsoft's new Chromium-based Edge browser as well. It combines the almighty black color with white text/icons and my favorite #1a73e8 blue color (used on my website) from Google's past Material Design Color Palette.</p>
+            <li><a style="font-weight:bold" href="https://addons.mozilla.org/en-US/firefox/addon/black-pixel/">Black Pixel theme for Mozilla Firefox</a>
+            <p>The Mozilla Firefox edition carries over the same color palette, but with a few variances to accommodate the differences in UI layout.</p>
+            <li><a style="font-weight:bold" href="https://t.me/addtheme/bpdesktop">Black Pixel theme for Telegram's official Android and Desktop apps</a>
+            <p>With Black Pixel for Telegram, my one and only goal is to keep the same minimal UI language style I've grown to love because of Google - absent of dividers and distractions, with vibrant colors here and there, whilst making it easier to focus on the important things first and foremost.</p>
+            <li><a style="font-weight:bold" href="https://github.com/erayrafet/erayrafet.github.io">erayrafet.github.io</a>
+            <p>Started as a learning platform, this is my first ever web page / bio.</p>
+            <li><a style="font-weight:bold" href="https://t.me/poco_mods">Eray's Mods Telegram channel</a>
+            <p>As I own a Xiaomi POCOPHONE F1, here I mostly do share my self-made Magisk modules, boot logos, and themes for it, aside from general phone stuff every now and then.</p>
+    </ul>
+  </div>
+  <div id="contacts" class="tabcontent">
+      <hr>
+
     <ul>
             <li>
     	    <b style=color:#D44638>Email: </b>
@@ -127,41 +206,37 @@
     <div class="footer">
         <p>Please, feel free to contact me at any given time in case you have an inquiry, or a job offer to make.</p>
     </div>
+  </div>
+  <div id="writer" class="tabcontent">
     <hr>
-    <h2>About me</h2>
-    <ul><li><b>Age: </b>20</li></ul>
-        <ul>
-            <li><b>Languages and proficiency:</b>
-                <ul>
-                    <li>Bulgarian - native</li>
-                    <li>English - advanced</li>
-                    <li>Turkish - native</li>
-                </ul>
-        </ul>
-    <ul>
-     	 <li><b>Occupaion: </b>Freelance Content Writer/Editor at <a href="https://www.testingcatalog.com/" <span style=font-weight:bold;color:#a4c639>TestingCatalog.com</span><a/> (July 2018 - Present)</li>
-    </ul>
-    <hr>
-    <h2>Projects</h2>
-    <ul>
-            <li><a style="font-weight:bold" href="https://github.com/erayrafet/Black-Pixel-Theme-for-Chrome">Black Pixel theme for Google Chrome / Chrome OS / Microsoft Edge</a>
-            <p>Black Pixel is a theme made especially for Google Chrome, but supports Microsoft's new Chromium-based Edge browser as well. It combines the almighty black color with white text/icons and my favorite #1a73e8 blue color (used on my website) from Google's past Material Design Color Palette.</p>
-            <li><a style="font-weight:bold" href="https://addons.mozilla.org/en-US/firefox/addon/black-pixel/">Black Pixel theme for Mozilla Firefox</a>
-            <p>The Mozilla Firefox edition carries over the same color palette, but with a few variances to accommodate the differences in UI layout.</p>
-            <li><a style="font-weight:bold" href="https://t.me/addtheme/bpdesktop">Black Pixel theme for Telegram's official Android and Desktop apps</a>
-            <p>With Black Pixel for Telegram, my one and only goal is to keep the same minimal UI language style I've grown to love because of Google - absent of dividers and distractions, with vibrant colors here and there, whilst making it easier to focus on the important things first and foremost.</p>
-            <li><a style="font-weight:bold" href="https://github.com/erayrafet/erayrafet.github.io">erayrafet.github.io</a>
-            <p>Started as a learning platform, this is my first ever web page / bio.</p>
-            <li><a style="font-weight:bold" href="https://t.me/poco_mods">Eray's Mods Telegram channel</a>
-            <p>As I own a Xiaomi POCOPHONE F1, here I mostly do share my self-made Magisk modules, boot logos, and themes for it, aside from general phone stuff every now and then.</p>
-    </ul>
-    <hr>
-    <div class="footer">
+    <a href="/writer" class="button">Try it</a>
+    <p>A very minimal text writing page.</p>
+  </div>
+  <hr>
+  <div class="footer">
             <p>® 2020 Eray Rafet Mustafa</p>
             <p>All rights reserved.</p>
             <br>
     </div>
     <script src="register-sw.js"></script>
     <script src="sw.js"></script>
+    <script>
+        function tab(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
 </body>
 </html>
