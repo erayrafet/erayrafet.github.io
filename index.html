@@ -242,7 +242,7 @@
     <script src="register-sw.js"></script>
     <script src="sw.js"></script>
     <script>
-        function tab(evt, cityName) {
+        function tab(evt, tab) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
           for (i = 0; i < tabcontent.length; i++) {
@@ -252,7 +252,7 @@
           for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
           }
-          document.getElementById(cityName).style.display = "block";
+          document.getElementById(tab).style.display = "block";
           evt.currentTarget.className += " active";
         }
     </script>
