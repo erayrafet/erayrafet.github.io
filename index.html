@@ -35,6 +35,10 @@
     a:hover {
         text-decoration: underline;
     }
+    a:.::selection, ::selection {
+        background: #1a73e8;
+        color: var(--body-color);
+    }
     .button {
         background-color: #1a73e8;
         border-radius: 18px;
@@ -82,10 +86,6 @@
     }
     img:hover {
         box-shadow: 0 0 20px 4px #1a73e8;
-    }
-    a:.::selection {
-        background: #1a73e8;
-        color: var(--body-color);
     }
     .tab {
         background-color: var(--body-background);
