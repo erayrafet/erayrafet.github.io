@@ -42,4 +42,9 @@
     <textarea aria-label="Title" id="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Add title here..."></textarea>
     <textarea aria-label="Writer" id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..."></textarea>
 </body>
+  <script>
+	localStorage.setItem('content', input_textarea.value);
+    input_textarea.textContent = input_textarea.value;
+	}
+  </script>
 </html>
