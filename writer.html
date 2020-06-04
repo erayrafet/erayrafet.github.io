@@ -15,6 +15,10 @@
     label {
         visibility: hidden;
     }
+    ::selection {
+        background: #1a73e8;
+        color: var(--body-color);
+    }
     textarea[name=title] {
         font-size: 22px;
         font-weight: bold;
@@ -43,9 +47,7 @@
     <textarea aria-label="Writer" id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..."></textarea>
 <script>
 localStorage.setItem('content', input_textarea.value);
-  input_textarea.textContent = input_textarea.value;
-  }
-}
+    input_textarea.textContent = input_textarea.value;
 </script>
 </body>
 </html>
