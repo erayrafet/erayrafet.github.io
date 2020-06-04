@@ -34,7 +34,6 @@
         margin-right: 4%;
         min-width: 92%;
         min-height: 92%;
-        overflow: hidden;
         resize: none;
     }
     textarea[name=title]:focus, textarea[name=writer]:focus {
@@ -44,6 +43,6 @@
 </head>
 <body>
     <textarea aria-label="Title" autofocus id="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Add title here..."></textarea>
-    <textarea aria-label="Writer" id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..."></textarea>
+    <textarea aria-label="Writer" id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..." rows="28"></textarea>
 </body>
 </html>
