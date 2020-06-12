@@ -20,10 +20,10 @@
     {
       "name": "Writer",
       "description": "Type down whatever you fancy",
-      "url": "/writer.html",
+      "url": "./writer",
       "icons": [
         {
-          "src": "/writer.svg",
+          "src": "./writer.svg",
           "type": "image/svg+xml",
           "purpose": "any"
         }
