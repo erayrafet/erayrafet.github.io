@@ -26,8 +26,8 @@
         {
           "purpose": "any",
           "sizes": "128x128",
-          "src": "/writer.svg",
-          "type": "image/svg+xml"
+          "src": "/writer.png",
+          "type": "image/png"
         }
       ]
     }
