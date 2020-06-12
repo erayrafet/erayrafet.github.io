@@ -16,11 +16,12 @@
   "lang": "en-US",
   "name": "Eray Rafet Mustafa",
   "orientation": "any",
+  "scope": "/",
   "shortcuts": [
     {
       "name": "Writer",
       "description": "Type down whatever you fancy",
-      "url": "./writer",
+      "url": "/writer",
       "icons": [
         {
           "purpose": "any",
