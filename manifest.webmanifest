@@ -21,7 +21,7 @@
     {
       "icons": [{ "sizes": "128x128", "src": "/writer.png" }],
       "name": "Writer",
-      "url": "/writer"
+      "url": "/?writer"
     }
   ],
   "short_name": "Eray Rafet",
