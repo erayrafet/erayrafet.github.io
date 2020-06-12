@@ -16,6 +16,21 @@
   "lang": "en-US",
   "name": "Eray Rafet Mustafa",
   "orientation": "any",
+  {
+  "shortcuts": [
+    {
+      "name": "Writer",
+      "description": "Type down whatever you fancy",
+      "url": "/writer",
+      "icons": [
+        {
+          "src": "/writer.svg",
+          "type": "image/svg+xml",
+          "purpose": "any"
+        }
+      ]
+    },
+  ],
   "short_name": "Eray Rafet",
   "start_url": "./",
   "theme_color": "#000000"
