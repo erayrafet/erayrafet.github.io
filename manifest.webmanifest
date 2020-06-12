@@ -20,7 +20,7 @@
     {
       "name": "Writer",
       "description": "Type down whatever you fancy",
-      "url": "/writer",
+      "url": "/writer.html",
       "icons": [
         {
           "src": "/writer.svg",
