@@ -19,8 +19,7 @@
   "scope": "/",
   "shortcuts": [
     {
-      "description": "Type down whatever you fancy",
-      "icons": [{ "purpose": "any", "sizes": "128x128", "src": "/writer.png", "type": "image/png" }],
+      "icons": [{ "sizes": "128x128", "src": "/writer.png" }],
       "name": "Writer",
       "url": "/writer"
     }
