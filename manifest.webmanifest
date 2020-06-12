@@ -23,10 +23,10 @@
       "url": "./writer",
       "icons": [
         {
-          "purpose": "any"
-          "sizes": "192x192"
+          "purpose": "any",
+          "sizes": "192x192",
           "src": "/writer.svg",
-          "type": "image/svg+xml",
+          "type": "image/svg+xml"
         }
       ]
     }
