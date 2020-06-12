@@ -19,17 +19,10 @@
   "scope": "/",
   "shortcuts": [
     {
-      "name": "Writer",
       "description": "Type down whatever you fancy",
-      "url": "/writer",
-      "icons": [
-        {
-          "purpose": "any",
-          "sizes": "128x128",
-          "src": "/writer.png",
-          "type": "image/png"
-        }
-      ]
+      "icons": [{  "purpose": "any", "sizes": "128x128", "src": "/writer.png", "type": "image/png" }],
+      "name": "Writer",
+      "url": "/writer"
     }
   ],
   "short_name": "Eray Rafet",
