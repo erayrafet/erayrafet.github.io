@@ -13,30 +13,24 @@
         body { background: #fff; color: #000; }
     }
     * {
-        margin-left: 4%;
-        margin-right: 4%;
-        margin-top: 2%;
-    }
-    hr {
-        border: 1px solid #1a73e8;
-    }
-    ::selection {
-        background: #1a73e8;
-        color: var(--body-color);
-    }
-    textarea[name=title] {
-        background-color: #1a73e833;
-        border-radius: 12px;
-        font-size: 24px;
-        font-weight: 700;
-    }
-    textarea[name=title], textarea[name=writer] {
+        background-color: var(--body-background);
         border: none;
         caret-color: #1a73e8;
         color: var(--body-color);
         font-family: "Open Sans";
-        min-width: 92%;
+        min-width: 96%;
+        outline: none;
+        padding: 2%;
         resize: none;
+    }
+    ::selection {
+        background: #1a73e8;
+    }
+    textarea[name=title] {
+        background-color: #1a73e822;
+        border-radius: 18px;
+        font-size: 24px;
+        font-weight: 700;
     }
 </style>
 </head>
