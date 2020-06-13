@@ -13,18 +13,26 @@
     * {
         font-family: "Open Sans";
         font-weight: bold;
-        margin-top: 10%;
+        margin-top: 8%;
         text-align: center;
         text-decoration: none;
-      }
-      .button {
+    }
+    a:active, a:link, a:visited {
+        color: var(--body-color);
+    }
+    .button {
         background: #1a73e8;
         border-radius: 18px;
         display: inline-block;
         float: center;
         font-weight: 700;
         padding: 6px 12px;
-      }
+	}
+    .button:hover {
+        transform: scale(1.08);
+        transition: transform 0.6s;
+        transition-timing-function: ease-out;
+	}
 </style>
 </head>
 <body>
