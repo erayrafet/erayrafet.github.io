@@ -28,6 +28,14 @@
     @media (prefers-color-scheme: light) {
         body { background: #fff; color: #000; }
     }
+    * {
+        animation: fadeEffect 0.6s;
+        background: var(--body-background);
+        border: none;
+        color: var(--body-color);
+        font-family: "Open Sans";
+        outline: none;
+  }
     a:active, a:link, a:visited {
         color: var(--body-color);
         text-decoration: none;
@@ -37,7 +45,6 @@
     }
     a:.::selection, ::selection {
         background: #1a73e8;
-        color: var(--body-color);
     }
     .button {
         background: #1a73e8;
@@ -45,13 +52,11 @@
         display: inline-block;
         float: right;
         font-weight: 700;
-        padding: 4px 22px;
+        padding: 6px 12px;
         text-align: center;
         text-decoration: none;
     }
     .button, .footer, h2, hr.bottom, img, p,.tab, .tab button, ul {
-        color: var(--body-color);
-        font-family: "Open Sans";
         margin-left: 4%;
         margin-right: 4%;
     }
@@ -69,7 +74,6 @@
     .header {
         background: #1a73e8;
         border-radius: 66px;
-        font-family: "Open Sans";
         margin-left: 26%;
         margin-right: 26%;
         padding: 2px;
@@ -91,24 +95,17 @@
         box-shadow: 0 0 20px 4px #1a73e8;
     }
     .tab {
-        background: var(--body-background);
         text-align: center;
     }
     .tab button, .tab button.active {
-        background: var(--body-background);
-        border: none;
         border-radius: 18px;
         font-size: 18px;
-        outline: none;
         padding: 6px 12px;
         transition: 0.6s;
     }
     .tab button.active {
         color: #1a73e8;
         font-weight: 700;
-    }
-    .tabcontent {
-        animation: fadeEffect 0.6s; 
     }
 </style>
 </head>
@@ -267,4 +264,3 @@
     </script>
 </body>
 </html>
-
