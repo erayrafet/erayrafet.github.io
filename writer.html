@@ -12,32 +12,31 @@
     @media (prefers-color-scheme: light) {
         body { background: #fff; color: #000; }
     }
-    label {
-        visibility: hidden;
+    * {
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 2%;
+    }
+    hr {
+        border: 1px solid #1a73e8;
     }
     ::selection {
         background: #1a73e8;
         color: var(--body-color);
     }
     textarea[name=title] {
-        font-size: 22px;
-        font-weight: bold;
-        margin-top: 4%;
+        background-color: #1a73e833;
+        border-radius: 12px;
+        font-size: 24px;
+        font-weight: 700;
     }
     textarea[name=title], textarea[name=writer] {
-        background-color: var(--body-background);
         border: none;
         caret-color: #1a73e8;
         color: var(--body-color);
         font-family: "Open Sans";
-        margin-left: 4%;
-        margin-right: 4%;
         min-width: 92%;
-        min-height: 92%;
         resize: none;
-    }
-    textarea[name=title]:focus, textarea[name=writer]:focus {
-        outline: none;
     }
 </style>
 </head>
