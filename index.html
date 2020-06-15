@@ -55,7 +55,7 @@
         float: right;
         font-weight: 700;
     }
-    .button, .footer, h2, hr.bottom, img, p,.tab, .tab button, ul {
+    .button, .footer, h2, hr.bottom, img, p,.tab, ul {
         margin-left: 4%;
         margin-right: 4%;
     }
@@ -68,7 +68,7 @@
     }
     .button, .tab button, .tab button.active {
         border-radius: 18px;
-        font-size: 18px;
+        font-size: large;
         padding: 6px 12px;
     }
     .footer {
@@ -78,8 +78,7 @@
     .header {
         border-radius: 66px;
         color: #1a73e8;
-        margin-left: 26%;
-        margin-right: 26%;
+        margin: 0 26%;
         padding: 2px;
         text-align: center;
     }
@@ -100,7 +99,6 @@
         box-shadow: 0 0 20px 4px #1a73e8;
     }
     .tab {
-        display: block;
         text-align: center;
     }
     .tab button.active {
@@ -261,7 +259,7 @@
           for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
           }
-          document.getElementById(tab).style.display = "inline-block";
+          document.getElementById(tab).style.display = "block";
           evt.currentTarget.className += " active";
         }
     </script>
