@@ -254,7 +254,7 @@
     <script src="register-sw.js"></script>
     <script src="sw.js"></script>
     <script>
-		function tab(evt, tab) {
+        function tab(evt, tab) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
           for (i = 0; i < tabcontent.length; i++) {
@@ -267,6 +267,7 @@
           document.getElementById(tab).style.display = "block";
           evt.currentTarget.className += "active";
         }
+        document.getElementById("default").click();
     </script>
 </body>
 </html>
