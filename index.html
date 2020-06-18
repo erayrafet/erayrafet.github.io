@@ -10,7 +10,7 @@
     <meta name="application-name" content="Eray Rafet">
     <meta name="author" content="Eray Rafet">
     <meta name="description" content="Eray Rafet Mustafa - writer, modder, a complete tech junkie.">
-    <meta name="keywords" content="eray rafet, black pixel, black pixe theme, poco f1, pocophone f1, poco mods, eray's mods">
+    <meta name="keywords" content="eray rafet, black pixel, black pixel theme, poco f1, pocophone f1, poco mods, eray's mods">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#000000">
     <meta name="viewport" content="initial-scale=1, shrink-to-fit=yes, user-scalable=no, width=device-width">
@@ -124,7 +124,7 @@
     
     <div class="tab">
     <hr>
-    <button class="tablinks" id="defaultOpen" onclick="tab(event, 'about')">About me</button>
+    <button class="tablinks" id="default" onclick="tab(event, 'about')">About me</button>
     <button class="tablinks" onclick="tab(event, 'contacts')">Contact details</button>
     <button class="tablinks" onclick="tab(event, 'projects')">Projects</button>
     <button class="tablinks" onclick="tab(event, 'webapps')">Web apps</button>
@@ -254,7 +254,7 @@
     <script src="register-sw.js"></script>
     <script src="sw.js"></script>
     <script>
-        function tab(evt, tab) {
+		function tab(evt, tab) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
           for (i = 0; i < tabcontent.length; i++) {
@@ -262,14 +262,11 @@
           }
           tablinks = document.getElementsByClassName("tablinks");
           for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            tablinks[i].className = tablinks[i].className.replace("active");
           }
           document.getElementById(tab).style.display = "block";
-          evt.currentTarget.className += " active";
+          evt.currentTarget.className += "active";
         }
-    </script>
-    <script>
-        document.getElementById("defaultOpen").click();
     </script>
 </body>
 </html>
