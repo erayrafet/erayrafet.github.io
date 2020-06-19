@@ -19,12 +19,25 @@
         caret-color: #1a73e8;
         color: var(--body-color);
         font-family: "Open Sans";
-        padding: 1% 0% 0% 1%;
         resize: none;
         scrollbar-color: #1a73e8 transparent;
         scrollbar-width: thin;
     }
+    button {
+        background: #1a73e8;
+        display: none;
+        float: right;
+        font-size: large;
+        font-weight: 700;
+        padding: 6px 12px;
+    }
+    button:hover {
+        transform: scale(1.06);
+        transition: transform 0.6s;
+        transition-timing-function: ease-out;
+    }
     html {
+        padding: 1%;
         scroll-behavior: smooth;
     }
     ::selection {
@@ -34,10 +47,10 @@
         background-color: #1a73e810;
         font-size: x-large;
         font-weight: 700;
-        width: 96%;
+        width: 100%;
     }
     textarea[name=writer] {
-        width: 96%;
+        width: 100%;
     }
     ::-webkit-scrollbar {
         width: 6px;
@@ -45,20 +58,6 @@
     ::-webkit-scrollbar-thumb {
         background: #1a73e8;
         border-radius: 4px;
-    }
-    button {
-        background: #1a73e8;
-        display: none;
-        float: right;
-        font-size: large;
-        font-weight: 700;
-        margin-bottom: 1%;
-        padding: 6px 12px;
-    }
-    button:hover {
-        transform: scale(1.06);
-        transition: transform 0.6s;
-        transition-timing-function: ease-out;
     }
 </style>
 </head>
