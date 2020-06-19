@@ -34,10 +34,11 @@
         background-color: #1a73e810;
         font-size: x-large;
         font-weight: 700;
+        scrollbar-width: none;
         width: 96%;
     }
     textarea[name=writer] {
-        overflow: hidden;        
+        scrollbar-width: none;
         width: 96%;
     }
     ::-webkit-scrollbar {
@@ -83,14 +84,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-  taid.addEventListener("change", () => {
-    var text = taid.value;
-    localStorage.setItem("text", text);
-});
-window.onload = () => {
-    var savedText = localStorage.getItem("text") || "";
-    taid.value = savedText;
-};
 </script>
 </body>
 </html>
