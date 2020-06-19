@@ -20,7 +20,7 @@
         color: var(--body-color);
         font-family: "Open Sans";
         outline: none;
-        padding: 1% 0% 0% 1%;
+        padding: 1% 1% 0% 1%;
         resize: none;
         scrollbar-color: #1a73e8 transparent;
         scrollbar-width: thin;
@@ -35,11 +35,11 @@
         background-color: #1a73e810;
         font-size: x-large;
         font-weight: 700;
-        width: 98%;
+        width: 96%;
     }
     textarea[name=writer] {
-        margin-top: 1%;
-        width: 98%;
+        margin-top: 0%;
+        width: 96%;
     }
     ::-webkit-scrollbar {
         width: 6px;
@@ -55,7 +55,7 @@
         float: right;
         font-size: large;
         font-weight: 700;
-        margin: 2%;
+        margin-bottom: 2%;
         padding: 6px 12px;
         padding-left: 24px;
         padding-right: 24px;
@@ -75,7 +75,7 @@
 var mybutton = document.getElementById("button");
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     mybutton.style.display = "inline";
   } else {
     mybutton.style.display = "none";
