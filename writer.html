@@ -24,7 +24,6 @@
         resize: none;
         scrollbar-color: #1a73e8 transparent;
         scrollbar-width: thin;
-        width: 98%;
     }
     html {
         scroll-behavior: smooth;
@@ -36,9 +35,11 @@
         background-color: #1a73e810;
         font-size: x-large;
         font-weight: 700;
+        width: 98%;
     }
     textarea[name=writer] {
         margin-top: 1%;
+        width: 98%;
     }
     ::-webkit-scrollbar {
         width: 6px;
@@ -47,10 +48,35 @@
         background: #1a73e8;
         border-radius: 4px;
     }
+    #top {
+        background: #1a73e8;border-radius: 50%;
+        display: none;
+        float: right;
+        padding: 12px;
+    }
 </style>
 </head>
 <body>
     <textarea aria-label="Title" autofocus id="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Add title here..."></textarea>
     <textarea aria-label="Writer" id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..." rows="28"></textarea>
+    <button onclick="topFunction()" id="top" title="Go to top">Top</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("top");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "inline-block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>
