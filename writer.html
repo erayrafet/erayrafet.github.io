@@ -48,21 +48,31 @@
         background: #1a73e8;
         border-radius: 4px;
     }
-    #top {
-        background: #1a73e8;border-radius: 50%;
-        display: none;
+    button {
+        background: #1a73e8;
+        border-radius: 18px;
         float: right;
-        padding: 12px;
+        font-size: large;
+        font-weight: 700;
+        margin: 2%;
+        padding: 6px 12px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+	button:hover {
+        transform: scale(1.06);
+        transition: transform 0.6s;
+        transition-timing-function: ease-out;
     }
 </style>
 </head>
 <body>
     <textarea aria-label="Title" autofocus id="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Add title here..."></textarea>
     <textarea aria-label="Writer" id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..." rows="28"></textarea>
-    <button onclick="topFunction()" id="top" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="button" title="Go to top">Top</button>
 <script>
 //Get the button
-var mybutton = document.getElementById("top");
+var mybutton = document.getElementById("button");
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
