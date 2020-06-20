@@ -25,7 +25,7 @@
   "scope": "/",
   "shortcuts": [
     {
-      "icons": [{ "sizes": "128x128", "src": "/writer.png" }],
+      "icons": [{ "sizes": "192x192", "src": "/writer.png" }],
       "name": "Writer",
       "url": "/writer"
     }
