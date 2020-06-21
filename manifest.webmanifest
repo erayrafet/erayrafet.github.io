@@ -1,6 +1,6 @@
 {
   "background_color": "#000000",
-  "display": "standalone",
+  "display": "minimal-ui",
   "icons": [
     {
       "sizes": "192x192",
