@@ -31,6 +31,6 @@
     }
   ],
   "short_name": "Eray Rafet",
-  "start_url": "/",
+  "start_url": "/?utm_source=analytics_test&utm_medium=referral",
   "theme_color": "#000000"
 }
