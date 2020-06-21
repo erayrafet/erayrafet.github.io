@@ -28,3 +28,4 @@
     ::selection { background: #1a73e8; }
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-thumb { background: #1a73e8; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #1a73e8; }
