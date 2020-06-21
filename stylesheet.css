@@ -18,6 +18,7 @@
     a:link { color: #1a73e8); }
     a:.::selection, { background: #1a73e8; }
     .footer { font-size: small; text-align: center; }
+    h1 { padding-bottom: 2%; }
     hr { border: 2px solid #1a73e8; border-radius: 4px; }
     html { caret-color: #1a73e8; padding: 2%; scrollbar-color: #1a73e8 transparent; scrollbar-width: thin; scroll-behavior: smooth; }
     li { font-weight: 700; }
