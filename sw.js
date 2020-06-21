@@ -1,4 +1,4 @@
-const OFFLINE_VERSION = 6
+const OFFLINE_VERSION = 7
 const CACHE_NAME = '404'
 const OFFLINE_URL = '404.html'
 
