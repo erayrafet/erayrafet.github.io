@@ -6,7 +6,6 @@
         animation: fadeEffect 0.6s;
         background: var(--body-background);
         border: none;
-        border-radius: 18px;
         color: var(--body-color);
         font-family: "Open Sans";
         outline: none;
