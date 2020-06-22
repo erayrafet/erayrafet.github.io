@@ -21,7 +21,7 @@
     .date { font-size: small; opacity: 0.8; padding-bottom: 2%; }
     .footer { font-size: small; padding: 1% 0; text-align: center; }
     h1 { color: #1a73e8; padding-bottom: 2%; text-align: center; }
-    h2 { padding: 1% 0 0.5%; }
+    h2 { padding: 1% 0 0.25%; }
     hr { border: 2px solid #1a73e8; border-radius: 4px; }
     html { caret-color: #1a73e8; padding: 2% 4%; scrollbar-color: #1a73e8 transparent; scrollbar-width: thin; scroll-behavior: smooth; }
     img { border-radius: 18px; display: block; margin-left: auto; margin-right: auto; width: 60%; }
