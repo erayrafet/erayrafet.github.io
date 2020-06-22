@@ -22,7 +22,7 @@
     h1 { color: #1a73e8; padding-bottom: 2%; text-align: center; }
     h2 { padding-top: 2%; }
     hr { border: 2px solid #1a73e8; border-radius: 4px; }
-    html { caret-color: #1a73e8; padding: 2%; scrollbar-color: #1a73e8 transparent; scrollbar-width: thin; scroll-behavior: smooth; }
+    html { caret-color: #1a73e8; padding: 2% 4%; scrollbar-color: #1a73e8 transparent; scrollbar-width: thin; scroll-behavior: smooth; }
     img { border-radius: 18px; display: block; margin-left: auto; margin-right: auto; width: 60%; }
     img.small { width: 30%; }
     li { font-weight: 700; }
