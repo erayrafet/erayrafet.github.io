@@ -18,7 +18,7 @@
     a:link { color: #1a73e8); }
     a:.::selection, { background: #1a73e8; }
     .button:hover, button:hover, h1:hover, img:hover { text-decoration: none; transform: scale(1.06); }
-    .date { font-size: small; opacity: 0.9; }
+    .date { font-size: small; opacity: 0.9; padding: 2% 0; }
     .footer { font-size: small; text-align: center; }
     h1 { color: #1a73e8; padding-bottom: 2%; text-align: center; }
     h2 { padding-top: 2%; }
