@@ -21,11 +21,28 @@ It's not strictly about speed, but rather latency, aka, the time to establish a 
 
     <h2>My first choice</h2>
     <ul><li>Quad9</li></ul>
-
+Primary: 9.9.9.9
+Secondary: 149.112.112.112
+DoT: dns.quad9.net
     <h2>Alternatives</h2>
 In case you don't trust Google Cloudflare because they do collect logs and other types of personal data for debugging issues, yet they may still easily outperform Quad9 in select regions of the world due to having a broader network base.
 
-<ul><li>Cloudflare</li><li>Google</li></ul>
+<ul><li>Cloudflare</li>
+Primary: 1.1.1.1
+Secondary: 1.0.0.1
+DoT: 1dot1dot1dot1.cloudflare-dns.com
+<li>Google</li>
+Primary: 8.8.8.8
+Secondary: 8.8.4.4
+DoT: dns.google
+</ul>
+    <h2>Setup</h2>
+The most straightforward way is to set up your preferred DNS directly through your router. Depending on your router maker, model, and firmware revision, the settings GUIs significantly vary. Make sure to scour through each and every option until you see the <b>DNS server</b> options.
+    <img src="./images/router.png"></ul>
+    
+Newer versions of Android (9 and above) have built-in support for DNS-over-TLS, which is very easy to set up and there isn't a single reason not to.
+<b>Settings > Network & internet > Advanced > Private DNS</b>
+    <img class="small" src="./images/dot-android.jpg">
     <h2>Closing words</h2>
 The Internet being a decentralized domain does have its implications as to who can track you and whom do you 
     <br><br><hr>
