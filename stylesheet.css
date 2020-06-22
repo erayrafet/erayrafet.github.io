@@ -24,8 +24,8 @@
     h2 { padding: 1% 0 0.25%; }
     hr { border: 2px solid #1a73e8; border-radius: 4px; }
     html { caret-color: #1a73e8; padding: 1% 4%; scrollbar-color: #1a73e8 transparent; scrollbar-width: thin; scroll-behavior: smooth; }
-    img { border-radius: 18px; display: block; margin-left: auto; margin-right: auto; padding: 1%; width: 50%; }
-    img.small { padding: 1%; width: 25%; }
+    img { border-radius: 18px; display: block; margin-left: auto; margin-right: auto; padding: 2%; width: 50%; }
+    img.small { padding: 2%; width: 25%; }
     li { font-weight: 700; }
     ::selection { background: #1a73e8; }
     ::-webkit-scrollbar { width: 6px; }
