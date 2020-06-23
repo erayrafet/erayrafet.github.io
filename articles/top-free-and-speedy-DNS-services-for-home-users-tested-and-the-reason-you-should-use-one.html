@@ -20,24 +20,26 @@ DNS-over-TLS (DoT) and DNS-over-HTTPS (DoH)
 It's not strictly about speed, but rather latency, aka, the time to establish a connection with a server. The use of a crappy Domain Name Service can bog down your latency, mostly important to competitive online gamers, though, not limited to.
 
     <h2>My first choice</h2>
-    <ul><li>Quad9</li></ul>
-Primary: 9.9.9.9<br>
+    <ul><h3><li>Quad9</li></h3></ul>
+    <ul>Primary: 9.9.9.9<br>
 Secondary: 149.112.112.112<br>
-DoT: dns.quad9.net<br>
+DoT: dns.quad9.net<br></ul>
 
 Quad9 is being run by a US-based non-profit organization and because they can't monetize their product, Quad9 relies solely on donations and is funded by IBM.
+
     <h2>Alternatives</h2>
 In case you don't trust Google and Cloudflare because they do collect logs and certain types of personal data for debugging reasons, yet, they may still easily outperform Quad9 in select regions of the world due to having a broader network infrastructure.
 
-<ul><li>Cloudflare</li>
-Primary: 1.1.1.1<br>
+    <ul><h3><li>Cloudflare</li></h3></ul>
+    <ul>Primary: 1.1.1.1<br>
 Secondary: 1.0.0.1<br>
-DoT: 1dot1dot1dot1.cloudflare-dns.com<br>
-<li>Google</li>
-Primary: 8.8.8.8<br>
+DoT: 1dot1dot1dot1.cloudflare-dns.com<br></ul>
+
+    <ul><h3><li>Google</li></h3></ul>
+    <ul>Primary: 8.8.8.8<br>
 Secondary: 8.8.4.4<br>
-DoT: dns.google<br>
-</ul>
+DoT: dns.google<br></ul>
+
     <h2>Configuration</h2>
 The most straightforward way is to set up your preferred DNS directly through your router. Depending on your router maker, model, and firmware revision, the settings GUIs significantly vary. Make sure to scour through each and every option until you see the <b>DNS server</b> options.
     <img src="./images/router.png"></ul>
