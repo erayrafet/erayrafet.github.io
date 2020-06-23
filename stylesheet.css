@@ -17,10 +17,11 @@
     a:hover { text-decoration: underline; }
     a:link { color: #1a73e8); }
     a:.::selection, { background: #1a73e8; }
-    .button:hover, button:hover, h1:hover, img:hover { text-decoration: none; transform: scale(1.06); }
+    .button:hover, button:hover, img:hover { text-decoration: none; transform: scale(1.06); }
     .date { font-size: small; opacity: 0.7; padding-bottom: 2%; }
     .footer { font-size: small; padding: 0.25% 0; text-align: center; }
     h1 { color: #1a73e8; padding-bottom: 2%; text-align: center; }
+    h1:hover, { transform: scale(0.94); }
     h2 { padding: 1% 0 0.25%; }
     hr { border: 2px solid #1a73e8; border-radius: 4px; }
     html { caret-color: #1a73e8; padding: 1% 4%; scrollbar-color: #1a73e8 transparent; scrollbar-width: thin; scroll-behavior: smooth; }
