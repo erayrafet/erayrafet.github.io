@@ -12,12 +12,12 @@
         resize: none;
     }
     button { background: #1a73e8; display: none; float: right; font-size: large; font-weight: 700; padding: 6px 12px; }
-    textarea[name=title] { background: rgba(26, 115, 232, 0.2); font-size: x-large; font-weight: 700; padding: 0.6%; width: 98%; }
+    textarea[name=title] { font-size: x-large; font-weight: 700; padding: 0.6%; width: 98%; }
     textarea[name=writer] { padding: 0.6%; width: 98%; }
 </style>
 </head>
 <body>
-    <textarea aria-label="Title" autofocus id="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Add title here..."></textarea>
+    <textarea aria-label="Title" autofocus class="box" id="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Add title here..."></textarea>
     <textarea aria-label="Writer" id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..." rows="32"></textarea>
     <button onclick="topFunction()" id="button" title="Go to top">Top</button>
 <script>
