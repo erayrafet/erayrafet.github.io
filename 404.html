@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap">
-    <link rel="stylesheet" href="stylesheet.css">
     <meta name="viewport" content="initial-scale=1, shrink-to-fit=yes, user-scalable=no, width=device-width">
     <title>Error 404</title>
 <style>
-    html { font-weight: 700; margin-top: 6%; text-align: center; }
+    @media (prefers-color-scheme: dark) { body { background: #000; color: #fff; }
+    }
+    @media (prefers-color-scheme: light) { body { background: #fff; color: #000; }
+    }
+    * { background: var(--body-background); color: var(--body-color); }
+    a { text-decoration: none; }
+    button { background: #1a73e8; border: none; border-radius: 18px; font-size: large; font-weight: 700; padding: 6px 12px; }
+    button:hover { transform: scale(1.05); transition: 0.5s; transition-timing-function: ease-out; }
+    html { padding: 25%; text-align: center; }
+    ::selection { background: #1a73e8; }
 </style>
 </head>
 <body>
     <h2>There ain't no Internet, yo!</h2>
-    <a href="/">Reload</a>
+    <button><a href="/"</a>Reload</button>
 </body>
 </html>
