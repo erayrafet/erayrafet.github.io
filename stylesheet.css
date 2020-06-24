@@ -2,28 +2,19 @@
     }
     @media (prefers-color-scheme: light) { body { background: #fff; color: #000; }
     }
-    * {
-        animation: fadeEffect 0.6s;
-        background: var(--body-background);
-        border: none;
-        color: var(--body-color);
-        font-family: "Open Sans";
-        outline: none;
-        text-decoration: none;
-        transition: 0.6s;
-        transition-timing-function: ease-out;      
-    }
+    * { animation: fadeEffect 0.5s; background: var(--body-background); border: none; color: var(--body-color); font-family: "Open Sans"; outline: none; transition: 0.5s; transition-timing-function: ease-out; }
     a:active, a:visited { color: var(--body-color); }
     a:hover { text-decoration: none; }
     a:link { color: #1a73e8); }
     a:.::selection, { background: #1a73e8; }
     .box { background: rgba(26, 115, 232, 0.15); border-radius: 18px; margin: 1% 0; padding: 1%; }
     .box:hover { background: rgba(26, 115, 232, 0.25); transform: scale(1.01); }
-    .button:hover, button:hover, img:hover { text-decoration: none; transform: scale(1.06); }
+    .button { background: #1a73e8; float: right; font-size: large; font-weight: 700; padding: 6px 12px; }
+    .button:hover, button:hover, img:hover { text-decoration: none; transform: scale(1.05); }
     .date { font-size: small; opacity: 0.7; padding-bottom: 2%; }
     .footer { font-size: small; padding: 0.25% 0; text-align: center; }
     h1 { color: #1a73e8; padding-bottom: 2%; text-align: center; }
-    h1:hover { transform: scale(0.94); }
+    h1:hover { transform: scale(0.95); }
     h2 { padding: 0.25% 0; }
     hr { border: 2px solid #1a73e8; border-radius: 4px; }
     html { caret-color: #1a73e8; padding: 1% 4%; scrollbar-color: #1a73e8 transparent; scrollbar-width: thin; scroll-behavior: smooth; }
