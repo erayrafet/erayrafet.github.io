@@ -3,8 +3,7 @@
     @media (prefers-color-scheme: light) { body { background: #fff; color: #000; }
     }
     * { animation: fadeEffect 0.5s; background: var(--body-background); border: none; color: var(--body-color); font-family: "Open Sans"; outline: none; transition: 0.5s; transition-timing-function: ease-out; }
-    a:active, a:visited { color: var(--body-color); }
-    a:hover { text-decoration: none; }
+    a {text-decoration:none; }
     a:link { color: #1a73e8); }
     a:.::selection, { background: #1a73e8; }
     .box { background: rgba(26, 115, 232, 0.15); border-radius: 18px; margin: 1% 0; padding: 1%; }
