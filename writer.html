@@ -7,31 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <title>Writer</title>
 <style>
-    * { align: center; border-radius: 18px; resize: none; }
-    .button { display:none; }
-    textarea[name=title] { font-size: x-large; font-weight: 700; width: 96%; }
-    textarea[name=writer] { padding: 1%; width: 96%; }
+    .button { bottom: 2%; position: fixed; right: 2%;}
+    html { scroll-behavior: unset; }
+    textarea[name=title] { font-size: x-large; font-weight: 700; resize: none; width: 96%; }
+    textarea[name=writer] { padding: 1%; resize: none; width: 96%; }
 </style>
 </head>
 <body>
     <textarea aria-label="Title" autofocus class="box" id="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Add title here..."></textarea>
     <textarea aria-label="Writer" id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..." rows="16"></textarea>
-    <button class="button button" id="button" onclick="topFunction()" title="Go to top">Top</button>
+    <button class="button button" onclick="scrollWin()" title="Go to top">Top</button>
 <script>
 var mybutton = document.getElementById('button')
-window.onscroll = function () {
-  scrollFunction()
-}
-function scrollFunction() {
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-    mybutton.style.display = 'inline'
-  } else {
-    mybutton.style.display = 'none'
-  }
-}
-function topFunction() {
-  document.body.scrollTop = 0
-  document.documentElement.scrollTop = 0
+function scrollWin() {
+  window.scrollTo(2, 0);
 }
 </script>
 </body>
