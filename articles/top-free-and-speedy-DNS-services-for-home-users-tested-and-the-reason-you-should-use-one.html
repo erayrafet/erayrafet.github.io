@@ -8,21 +8,19 @@
     <script data-ad-client="ca-pub-7179614252791319" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
-    <h1>Top free and speedy DNS services for home users tested and the reason you should use one</h1>
+    <h1>Top free, secure and speedy DNS services for home users tested and the reason you should use one</h1>
     <div class="date">Publishing date: June 23, 2020</div>
 
-Well, I am no expert here, but for starters, we must know what DNS stands for and how it impacts our web surfing and online privacy. The internet runs on ip addresses - 216.58.214.206, perhaps is for Google.com. Test by typing it into your address bar.
+Well, I have no expertise in this topic, but for starters, we must know what DNS stands for and how it impacts our web surfing and online privacy.<br>Simply put, the internet runs on IP addresses - 216.58.214.206, perhaps is for Google.com. Test it by typing it into your address bar. 
     <img src="./images/ping-google.png"></ul>
-
-But they are too hard to remember, right? And so, we need a "phonebook" for the internet.
-Unless that data with our DNS provider is encrypted
-Internet service providers (ISPs) have their own DNS servers, and they can 
+Sure enough, remembering those is such a hassle, right? That's the reason we need a "phonebook" for the internet in the name of a Domain Name Service, referred as DNS from now on, to translate website domains into IPs. 
+Most internet service providers (ISPs) have each of their own DNS servers, and potentially they can snoop on which sites their clients visit. The introduction of DNS-over-TLS and DNS-over-HTTPS types of traffic encryption has paved the way for a more secure internet.
 
     <h2>User privacy</h2>
-DNS-over-TLS (DoT) and DNS-over-HTTPS (DoH) are still sorta new, and have major importance in having a more secure internet. Unless you are running a secure DNS of the aforementioned types, the sites you visit can easily be tracked by your current internet service provider.
+DNS-over-TLS (DoT) and DNS-over-HTTPS (DoH) are still sorta new, though they have major importance in having privacy in-check when browsing the internet with the use of modern encryption standards. Unless you are running a secure DNS of the aforementioned types, the website addresses you visit can easily be tracked by your current internet service provider, and anyone in-between.
 
     <h2>Speed</h2>
-It's not strictly about speed, but rather latency, aka, the time to establish a connection with a server. The use of a crappy Domain Name Service can bog down your latency, mostly important to competitive online gamers, though, not limited to.
+It's not strictly about speed, but rather latency, aka, the exact time to establish a connection with a remote server. The use of a crappy Domain Name Service can bog down your latency, which in most situations can hurt competitive online gameplays, though, it's not limited to.
 
     <h2>My first choice</h2>
     <ul><h3><li>Quad9</li></h3></ul>
@@ -30,11 +28,9 @@ It's not strictly about speed, but rather latency, aka, the time to establish a 
 Secondary: 149.112.112.112<br>
 DoT: dns.quad9.net<br></ul>
 
-Quad9 is being run by a US-based non-profit organization and because they can't monetize their product, Quad9 relies solely on donations and is funded by IBM.
+Quad9 DNS is being run by a US-based non-profit organization and because they can't monetize their product, Quad9 relies solely on donations and is funded by IBM. Their policy strictly states that no user data collection gets recorder, or stored, for that matter. They have over a hundred partner servers over the world to give you the best latency (lower is always better) to the end user.
 
     <h2>Alternatives</h2>
-In case you don't trust Google and Cloudflare because they do collect logs and certain types of personal data for debugging reasons, yet, they may still easily outperform Quad9 in select regions of the world due to having a broader network infrastructure.
-
     <ul><h3><li>Cloudflare</li></h3></ul>
     <ul>Primary: 1.1.1.1<br>
 Secondary: 1.0.0.1<br>
@@ -44,6 +40,8 @@ DoT: 1dot1dot1dot1.cloudflare-dns.com<br></ul>
     <ul>Primary: 8.8.8.8<br>
 Secondary: 8.8.4.4<br>
 DoT: dns.google<br></ul>
+
+In case you don't trust Google and Cloudflare because they openly declare that they do collect logs and certain types of personal data for debugging reasons, yet, they may still easily outperform Quad9 in select regions of the world due to having a larger network infrastructure.
 
     <h2>Configuration</h2>
 The most straightforward way is to set up your preferred DNS directly through your router. Depending on your router maker, model, and firmware revision, the settings GUIs significantly vary. Make sure to scour through each and every option until you see the <b>DNS server</b> options.
