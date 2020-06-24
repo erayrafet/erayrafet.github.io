@@ -18,7 +18,7 @@
     a:link { color: #1a73e8); }
     a:.::selection, { background: #1a73e8; }
     .box {background: rgba(26, 115, 232, 0.15); border-radius: 18px; margin: 1% 0; padding: 1%; }
-    .box:hover { {background: rgba(26, 115, 232, 0.25); transform: scale(1.01); }
+    .box:hover { background: rgba(26, 115, 232, 0.25); transform: scale(1.01); }
     .button:hover, button:hover, img:hover { text-decoration: none; transform: scale(1.06); }
     .date { font-size: small; opacity: 0.7; padding-bottom: 2%; }
     .footer { font-size: small; padding: 0.25% 0; text-align: center; }
