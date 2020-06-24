@@ -17,9 +17,9 @@
     a:hover { text-decoration: underline; }
     a:link { color: #1a73e8); }
     a:.::selection, { background: #1a73e8; }
+    .box {background: rgba(26, 115, 232, 0.15); border-radius: 18px; margin: 1% 0; padding: 1%; }
     .box:hover, h1:hover { transform: scale(0.94); }
     .button:hover, button:hover, img:hover { text-decoration: none; transform: scale(1.06); }
-    .box {background: rgba(26, 115, 232, 0.15); border-radius: 18px; margin: 1% 0; padding: 1%; }
     .date { font-size: small; opacity: 0.7; padding-bottom: 2%; }
     .footer { font-size: small; padding: 0.25% 0; text-align: center; }
     h1 { color: #1a73e8; padding-bottom: 2%; text-align: center; }
