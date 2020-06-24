@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <title>Writer</title>
 <style>
-    .button { bottom: 2%; position: fixed; right: 2%;}
-    html { scroll-behavior: unset; }
+    .button { bottom: 2%; position: fixed; right: 2%; }
     textarea[name=title] { font-size: x-large; font-weight: 700; resize: none; width: 96%; }
     textarea[name=writer] { padding: 1%; resize: none; width: 96%; }
 </style>
@@ -18,9 +17,8 @@
     <textarea aria-label="Writer" id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..." rows="16"></textarea>
     <button class="button button" onclick="scrollWin()" title="Go to top">Top</button>
 <script>
-var mybutton = document.getElementById('button')
 function scrollWin() {
-  window.scrollTo(2, 0);
+  window.scrollTo(1 0);
 }
 </script>
 </body>
