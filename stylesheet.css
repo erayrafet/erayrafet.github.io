@@ -14,7 +14,7 @@
     .footer { font-size: small; padding: 0.25% 0; text-align: center; }
     h1 { color: #1a73e8; padding-bottom: 2%; text-align: center; }
     h1:hover { transform: scale(1.01); }
-    h2 { padding: 0.25% 0; }
+    h2 { padding: 0.25% 0 0.15%; }
     hr { border: 2px solid #1a73e8; border-radius: 4px; }
     html { caret-color: #1a73e8; padding: 1% 4%; scrollbar-color: #1a73e8 transparent; scrollbar-width: thin; }
     img { border-radius: 18px; display: block; margin-left: auto; margin-right: auto; padding: 2%; width: 50%; }
