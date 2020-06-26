@@ -12,7 +12,7 @@
       "src": "/favicon.png",
       "type": "image/png"
     },
-  {
+    {
       "purpose": "any maskable",
       "sizes": "512x512",
       "src": "/maskable_icon.png",
