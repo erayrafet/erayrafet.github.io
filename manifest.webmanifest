@@ -20,7 +20,7 @@
     }
   ],
   "lang": "en-US",
-  "name": "Eray Rafet",
+  "name": "Eray's Blog",
   "orientation": "any",
   "scope": "/",
   "shortcuts": [
@@ -30,7 +30,7 @@
       "url": "/writer"
     }
   ],
-  "short_name": "Eray Rafet",
+  "short_name": "Eray's Blog",
   "start_url": "/",
   "theme_color": "#000000"
 }
