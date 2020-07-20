@@ -6,8 +6,8 @@
     a {text-decoration:none; }
     .box { background: rgba(26, 115, 232, 0.15); border-radius: 18px; margin: 1em 0; padding: .15em 1em 1em; }
     .box:hover { background: rgba(26, 115, 232, 0.25); box-shadow: 0 0 20px 4px #1a73e8; transform: scale(1.01); }
-    .button { background: #1a73e8; border-radius: 18px; float: left; font-size: large; font-weight: 700; padding: 6px 12px; }
-    .button:hover, img:hover { cursor: pointer; transform: scale(1.05); }
+    button { background: #1a73e8; border-radius: 18px; float: left; font-size: large; font-weight: 700; padding: 6px 12px; }
+    button:hover, img:hover { cursor: pointer; transform: scale(1.05); }
     .date { font-size: small; opacity: 0.7; padding-bottom: 2%; }
     .footer { font-size: small; text-align: center; }
     h1 { animation: pulse 4s; animation-delay: 1s; color: #1a73e8; padding-bottom: 1%; text-align: center; }
