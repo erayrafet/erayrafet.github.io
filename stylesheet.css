@@ -13,8 +13,6 @@
     .donate { font-size: small; font-weight: 700; padding: 12px; }
     .donate, .tab { background: rgba(26, 115, 232, 0.15); border-radius: 24px; overflow-x: scroll; text-align: center; }
     .donate::-webkit-scrollbar, .tab::-webkit-scrollbar { display: none; }
-    .donate-text, .tab-text { animation: move 6s linear infinite; white-space: nowrap; }
-    .donate-text:hover, .tab-text:hover { animation-play-state: paused; }
     .footer { font-size: small; text-align: center; }
     h1 { animation: pulse 4s; animation-delay: 1s; color: #1a73e8; padding-bottom: 1%; text-align: center; }
     h1:hover { transform: scale(1.025); }    
@@ -24,10 +22,12 @@
     img { border-radius: 18px; display: block; margin-left: auto; margin-right: auto; padding: 2%; width: 50%; }
     img.small { padding: 2%; width: 25%; }
     ::selection { background: #1a73e8; }
+    .scrollable-text { animation: move 6s linear infinite; white-space: nowrap; }
+    .scrollable-text:hover { animation-play-state: paused; }
     .tab { padding: 6px;  white-space: nowrap; }
     .tab button, .tab button.active { border-radius: 18px; font-size: large; padding: 6px 12px; }
     .tab button.active { color: #1a73e8; font-weight: 700; }
     .tab button:hover, .tab button.active:hover { background: #1a73e8; color: var(--body-color); cursor: pointer; font-weight: 700; transform: scale(1.05); }
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-thumb { background: #1a73e8; border-radius: 4px; }
-    @media screen and (min-width: 768px) { .donate-text { animation: none; } }
+    @media screen and (min-width: 768px) { .scrollable-text { animation: none; } }
