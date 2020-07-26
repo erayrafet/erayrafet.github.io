@@ -33,23 +33,19 @@
     .date, h3 { padding: 0; }
     img { border-radius: 18px; padding: 0; }
     img:hover { box-shadow: 0 0 20px 4px #1a73e8; }
-    .tab { text-align: center; }
-    .tab button, .tab button.active { border: none; border-radius: 18px; font-size: large; margin: 0 1%; padding: 6px 12px; }
-    .tab button.active { color: #1a73e8; font-weight: 700; }
-    .tab button:hover, .tab button.active:hover { background: #1a73e8; color: var(--body-color); cursor: pointer; font-weight: 700; margin: 0 -1%; transform: scale(1.05); }
 </style>
 </head>
 <body>
     <h1>Eray's Blog</h1>
-    
-    <div class="tab"><hr>
-    <button class="tablinks" id="default" onclick="tab(event, 'blog')">Blog</button>
-    <button class="tablinks" onclick="tab(event, 'projects')">Projects</button>
-    <button class="tablinks" onclick="tab(event, 'webapps')">Web apps</button>
-    <button class="tablinks" onclick="tab(event, 'about')">About me</button>
-    <button class="tablinks" onclick="tab(event, 'support')">Support links</button>
-    <button class="tablinks" onclick="tab(event, 'contacts')">Contact details</button>
-    <hr></div>
+
+    <div class="tab">
+        <button class="tablinks" id="default" onclick="tab(event, 'blog')">Blog</button>
+        <button class="tablinks" onclick="tab(event, 'projects')">Projects</button>
+        <button class="tablinks" onclick="tab(event, 'webapps')">Web apps</button>
+        <button class="tablinks" onclick="tab(event, 'about')">About me</button>
+        <button class="tablinks" onclick="tab(event, 'support')">Support links</button>
+        <button class="tablinks" onclick="tab(event, 'contacts')">Contact details</button>
+    </div>
 
     <div id="blog" class="tabcontent">
 
@@ -177,8 +173,9 @@
         </ul>
     </div>
 
-    <div class="footer"><hr>
-        <p>The site has no ads, so please do show your support by making a donation.</p><hr>
+    <div class="donate">The site has no ads, so please do show your support by making a donation.</div>
+
+    <div class="footer">
         <p>® 2020 Eray Rafet Mustafa</p>
         <p>All rights reserved.</p>
     </div>
@@ -198,6 +195,6 @@ function tab(evt, tab) {
   evt.currentTarget.className += ' active'
 }
 document.getElementById('default').click()
-</script>
+  </script>
 </body>
 </html>
