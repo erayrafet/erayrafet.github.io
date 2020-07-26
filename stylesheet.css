@@ -1,6 +1,7 @@
     @keyframes fadeEffect { from {opacity: 0;} to {opacity: 1;} }
     @keyframes move { 0% { margin-left: -200% } 100% { margin-left: 110%; } }
     @keyframes pulse { 0% { transform: scale(1); } 25% { transform: scale(0.975); } 50% { transform: scale(1); } 75% { transform: scale(0.975); } 100% { transform: scale(1); } }
+    @keyframes wiggle { 0% { margin-left: 5%; margin-right: -5% } 100% { margin-left: 0%; margin-right: 0%} }
     @media (prefers-color-scheme: dark) { body { background: #000; color: #fff; } }
     @media (prefers-color-scheme: light) { body { background: #fff; color: #000; } }
     * { animation: fadeEffect 0.5s; background: var(--body-background); border: none; color: var(--body-color); font-family: "Open Sans"; outline: none; transition: 0.5s; transition-timing-function: ease-out; }
@@ -22,12 +23,13 @@
     img { border-radius: 18px; display: block; margin-left: auto; margin-right: auto; padding: 2%; width: 50%; }
     img.small { padding: 2%; width: 25%; }
     ::selection { background: #1a73e8; }
-    .scrollable-text { animation: move 6s linear infinite; white-space: nowrap; }
-    .scrollable-text:hover { animation-play-state: paused; }
+    .scrollable-text  { animation: move 6s linear infinite; white-space: nowrap; }
+    .scrollable-text:hover, .tab-wiggle:hover { animation-play-state: paused; }
     .tab { padding: 6px;  white-space: nowrap; }
     .tab button, .tab button.active { border-radius: 18px; font-size: large; padding: 6px 12px; }
     .tab button.active { color: #1a73e8; font-weight: 700; }
     .tab button:hover, .tab button.active:hover { background: #1a73e8; color: var(--body-color); cursor: pointer; font-weight: 700; transform: scale(1.05); }
+    .tab-wiggle { animation: wiggle 2s; }
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-thumb { background: #1a73e8; border-radius: 4px; }
-    @media screen and (min-width: 768px) { .scrollable-text { animation: none; } }
+    @media screen and (min-width: 768px) { .scrollable-text, .tab-wiggle { animation: none; } }
