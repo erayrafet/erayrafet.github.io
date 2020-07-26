@@ -12,7 +12,7 @@
     .date { font-size: small; opacity: 0.7; padding-bottom: 2%; }
     .donate { font-size: small; font-weight: 700; padding: 12px; }
     .donate, .tab { background: rgba(26, 115, 232, 0.15); border-radius: 24px; overflow-x: scroll; text-align: center; }
-    .donate::-webkit-scrollbar, .tab::-webkit-scrollbar { display: none; }
+    .donate::-webkit-scrollbar, .tab::-webkit-scrollbar { height: 0px; }
     .footer { font-size: small; text-align: center; }
     h1 { animation: pulse 4s; animation-delay: 1s; color: #1a73e8; padding-bottom: 1%; text-align: center; }
     h1:hover { transform: scale(1.025); }    
