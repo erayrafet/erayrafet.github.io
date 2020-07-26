@@ -9,10 +9,10 @@
     .button { background: #1a73e8; border-radius: 18px; float: left; font-size: large; font-weight: 700; padding: 6px 12px; }
     .button:hover, img:hover { cursor: pointer; transform: scale(1.05); }
     .date { font-size: small; opacity: 0.7; padding-bottom: 2%; }
-    .donate { padding: 12px; }
+    .donate { font-size: small; font-weight: 700; padding: 12px; }
     .donate, .tab { background: rgba(26, 115, 232, 0.15); border-radius: 24px; overflow-x: scroll; text-align: center; white-space: nowrap; }
     .donate::-webkit-scrollbar, .tab::-webkit-scrollbar { display: none; }
-    .footer { font-size: small; padding: 1px 12px; text-align: center; }
+    .footer { font-size: small; text-align: center; }
     h1 { animation: pulse 4s; animation-delay: 1s; color: #1a73e8; padding-bottom: 1%; text-align: center; }
     h1:hover { transform: scale(1.025); }    
     h2 { padding: 0.25% 0 0.15%; }
