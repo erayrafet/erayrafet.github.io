@@ -16,7 +16,6 @@
     .donate, .donate-subpage { font-size: small; font-weight: 700; text-align: center; }
     .donate, .donate-subpage, .tab { overflow-x: scroll;  white-space: nowrap; }
     .donate, .tab { overflow-x: scroll; padding: 1em; }
-    .donate-subpage { padding: 0.7em; }
     .donate::-webkit-scrollbar, .donate-subpage::-webkit-scrollbar, .tab::-webkit-scrollbar { height: 0px; }
     .footer { font-size: small; text-align: center; }
     h1 { animation: pulse 4s; animation-delay: 1s; color: #1a73e8; padding-bottom: 1%; text-align: center; }
@@ -27,7 +26,7 @@
     img { display: block; margin-left: auto; margin-right: auto; padding: 2%; width: 50%; }
     img.small { padding: 2%; width: 25%; }
     ::selection { background: #1a73e8; }
-    .scrollable-text  { animation: move 6s linear infinite; }
+    .scrollable-text  { animation: move 6s linear infinite; padding: 0.7em; }
     .scrollable-text:hover, .tab-wiggle:hover { animation-play-state: paused; }
     .tab button, .tab button.active { border-radius: 18px; font-size: large; padding: 6px 12px; }
     .tab button.active { color: #1a73e8; font-weight: 700; }
