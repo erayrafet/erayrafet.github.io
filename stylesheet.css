@@ -6,15 +6,15 @@
     @media (prefers-color-scheme: light) { body { background: #fff; color: #000; } }
     * { animation: fadeEffect 0.5s; background: var(--body-background); border: none; color: var(--body-color); font-family: "Open Sans"; outline: none; transition: 0.5s; transition-timing-function: ease-out; }
     a {text-decoration:none; }
-    .box, .card { background: rgba(26, 115, 232, 0.15); border-radius: 18px; margin: 1em 0; padding: .15em 1em 1em; }
+    .box, .card, .donate, .tab  { background: rgba(26, 115, 232, 0.15); border-radius: 18px; margin: 1em 0; padding: .15em 1em 1em; }
     .box:hover { background: rgba(26, 115, 232, 0.25); box-shadow: 0 0 20px 4px #1a73e8; transform: scale(1.01); }
     .button { margin: 12px; }
     .button, .button-home { background: #1a73e8; border-radius: 18px; float: left; font-size: large; font-weight: 700; padding: 6px 12px; }
     .button:hover, .button-home:hover; img:hover { cursor: pointer; transform: scale(1.05); }
     .date { font-size: small; opacity: 0.7; padding-bottom: 2%; }
     .donate { font-size: small; font-weight: 700; }
-    .donate, .tab { background: rgba(26, 115, 232, 0.15); border-radius: 18px; overflow-x: scroll; text-align: center; }
-    .donate::-webkit-scrollbar, .donate-text::-webkit-scrollbar, .tab::-webkit-scrollbar { height: 0px; }
+    .donate, .tab { overflow-x: scroll; text-align: center; }
+    .donate::-webkit-scrollbar, .tab::-webkit-scrollbar { height: 0px; }
     .footer { font-size: small; text-align: center; }
     h1 { animation: pulse 4s; animation-delay: 1s; color: #1a73e8; padding-bottom: 1%; text-align: center; }
     h1:hover { transform: scale(1.025); }    
@@ -24,9 +24,8 @@
     img { border-radius: 18px; display: block; margin-left: auto; margin-right: auto; padding: 2%; width: 50%; }
     img.small { padding: 2%; width: 25%; }
     ::selection { background: #1a73e8; }
-    .scrollable-text  { animation: move 6s linear infinite; white-space: nowrap; }
+    .scrollable-text  { animation: move 6s linear infinite; padding: 0.7em; white-space: nowrap; }
     .scrollable-text:hover, .tab-wiggle:hover { animation-play-state: paused; }
-    .tab { padding: 6px;  white-space: nowrap; }
     .tab button, .tab button.active { border-radius: 18px; font-size: large; padding: 6px 12px; }
     .tab button.active { color: #1a73e8; font-weight: 700; }
     .tab button:hover, .tab button.active:hover { background: #1a73e8; color: var(--body-color); cursor: pointer; font-weight: 700; transform: scale(1.05); }
