@@ -26,4 +26,4 @@
     .tab button.active { color: #1a73e8; font-weight: 700; }
     .tab button:hover, .tab button.active:hover { background: #1a73e8; color: var(--body-color); cursor: pointer; font-weight: 700; transform: scale(1.05); }
     ::-webkit-scrollbar { width: 4px; }
-    ::-webkit-scrollbar-thumb { background: #1a73e8; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb { background: #1a73e8; border-radius: 6px; }
