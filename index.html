@@ -33,6 +33,25 @@
     .date, h3 { padding: 0; }
     img { border-radius: 18px; padding: 0; }
     img:hover { box-shadow: 0 0 20px 4px #1a73e8; }
+    HTML SCSS JSResult
+#nav-1 { position: relative; border: none; border-radius: 10em; display: flex; list-style: none; background: #f5f5f5; box-shadow: 20px 40px 40px #00000033; padding: 10px; li { margin: 0px;
+      a { position: relative; padding: 0.6em 2em; font-size: 18px; border: none; outline:none; color: #333; display: inline-block; text-decoration: none; z-index: 3; }
+    }
+    .slide1,
+    .slide2 {
+        position: absolute;
+        display: inline-block;
+        height: 3em;
+        border-radius: 10em;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1.05);
+    }
+    .slide1 {
+        background-color: yellowgreen;
+        z-index: 2;
+    }
+    .slide2 { opacity: 0; background: #ddd;
+        z-index: 1; }
+     .squeeze { transform: scale(0.9); } }
     .tab { text-align: center; }
     .tab button, .tab button.active { border: none; border-radius: 18px; font-size: large; margin: 0 1%; padding: 6px 12px; }
     .tab button.active { color: #1a73e8; font-weight: 700; }
@@ -42,6 +61,16 @@
 <body>
     <h1>Eray's Blog</h1>
     
+<ul id="nav-1"> 
+    <li class="slide1"></li>         
+    <li class="slide2"></li>
+    <li><a href="#/">Alpha</a></li>
+    <li><a href="#/">Beta</a></li>
+    <li><a href="#/">Gamma</a></li>
+    <li><a href="#/">Delta</a></li>
+    <li><a href="#/">Epsilon</a></li>
+</ul>
+
     <div class="tab"><hr>
     <button class="tablinks" id="default" onclick="tab(event, 'blog')">Blog</button>
     <button class="tablinks" onclick="tab(event, 'projects')">Projects</button>
@@ -198,6 +227,35 @@ function tab(evt, tab) {
   evt.currentTarget.className += ' active'
 }
 document.getElementById('default').click()
+
+$("#nav-1 a").on("click", function() {
+  var position = $(this)
+    .parent().position();
+  var width = $(this)
+    .parent().width();
+  $("#nav-1 .slide1").css({ opacity: 1, left: +position.left, width: width });
+});
+
+$("#nav-1 a").on("mouseover", function() {
+  var position = $(this)
+    .parent().position();
+  var width = $(this)
+    .parent().width();
+  $("#nav-1 .slide2").css({ 
+    opacity: 1, left: +position.left, width: width })
+    .addClass("squeeze");
+});
+
+$("#nav-1 a").on("mouseout", function() {
+  $("#nav-1 .slide2").css({ opacity: 0 }).removeClass("squeeze");
+});
+
+var currentWidth = $("#nav-1")
+  .find("li:nth-of-type(3) a")
+  .parent("li")
+  .width();
+var current = $("li:nth-of-type(3) a").position();
+$("#nav-1 .slide1").css({ left: +current.left, width: currentWidth });
 </script>
 </body>
 </html>
