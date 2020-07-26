@@ -1,5 +1,5 @@
     @keyframes fadeEffect { from {opacity: 0;} to {opacity: 1;} }
-    @keyframes move { 0% { margin-left: -300%; } 100% { margin-left: 110%; } }
+    @keyframes move { 0% { margin-right: 110%; } 100% { margin-left: 110%; } }
     @keyframes pulse { 0% { transform: scale(1); } 25% { transform: scale(0.975); } 50% { transform: scale(1); } 75% { transform: scale(0.975); } 100% { transform: scale(1); } }
     @media (prefers-color-scheme: dark) { body { background: #000; color: #fff; } }
     @media (prefers-color-scheme: light) { body { background: #fff; color: #000; } }
@@ -13,7 +13,7 @@
     .donate { font-size: small; font-weight: 700; padding: 12px; }
     .donate, .tab { background: rgba(26, 115, 232, 0.15); border-radius: 24px; overflow-x: scroll; text-align: center; white-space: nowrap; }
     .donate::-webkit-scrollbar, .tab::-webkit-scrollbar { display: none; }
-    .donate-text { -webkit-animation-name: move; -webkit-animation-duration: 20s; -webkit-animation-iteration-count: infinite; -webkit-animation-direction: right; }
+    .donate-text { -webkit-animation-name: move; -webkit-animation-duration: 12s; -webkit-animation-iteration-count: infinite; -webkit-animation-direction: right; }
     .donate-text:hover { -webkit-animation-play-state: paused; }
     .footer { font-size: small; text-align: center; }
     h1 { animation: pulse 4s; animation-delay: 1s; color: #1a73e8; padding-bottom: 1%; text-align: center; }
