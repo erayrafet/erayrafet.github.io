@@ -13,7 +13,7 @@
     .donate { font-size: small; font-weight: 700; padding: 12px; }
     .donate, .tab { background: rgba(26, 115, 232, 0.15); border-radius: 24px; overflow-x: scroll; text-align: center; white-space: nowrap; }
     .donate::-webkit-scrollbar, .tab::-webkit-scrollbar { display: none; }
-    .donate-text { margin: 6px -300px; -webkit-animation-name: move; -webkit-animation-duration: 10s; -webkit-animation-iteration-count: infinite; -webkit-animation-direction: right; }
+    .donate-text { -webkit-animation-name: move; -webkit-animation-duration: 20s; -webkit-animation-iteration-count: infinite; -webkit-animation-direction: right; }
     .donate-text:hover { -webkit-animation-play-state: paused; }
     .footer { font-size: small; text-align: center; }
     h1 { animation: pulse 4s; animation-delay: 1s; color: #1a73e8; padding-bottom: 1%; text-align: center; }
