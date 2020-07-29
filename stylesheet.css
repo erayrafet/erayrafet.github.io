@@ -28,7 +28,7 @@
     ::selection { background: #1a73e8; }
     .scrollable-text  { animation: move 6s linear infinite; padding: 0.8em; }
     .scrollable-text:hover, .tab-wiggle:hover { animation-play-state: paused; }
-    .tab { overflow-x: scroll; padding: 0.2em 1em; }
+    .tab { overflow-x: scroll; padding: 0.25em 1em; }
     .tab button, .tab button.active { border-radius: 18px; font-size: large; padding: 6px 12px; }
     .tab button.active { color: #1a73e8; font-weight: 700; }
     .tab button:hover, .tab button.active:hover { background: #1a73e8; color: var(--body-color); cursor: pointer; font-weight: 700; transform: scale(1.05); }
