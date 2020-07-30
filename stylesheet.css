@@ -23,9 +23,9 @@
     h2 { padding: 0.25% 0 0.15%; }
     hr { background: #1a73e8; border-radius: 4px; height: 4px; margin-top: 1em; }
     html { caret-color: #1a73e8; padding: 1% 4%; scrollbar-color: #1a73e8 transparent; scrollbar-width: thin; }
-    img { display: block; margin-left: auto; margin-right: auto; padding: 2%; width: 50%; }
+    img { margin: 1em auto; width: 50%; }
     img:hover, img.small:hover { box-shadow: 0 0 20px 4px #1a73e8; }
-    img.small { padding: 2%; width: 25%; }
+    img.small { margin: 1em auto; width: 25%; }
     ::selection { background: #1a73e8; }
     .scrollable-text  { animation: move 6s linear infinite; padding: 0.8em; }
     .scrollable-text:hover, .tab-wiggle:hover { animation-play-state: paused; }
