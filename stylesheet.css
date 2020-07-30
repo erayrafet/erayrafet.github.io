@@ -23,7 +23,7 @@
     h2 { padding: 0.25% 0 0.15%; }
     hr { background: #1a73e8; border-radius: 4px; height: 4px; margin-top: 1em; }
     html { caret-color: #1a73e8; padding: 1% 4%; scrollbar-color: #1a73e8 transparent; scrollbar-width: thin; }
-    img, img.small { display: block; margin: 1em auto; width: 50%; }
+    img, img.small { border-radius: 4px; display: block; margin: 1em auto; width: 50%; }
     img.small { width: 25%; }
     ::selection { background: #1a73e8; }
     .scrollable-text  { animation: move 6s linear infinite; padding: 0.8em; }
