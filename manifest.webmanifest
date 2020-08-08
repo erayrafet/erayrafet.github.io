@@ -9,14 +9,14 @@
     },
     {
       "sizes": "512x512",
-      "src": "/favicon.png",
-      "type": "image/png"
+      "src": "/favicon.webp",
+      "type": "image/webp"
     },
     {
       "purpose": "any maskable",
       "sizes": "512x512",
-      "src": "/maskable_icon.png",
-      "type": "image/png"
+      "src": "/maskable_icon.webp",
+      "type": "image/webp"
     }
   ],
   "lang": "en-US",
@@ -25,7 +25,7 @@
   "scope": "/",
   "shortcuts": [
     {
-      "icons": [{ "sizes": "192x192", "src": "/writer.png" }],
+      "icons": [{ "sizes": "192x192", "src": "/writer.webp" }],
       "name": "Writer",
       "url": "/writer"
     }
