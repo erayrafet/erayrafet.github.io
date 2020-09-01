@@ -1,25 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap">
-    <link rel="stylesheet" href="stylesheet.css">
-    <meta name="description" content="A simple text writer">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <meta name="description" content="A simple text writer" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=yes"
+    />
     <title>Writer</title>
-<style>
-    .button { bottom: 1em; position: fixed; right: 1em; }
-    textarea[name=title] { font-size: x-large; font-weight: 700; resize: none; width: 96%; }
-    textarea[name=writer] { padding: 1%; resize: none; width: 96%; }
-</style>
-</head>
-<body>
-    <textarea aria-label="Title" autofocus class="box" id="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Add title here..."></textarea>
-    <textarea aria-label="Writer" id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Write here..." rows="16"></textarea>
-    <button class="button button" onclick="scrollWin()" title="Go to top">Top</button>
-<script>
-function scrollWin() {
-  window.scrollTo(1, 0);
-}
-</script>
-</body>
+    <style>
+      .button-right {
+        bottom: 1em;
+        position: fixed;
+        right: 1em;
+      }
+      textarea[name="title"] {
+        font-size: x-large;
+        font-weight: 700;
+        resize: none;
+        width: 96%;
+      }
+      textarea[name="writer"] {
+        padding: 1%;
+        resize: none;
+        width: 96%;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea
+      aria-label="Title"
+      autofocus
+      class="box"
+      id="title"
+      name="title"
+      oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
+      placeholder="Add title here..."
+    ></textarea>
+    <textarea
+      aria-label="Writer"
+      id="writer"
+      name="writer"
+      oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
+      placeholder="Write here..."
+      rows="16"
+    ></textarea>
+    <button class="button button" onclick="scrollWin()" title="Go to top">
+      Top
+    </button>
+    <script>
+      function scrollWin() {
+        window.scrollTo(1, 0);
+      }
+    </script>
+  </body>
 </html>
