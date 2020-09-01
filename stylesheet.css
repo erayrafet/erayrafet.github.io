@@ -36,12 +36,10 @@
 }
 @keyframes wiggle {
   0% {
-    margin-left: 5%;
-    margin-right: -5%;
+    margin-left: 10%;
   }
-  100% {
-    margin-left: 0%;
-    margin-right: 0%;
+  50% {
+    margin-left: -10%;
   }
 }
 @media (prefers-color-scheme: dark) {
