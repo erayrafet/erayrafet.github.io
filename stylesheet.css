@@ -27,8 +27,9 @@
     img, img.small { border-radius: 4px; display: block; margin: 1em auto; width: 50%; }
     img.small { width: 25%; }
     ::selection { background: var(--accent); }
-    .scrollable-text  { animation: move 6s linear infinite; padding: 0.8em; }
-    .scrollable-text:hover, .tab-wiggle:hover { animation-play-state: paused; }
+    .scrollable-text { padding: 0.8em; }
+    .scrollable-text, .scrollable-text-index { animation: move 6s linear infinite; }
+    .scrollable-text:hover, .scrollable-text-index:hover, .tab-wiggle:hover { animation-play-state: paused; }
     .tab { overflow-x: scroll; padding: 0.25em 1em; }
     .tab button, .tab button.active { border-radius: 18px; font-size: large; padding: 6px 12px; }
     .tab button.active { color: var(--accent); font-weight: 700; }
