@@ -1,4 +1,4 @@
-@keyframes fadeEffect {
+@keyframes fade {
   from {
     opacity: 0;
   }
@@ -57,14 +57,29 @@
 :root {
   --accent: #1a73e8;
 }
+/*Animated elements*/
+.box,
+button,
+.button-home,
+.button-right,
+.card,
+.date,
+h1,
+h2,
+h3,
+img,
+img.small,
+p,
+ul {
+  animation: fade 0.5s;
+  transition: 0.5s;
+}
 * {
-  animation: fadeEffect 0.5s;
   background: var(--body-background);
   border: none;
   color: var(--body-color);
   font-family: "Open Sans";
   outline: none;
-  transition: 0.5s;
 }
 a {
   text-decoration: none;
@@ -89,8 +104,13 @@ img.small:hover {
   box-shadow: 0 0 20px 4px var(--accent);
   transform: scale(1.01);
 }
+img.small:hover {
+  transform: scale(1.05);
+}
 .button-home {
   float: left;
+  position: relative;
+  z-index: 1;
 }
 .button-right {
   float: right;
