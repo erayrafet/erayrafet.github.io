@@ -16,12 +16,13 @@
       textarea[name="title"] {
         font-size: x-large;
         font-weight: 700;
-        border: box;
-        resize: none;
-        width: 96%;
+        text-align: center;
       }
-      textarea[name="writer"] {
-        padding: 1%;
+      textarea[name="title"], textarea[name="writer"] {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5em 1em;
         resize: none;
         width: 96%;
       }
@@ -35,14 +36,14 @@
       id="title"
       name="title"
       oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
-      placeholder="Add title here..."
+      placeholder="Title goes here..."
     ></textarea>
     <textarea
       aria-label="Writer"
       id="writer"
       name="writer"
       oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
-      placeholder="Write here..."
+      placeholder="Input text..."
       rows="16"
     ></textarea>
     <div class="button-right" onclick="scrollWin()" title="Go to top">
@@ -50,7 +51,7 @@
     </div>
     <script>
       function scrollWin() {
-        window.scrollTo(1, 0);
+        window.scrollTo(0, 0);
       }
     </script>
   </body>
