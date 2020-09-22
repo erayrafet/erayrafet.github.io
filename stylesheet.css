@@ -201,6 +201,13 @@ img.small {
 img.small {
 	width: 25%;
 }
+li {
+	margin: 0.8em 2.5em;
+}
+li.clean {
+	list-style-position: outside;
+	list-style-type: none;
+}
 ::selection {
 	background: var(--accent);
 }
@@ -240,6 +247,9 @@ img.small {
 }
 .tab-wiggle {
 	animation: wiggle 2s;
+}
+ul {
+  padding: 0;
 }
 ::-webkit-scrollbar {
 	width: 6px;
