@@ -90,10 +90,6 @@ a {
 	text-decoration: none;
 }
 .box,
-button {
-	margin-left: 0.5em;
-	margin-right: 0.5em;
-}
 .card,
 .donate,
 .donate-subpage,
@@ -115,6 +111,10 @@ img.small:hover {
 }
 img.small:hover {
 	transform: scale(1.05);
+}
+button {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
 }
 .button-home {
 	float: left;
