@@ -185,7 +185,6 @@ hr {
 	margin-top: 1em;
 }
 html {
-	background: var(--body-background);
 	caret-color: var(--accent);
 	padding: 1% 4%;
 	scrollbar-color: var(--accent) transparent;
