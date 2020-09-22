@@ -90,6 +90,10 @@ a {
 	text-decoration: none;
 }
 .box,
+button {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
 .card,
 .donate,
 .donate-subpage,
