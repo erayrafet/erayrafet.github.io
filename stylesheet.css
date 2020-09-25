@@ -219,6 +219,9 @@ li.clean {
 	list-style-position: outside;
 	list-style-type: none;
 }
+p.li {	
+	margin: 0.8em 3em;	
+}
 ::selection {
 	background: var(--accent);
 }
