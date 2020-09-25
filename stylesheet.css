@@ -53,6 +53,12 @@
 		background: white;
 		color: black;
 	}
+	@media screen and (min-width: 768px) {
+		.scrollable-text,
+		.scrollable-text-index {
+			animation: none;
+		}
+	}
 }
 :root {
 	--accent: #1a73e8;
@@ -109,9 +115,6 @@ img.small:hover {
 	background: var(--accent-hover);
 	box-shadow: 0 0 20px 4px var(--accent);
 	transform: scale(1.01);
-}
-img.small:hover {
-	transform: scale(1.05);
 }
 button {
 	margin-left: 0.5em;
@@ -205,6 +208,9 @@ img.small {
 img.small {
 	width: 25%;
 }
+img.small:hover {
+	transform: scale(1.05);
+}
 li {
 	list-style-type: disc;
 	margin: 0.8em 2.5em;
@@ -262,10 +268,4 @@ ul {
 ::-webkit-scrollbar-thumb {
 	background: var(--accent);
 	border-radius: 4px;
-}
-@media screen and (min-width: 768px) {
-	.scrollable-text,
-	.scrollable-text-index {
-		animation: none;
-	}
 }
