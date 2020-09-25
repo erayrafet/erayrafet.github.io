@@ -100,7 +100,7 @@ a {
 .box,
 .card {
 	margin: 1em 0;
-	padding: 0.15em 1em 0.5em;
+	padding: 0.15em 1.5em 1em;
 }
 .box:hover,
 img:hover,
@@ -212,9 +212,6 @@ li {
 li.clean {
 	list-style-position: outside;
 	list-style-type: none;
-}
-p.li {
-	margin: 0.8em 3em;
 }
 ::selection {
 	background: var(--accent);
