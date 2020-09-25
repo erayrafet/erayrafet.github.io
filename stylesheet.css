@@ -59,6 +59,17 @@
 	--accent-bg: rgba(26, 115, 232, 0.15);
 	--accent-hover: rgba(26, 115, 232, 0.25);
 }
+* {
+	background: var(--body-background);
+	border: none;
+	color: var(--body-color);
+	font-family: "Open Sans";
+	outline: none;
+}
+a {
+	text-decoration: none;
+}
+/*Scrollbar transparent background*/
 body {
 	overflow: overlay;
 }
@@ -78,16 +89,6 @@ p,
 ul {
 	animation: fade 0.5s;
 	transition: 0.5s;
-}
-* {
-	background: var(--body-background);
-	border: none;
-	color: var(--body-color);
-	font-family: "Open Sans";
-	outline: none;
-}
-a {
-	text-decoration: none;
 }
 .box,
 .card,
@@ -123,7 +124,6 @@ button {
 }
 .button-right {
 	float: right;
-	margin: 12px;
 }
 .button-home,
 .button-right {
