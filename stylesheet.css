@@ -1,83 +1,83 @@
 @keyframes fade {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes pulse {
-	0% {
-		transform: scale(1);
-	}
-	25% {
-		transform: scale(0.975);
-	}
-	50% {
-		transform: scale(1);
-	}
-	75% {
-		transform: scale(0.975);
-	}
-	100% {
-		transform: scale(1);
-	}
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.975);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.975);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @keyframes scroll {
-	0% {
-		-webkit-transform: translateX(100%);
-	}
-	50% {
-		-webkit-transform: translateX(0%);
-	}
-	100% {
-		-webkit-transform: translateX(-100%);
-	}
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  50% {
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
 }
 @keyframes wiggle {
-	0% {
-		margin-left: 10%;
-	}
-	50% {
-		margin-left: -10%;
-	}
+  0% {
+    margin-left: 10%;
+  }
+  50% {
+    margin-left: -10%;
+  }
 }
 @media (prefers-color-scheme: dark) {
-	body {
-		background: black;
-		color: white;
-	}
+  body {
+    background: black;
+    color: white;
+  }
 }
 @media (prefers-color-scheme: light) {
-	body {
-		background: white;
-		color: black;
-	}
-	@media screen and (min-width: 768px) {
-		.scrollable-text,
-		.scrollable-text-index {
-			animation: none;
-		}
-	}
+  body {
+    background: white;
+    color: black;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .scrollable-text,
+  .scrollable-text-index {
+    animation: none;
+  }
 }
 :root {
-	--accent: #1a73e8;
-	--accent-bg: rgba(26, 115, 232, 0.15);
-	--accent-hover: rgba(26, 115, 232, 0.25);
+  --accent: #1a73e8;
+  --accent-bg: rgba(26, 115, 232, 0.15);
+  --accent-hover: rgba(26, 115, 232, 0.25);
 }
 * {
-	background: var(--body-background);
-	border: none;
-	color: var(--body-color);
-	font-family: "Open Sans";
-	outline: none;
+  background: var(--body-background);
+  border: none;
+  color: var(--body-color);
+  font-family: "Open Sans";
+  outline: none;
 }
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 /*Scrollbar transparent background*/
 body {
-	overflow: overlay;
+  overflow: overlay;
 }
 /*Animated elements*/
 .box,
@@ -93,182 +93,181 @@ img,
 img.small,
 p,
 ul {
-	animation: fade 0.5s;
-	transition: 0.5s;
+  animation: fade 0.5s;
+  transition: 0.5s;
 }
 .box,
 .card,
 .donate,
 .donate-subpage,
 .tab {
-	background: var(--accent-bg);
-	border-radius: 18px;
+  background: var(--accent-bg);
+  border-radius: 18px;
 }
 .box,
 .card {
-	margin: 1em 0;
-	padding: 0.15em 1.5em 1em;
+  margin: 1em 0;
+  padding: 0.15em 1.5em 1em;
 }
 .box:hover,
 img:hover,
 img.small:hover {
-	background: var(--accent-hover);
-	box-shadow: 0 0 20px 4px var(--accent);
-	transform: scale(1.01);
+  background: var(--accent-hover);
+  box-shadow: 0 0 20px 4px var(--accent);
+  transform: scale(1.01);
 }
 button {
-	margin-left: 0.5em;
-	margin-right: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 .button-home {
-	float: left;
-	position: relative;
-	z-index: 1;
+  float: left;
+  position: relative;
+  z-index: 1;
 }
 .button-right {
-	float: right;
+  float: right;
 }
 .button-home,
 .button-right {
-	background: var(--accent);
-	border-radius: 18px;
-	font-size: large;
-	font-weight: 700;
-	padding: 6px 12px;
+  background: var(--accent);
+  border-radius: 18px;
+  font-size: large;
+  font-weight: 700;
+  padding: 6px 12px;
 }
 .button-home:hover,
 .button-right:hover,
 img:hover {
-	cursor: pointer;
-	transform: scale(1.05);
+  cursor: pointer;
+  transform: scale(1.05);
 }
 .date {
-	font-size: small;
-	opacity: 0.7;
-	padding-bottom: 1em;
+  font-size: small;
+  opacity: 0.7;
+  padding-bottom: 1em;
+}
+.donate {
+  padding: 1em;
 }
 .donate,
 .donate-subpage {
-	font-size: small;
-	font-weight: 700;
+  font-size: small;
+  font-weight: 700;
 }
 .donate,
 .donate-subpage,
 .tab {
-	overflow-x: scroll;
-	text-align: center;
-	white-space: nowrap;
-}
-.donate {
-	overflow-x: scroll;
-	padding: 1em;
+  overflow-x: scroll;
+  text-align: center;
+  white-space: nowrap;
 }
 .donate::-webkit-scrollbar,
 .donate-subpage::-webkit-scrollbar,
 .tab::-webkit-scrollbar {
-	height: 0px;
+  height: 0px;
 }
 .footer {
-	font-size: small;
-	text-align: center;
+  font-size: small;
+  text-align: center;
 }
 h1 {
-	animation: pulse 4s;
-	animation-delay: 1s;
-	color: var(--accent);
-	padding-bottom: 1%;
-	text-align: center;
+  animation: pulse 4s;
+  animation-delay: 1s;
+  color: var(--accent);
+  padding-bottom: 1%;
+  text-align: center;
 }
 h1:hover {
-	transform: scale(1.025);
+  transform: scale(1.025);
 }
 h2 {
-	padding: 0.25% 0 0.15%;
+  padding: 0.25% 0 0.15%;
 }
 hr {
-	background: var(--accent);
-	border-radius: 4px;
-	height: 4px;
-	margin-top: 1em;
+  background: var(--accent);
+  border-radius: 4px;
+  height: 4px;
+  margin-top: 1em;
 }
 html {
-	caret-color: var(--accent);
-	padding: 1% 4%;
-	scrollbar-color: var(--accent) transparent;
-	scrollbar-width: thin;
-	transition: color 0.5s;
+  caret-color: var(--accent);
+  padding: 1% 4%;
+  scrollbar-color: var(--accent) transparent;
+  scrollbar-width: thin;
+  transition: color 0.5s;
 }
 img,
 img.small {
-	border-radius: 4px;
-	display: block;
-	margin: 1em auto;
-	width: 50%;
+  border-radius: 4px;
+  display: block;
+  margin: 1em auto;
+  width: 50%;
 }
 img.small {
-	width: 25%;
+  width: 25%;
 }
 img.small:hover {
-	transform: scale(1.05);
+  transform: scale(1.05);
 }
 li {
-	list-style-type: disc;
-	margin: 0.8em 2.5em;
+  list-style-type: disc;
+  margin: 0.8em 2.5em;
 }
 li.clean {
-	list-style-position: outside;
-	list-style-type: none;
+  list-style-position: outside;
+  list-style-type: none;
 }
-p.li {	
-	margin: 0.8em 3em;	
+p.li {
+  margin: 0.8em 3em;
 }
 ::selection {
-	background: var(--accent);
+  background: var(--accent);
 }
 .scrollable-text {
-	padding: 0.8em;
+  padding: 0.8em;
 }
 .scrollable-text,
 .scrollable-text-index {
-	animation: 10s linear infinite scroll;
+  animation: 10s linear infinite scroll;
 }
 .scrollable-text:hover,
 .scrollable-text-index:hover,
 .tab-wiggle:hover {
-	animation-play-state: paused;
+  animation-play-state: paused;
 }
 .tab {
-	overflow-x: scroll;
-	padding: 0.25em 1em;
+  overflow-x: scroll;
+  padding: 0.25em 1em;
 }
 .tab button,
 .tab button.active {
-	border-radius: 18px;
-	font-size: large;
-	padding: 6px 12px;
+  border-radius: 18px;
+  font-size: large;
+  padding: 6px 12px;
 }
 .tab button.active {
-	color: var(--accent);
-	font-weight: 700;
+  color: var(--accent);
+  font-weight: 700;
 }
 .tab button:hover,
 .tab button.active:hover {
-	background: var(--accent);
-	color: var(--body-color);
-	cursor: pointer;
-	font-weight: 700;
-	transform: scale(1.05);
+  background: var(--accent);
+  color: var(--body-color);
+  cursor: pointer;
+  font-weight: 700;
+  transform: scale(1.05);
 }
 .tab-wiggle {
-	animation: wiggle 2s;
+  animation: wiggle 2s;
 }
 ul {
   padding: 0;
 }
 ::-webkit-scrollbar {
-	width: 6px;
+  width: 6px;
 }
 ::-webkit-scrollbar-thumb {
-	background: var(--accent);
-	border-radius: 4px;
+  background: var(--accent);
+  border-radius: 4px;
 }
