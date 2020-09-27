@@ -25,13 +25,10 @@
 }
 @keyframes scroll {
   0% {
-    -webkit-transform: translateX(100%);
-  }
-  50% {
-    -webkit-transform: translateX(0%);
+    -webkit-transform: translateX(140ch);
   }
   100% {
-    -webkit-transform: translateX(-100%);
+    -webkit-transform: translateX(-120ch);
   }
 }
 @keyframes wiggle {
@@ -42,6 +39,7 @@
     margin-left: -10%;
   }
 }
+
 @media (prefers-color-scheme: dark) {
   body {
     background: black;
@@ -55,9 +53,8 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .scrollable-text,
-  .scrollable-text-index {
-    animation: none;
+  @keyframes scroll {
+    animation-play-state: paused;
   }
 }
 :root {
