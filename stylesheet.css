@@ -39,7 +39,6 @@
     margin-left: -10%;
   }
 }
-
 @media (prefers-color-scheme: dark) {
   body {
     background: black;
@@ -215,6 +214,7 @@ li.clean {
   list-style-position: outside;
   list-style-type: none;
 }
+/*Paragraphs below bullet points*/
 p.li {
   margin: 0.8em 3em;
 }
