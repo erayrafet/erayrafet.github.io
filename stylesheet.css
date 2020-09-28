@@ -130,7 +130,8 @@ button {
   border-radius: 18px;
   font-size: large;
   font-weight: 700;
-  padding: 6px 12px;
+  height: 24px;
+  padding: 7px 14px;
 }
 .button-home:hover,
 .button-right:hover,
@@ -150,7 +151,6 @@ img:hover {
 .donate-subpage {
   font-size: small;
   font-weight: 700;
-  height: 36px;
 }
 .donate,
 .donate-subpage,
@@ -159,18 +159,8 @@ img:hover {
   text-align: center;
   white-space: nowrap;
 }
-.header {
-  left: 4em;
-  position: fixed;
-  right: 4em;
-  top: 1em;
-}
-.header + .content {
-  padding-top: 2em;
-}
 .donate::-webkit-scrollbar,
 .donate-subpage::-webkit-scrollbar,
-.header::-webkit-scrollbar,
 .tab::-webkit-scrollbar {
   height: 0px;
 }
