@@ -51,7 +51,7 @@
     color: black;
   }
 }
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   @keyframes scroll {
     animation-play-state: paused;
   }
@@ -105,12 +105,14 @@ ul {
   margin: 1em 0;
   padding: 0.15em 1.5em 1em;
 }
+.box:hover {
+  transform: scale(1.01);
+}
 .box:hover,
 img:hover,
 img.small:hover {
   background: var(--accent-hover);
   box-shadow: 0 0 20px 4px var(--accent);
-  transform: scale(1.01);
 }
 button {
   margin-left: 0.5em;
@@ -199,17 +201,20 @@ img,
 img.small {
   border-radius: 4px;
   display: block;
-  margin: 1em auto;
+  margin: 1% auto;
   width: 50%;
 }
 img.small {
   width: 25%;
 }
 /*Zoom-in on images and add top and bottom spacing whilst keeping the centered position intact*/
-img:hover,
+img:hover {
+  margin: 4% auto;
+  transform: scale(1.15);
+}
 img.small:hover {
+  margin: 2% auto;
   transform: scale(1.25);
-  margin: 2em auto;
 }
 li {
   list-style-type: disc;
