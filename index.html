@@ -29,11 +29,12 @@
     <script src="sw.js"></script>
     <title>Eray's Blog</title>
 <style>
-    @media screen and (max-width: 600px) { img { float: center; width: 45%; } }
-    @media screen and (min-width: 600px) { img { float: right; margin: 1.25em; width: 25%; } }
-    @media screen and (min-width: 1800px) { img { float: right; margin: 2.5em; width: 15%; } }
+    @media screen and (max-width: 600px) { img.avatar { float: center; width: 45%; } }
+    @media screen and (min-width: 600px) { img.avatar { float: right; margin: 1.25em; width: 25%; } }
+    @media screen and (min-width: 1800px) { img.avatar { float: right; margin: 2.5em; width: 15%; } }
     .date, h3 { padding: 0; }
-    img { border-radius: 50%; }
+    img.avatar { border-radius: 50%; }
+    img.avatar:hover { transform: scale(1.05); }
 </style>
 </head>
 <body>
@@ -81,7 +82,7 @@
     </div></div>
 
     <div id="about" class="tabcontent"><div class="card">
-    <a href="/profile_photo_high_res.webp"><img alt="Profile photo" loading=lazy src="/profile_photo.webp"></a>
+    <a href="/profile_photo_high_res.webp"><img class ="avatar" alt="Profile photo" loading=lazy src="/profile_photo.webp"></a>
     <ul><li.clean><b>Name: </b>Eray Rafet</li></ul>
     <ul><li.clean><b>Age: </b>20</li></ul>
     <ul><li.clean><b>Country of residence: </b>Bulgaria</li></ul>

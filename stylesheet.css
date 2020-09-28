@@ -134,8 +134,7 @@ button {
   padding: 7px 14px;
 }
 .button-home:hover,
-.button-right:hover,
-img:hover {
+.button-right:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -159,10 +158,12 @@ img:hover {
   text-align: center;
   white-space: nowrap;
 }
+/*Hide horizontal & vertical scrollbars*/
 .donate::-webkit-scrollbar,
 .donate-subpage::-webkit-scrollbar,
 .tab::-webkit-scrollbar {
-  height: 0px;
+  height: 0;
+  width: 0;
 }
 .footer {
   font-size: small;
@@ -204,8 +205,11 @@ img.small {
 img.small {
   width: 25%;
 }
+/*Zoom-in on images and add top and bottom spacing whilst keeping the centered position intact*/
+img:hover,
 img.small:hover {
-  transform: scale(1.05);
+  transform: scale(1.25);
+  margin: 2em auto;
 }
 li {
   list-style-type: disc;
@@ -242,7 +246,7 @@ p.li {
 .tab button.active {
   border-radius: 18px;
   font-size: large;
-  padding: 6px 12px;
+  padding: 7px 14px;
 }
 .tab button.active {
   color: var(--accent);
