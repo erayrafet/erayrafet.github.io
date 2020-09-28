@@ -160,18 +160,17 @@ img:hover {
   white-space: nowrap;
 }
 .header {
+  left: 4em;
   position: fixed;
+  right: 4em;
   top: 1em;
-  left: 1em;
-  right: 1em;
-  height: 18px;
-  width: 100%;
 }
 .header + .content {
   padding-top: 2em;
 }
 .donate::-webkit-scrollbar,
 .donate-subpage::-webkit-scrollbar,
+.header::-webkit-scrollbar,
 .tab::-webkit-scrollbar {
   height: 0px;
 }
