@@ -158,6 +158,15 @@ img:hover {
   text-align: center;
   white-space: nowrap;
 }
+.header {
+  position: fixed;
+  top: 0;
+  height: 18px;
+  width: 100%;
+}
+.header + .content {
+  padding-top: 2em;
+}
 .donate::-webkit-scrollbar,
 .donate-subpage::-webkit-scrollbar,
 .tab::-webkit-scrollbar {
