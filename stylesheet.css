@@ -162,6 +162,8 @@ img:hover {
 .header {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   height: 18px;
   width: 100%;
 }
