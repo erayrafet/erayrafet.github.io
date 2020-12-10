@@ -140,6 +140,16 @@ button {
   cursor: pointer;
   transform: scale(1.05);
 }
+.caption {
+  background: #1a73e8;
+  border-radius: 12px;
+  font-weight: 700;
+  margin-top: 2em;
+  margin-left: 4em;
+  margin-right: 4em;
+  padding: 0.5em;
+  text-align: center;
+}
 .date {
   font-size: small;
   opacity: 0.7;

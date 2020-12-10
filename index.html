@@ -40,9 +40,14 @@
     @media screen and (max-width: 600px) { img.avatar { float: center; width: 45%; } }
     @media screen and (min-width: 600px) { img.avatar { float: right; margin: 2em 1.25em; width: 25%; } }
     @media screen and (min-width: 1800px) { img.avatar { float: right; margin: 2.5em; width: 15%; } }
+    @media (max-width: 800px) { .flex-item-right, .flex-item-left { flex: 100%; } }
     .date, h3 { padding: 0; }
     img.avatar { border-radius: 50%; }
-    img.avatar:hover { transform: scale(1.05); }
+    img.avatar:hover, img.gallery:hover { transform: scale(1.05); }
+    img.gallery { border-radius: 12px; width: auto; }
+    .gallery-container { display: flex; flex-wrap: wrap; padding: 2em 1em 1.25em; }
+    .gallery-item-left, .gallery-item-right { flex: 50%; }
+    .gallery-item-left { padding-bottom: 2em; }
 </style>
 </head>
 <body>
@@ -75,11 +80,23 @@
 
     <!From here is everything else>
 
-    <div id="photos" class="tabcontent"><div class="card">
-
-        <a href="/photos/profile_photo_1_high_res.webp"><img class ="" alt="Profile photo" loading=lazy src="./photos/profile_photo_1.webp"></a>
-
-    </div></div>
+    <div id="photos" class="tabcontent">
+        <div class="card">
+            <div class="gallery-container">
+                <div class="gallery-item-left">
+                    <a href="/photos/profile_photo_2_high_res.avif">
+                        <img class="gallery" alt="Profile photo" loading=lazy src="./photos/profile_photo_2.avif"></a>
+                        <div class="caption">December, 2020</div>
+                </div>
+                <div class="gallery-item-right">
+                    <a href="/photos/profile_photo_1_high_res.webp">
+                        <img class="gallery" alt="Profile photo" loading=lazy src="./photos/profile_photo_1.webp"></a>
+                        <div class="caption">July, 2020</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div id="mygadgets" class="tabcontent"><div class="card">
     <ul>
         <li.clean><b>Computing devices:</b>
