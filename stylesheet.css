@@ -68,8 +68,18 @@
   font-family: "Open Sans";
   outline: none;
 }
+
 a {
   text-decoration: none;
+  transition: 0.5s; /*Animate link color on hover*/
+}
+a:hover {
+  color: var(--accent);
+}
+.box:hover a,
+.button-home:hover,
+.button-right:hover {
+  color: var(--body-color);
 }
 /*Scrollbar transparent background*/
 body {
@@ -81,6 +91,7 @@ button,
 .button-home,
 .button-right,
 .card,
+.caption,
 .date,
 h1,
 h2,
@@ -127,7 +138,8 @@ button {
   float: right;
 }
 .button-home,
-.button-right {
+.button-right,
+.caption {
   background: var(--accent);
   border-radius: 18px;
   font-size: large;
@@ -141,14 +153,14 @@ button {
   transform: scale(1.05);
 }
 .caption {
-  background: #1a73e8;
-  border-radius: 12px;
-  font-weight: 700;
+  cursor: text;
   margin-top: 2em;
   margin-left: 4em;
   margin-right: 4em;
-  padding: 0.5em;
   text-align: center;
+}
+.caption:hover {
+  transform: scale(1.05);
 }
 .date {
   font-size: small;
