@@ -229,7 +229,7 @@ img.small {
 img.small {
   width: 25%;
 }
-/*Zoom-in on images and add top and bottom spacing whilst keeping the centered position intact*/
+/*Zoom-in on images and add top and bottom spacing whilst keeping the centered position intact.*/
 img:hover {
   margin: 4% auto;
   transform: scale(1.15);
