@@ -87,8 +87,12 @@
             <div class="gallery-container">
                 <div class="gallery-item-left">
                     <a href="/photos/profile_photo_2_high_res.avif">
-                        <img class="gallery" alt="Profile photo" loading=lazy src="./photos/profile_photo_2.avif"></a>
-                        <div class="caption">December, 2020</div>
+                        <picture>
+                            <source type="image/webp" srcset="./photos/profile_photo_2.webp">
+                            <img class ="gallery" alt="Profile photo" loading=lazy src="./photos/profile_photo_2.avif">
+                            </img>
+                        </picture>
+                    <div class="caption">December, 2020</div>
                 </div>
                 <div class="gallery-item-right">
                     <a href="/photos/profile_photo_1_high_res.webp">
