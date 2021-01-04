@@ -68,7 +68,6 @@
   font-family: "Open Sans";
   outline: none;
 }
-
 a {
   text-decoration: none;
   transition: 0.5s; /*Animate link color on hover*/
@@ -201,6 +200,7 @@ h1 {
   text-align: center;
 }
 h1:hover {
+  text-shadow: 4px 4px 8px var(--accent);
   transform: scale(1.025);
 }
 h2 {
