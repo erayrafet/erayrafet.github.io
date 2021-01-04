@@ -153,10 +153,8 @@ button {
 }
 .caption {
   cursor: text;
-  margin-top: 2em;
-  margin-left: 4em;
-  margin-right: 4em;
-  text-align: center;
+  margin: 2em auto;
+  width: fit-content;
 }
 .caption:hover {
   transform: scale(1.05);
