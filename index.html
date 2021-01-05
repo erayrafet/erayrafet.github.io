@@ -37,16 +37,40 @@
     <script src="sw.js"></script>
     <title>Eray's Blog</title>
 <style>
-    @media screen and (max-width: 600px) { img.avatar { float: center; width: 45%; } }
-    @media screen and (min-width: 600px) { img.avatar { float: right; margin: 2em 1.25em; width: 25%; } }
-    @media screen and (min-width: 1800px) { img.avatar { float: right; margin: 2.5em; width: 15%; } }
-    @media (max-width: 800px) { .flex-item-right, .flex-item-left { flex: 100%; } }
-    .date, h3 { padding: 0; }
-    img.avatar { border-radius: 50%; }
-    img.avatar:hover, img.gallery:hover { transform: scale(1.05); }
-    img.gallery { border-radius: 18px; width: auto; }
-    .gallery-container { display: flex; flex-wrap: wrap; padding: 2em 1em 1.25em; }
-    .gallery-item-left, .gallery-item-right { flex: 10%; }
+    @media screen and (max-width: 600px) {
+        img.avatar { justify-self: center; width: 45%; }
+        img.gallery { width: 75%; }
+    }
+    @media screen and (min-width: 600px) { 
+        img.avatar { float: right; margin: 2em 1.25em; width: 25%; }
+        img.gallery { width: 50%; }
+    }
+    @media screen and (min-width: 1200px) {
+        img.avatar { float: right; margin: 3em; width: 20%; }
+        img.gallery { width: 25%; }
+    }
+    @media screen and (min-width: 1800px) {
+        img.avatar { float: right; margin: 6em; width: 15%; }
+        img.gallery { width: 10%; }
+    }
+    .date, h3 {
+        padding: 0;
+    }
+    img.avatar {
+        border-radius: 50%;
+    }
+    img.avatar:hover, img.gallery:hover {
+        transform: scale(1.05);
+    }
+    img.gallery {
+        border-radius: 18px;
+    }
+    .gallery-container {
+        padding: 2em 1em 1.25em; 
+    }
+    .gallery-item {
+        margin: 0 auto;
+    }
 </style>
 </head>
 <body>
@@ -84,7 +108,7 @@
         <!images have a resolution of 384x384px>
         <div class="card">
             <div class="gallery-container">
-                <div class="gallery-item-left">
+                <div class="gallery-item">
                     <a href="/photos/profile_photo_2_high_res.avif">
     
     <!avif to webp fallback for Edge & Firefox>
@@ -96,7 +120,7 @@
                         </picture>
                     <div class="caption">December, 2020</div>
                 </div>
-                <div class="gallery-item-right">
+                <div class="gallery-item">
                     <a href="/photos/profile_photo_1_high_res.webp">
                         <img class="gallery" alt="Profile photo" loading=lazy src="./photos/profile_photo_1.webp"></a>
                         <div class="caption">July, 2020</div>
