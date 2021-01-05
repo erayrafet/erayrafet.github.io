@@ -60,6 +60,7 @@
   --accent: #1a73e8;
   --accent-bg: rgba(26, 115, 232, 0.15);
   --accent-hover: rgba(26, 115, 232, 0.25);
+  --background: var(--body-background);
 }
 * {
   background: var(--body-background);
@@ -249,7 +250,7 @@ p.li {
   margin: 0.8em 3em;
 }
 ::selection {
-  background: var(--accent);
+  background: var(--accent-hover);
 }
 .scrollable-text {
   padding: 0.8em;
