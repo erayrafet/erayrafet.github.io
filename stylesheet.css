@@ -199,7 +199,7 @@ h1 {
   text-align: center;
 }
 h1:hover {
-  text-shadow: 4px 4px 8px var(--accent);
+  filter: drop-shadow(0 0 1rem var(--accent));
   transform: scale(1.025);
 }
 h2 {
