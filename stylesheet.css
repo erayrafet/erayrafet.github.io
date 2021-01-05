@@ -117,9 +117,10 @@ ul {
   padding: 0.15em 1.5em 1em;
 }
 .box:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 0 20px 4px var(--accent);
   transform: scale(1.01);
 }
-.box:hover,
 img:hover,
 img.small:hover {
   background: var(--accent-hover);
