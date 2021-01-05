@@ -123,7 +123,8 @@ ul {
 img:hover,
 img.small:hover {
   background: var(--accent-hover);
-  box-shadow: 0 0 20px 4px var(--accent);
+  filter: drop-shadow(0 0 1rem var(--accent));
+  }
 }
 button {
   margin-left: 0.5em;
@@ -152,13 +153,14 @@ button {
   cursor: pointer;
   transform: scale(1.05);
 }
+.button-right:hover, .caption:hover {
+  filter: drop-shadow(0 0 1rem var(--accent));
+  transform: scale(1.05);
+}
 .caption {
   cursor: text;
   margin: 2em auto;
   width: fit-content;
-}
-.caption:hover {
-  transform: scale(1.05);
 }
 .date {
   font-size: small;

@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="initial-scale=1, shrink-to-fit=yes, user-scalable=no, width=device-width"/>
+  <head>
+    <meta name="viewport" content="initial-scale=1, shrink-to-fit=yes, width=device-width" />
     <title>Error 404</title>
-<style>
-    @media (prefers-color-scheme: dark) { body { background: black; color: white; } }
-    @media (prefers-color-scheme: light) { body { background: white; color: black; } }
-    * { background: var(--body-background); color: var(--body-color); }
-    a { text-decoration: none; }
-    button { background: #1a73e8; border: none; border-radius: 18px; font-size: large; font-weight: 700; padding: 6px 12px; }
-    button:hover { transform: scale(1.05); transition: 0.5s; transition-timing-function: ease-out; }
-    html { padding: 25%; text-align: center; }
-    ::selection { background: #1a73e8; }
-</style>
-</head>
-<body>
+    <style>
+          @keyframes fade {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+          @media (prefers-color-scheme: dark) {
+              body {
+                  background: black;
+                  color: white;
+              }
+          }
+          @media (prefers-color-scheme: light) {
+              body {
+                  background: white;
+                  color: black;
+              }
+          }
+        * {
+            animation: fade 0.5s;
+            background: var(--body-background);
+            border: none;
+            color: var(--body-color);
+            outline: none;
+            text-align: center;
+            text-decoration: none;
+            transition: 0.5s; /*Animate link color on hover*/
+        }
+        body {
+            padding-top: 15%;
+        }
+        .button-right {
+            background: #1a73e8;
+            border-radius: 18px;
+            display: inline-block; /*Fix animation on hover*/
+            font-size: large;
+            font-weight: 700;
+            height: 24px;
+            padding: 7px 14px;
+            transition: 0.5s;
+        }
+        .button-right:hover {
+            display: inline-block; /*Fix animation on hover*/
+            filter: drop-shadow(0 0 1rem #1a73e8);
+            transform: scale(1.05);
+        }
+        ::selection {
+            background: rgba(26, 115, 232, 0.25);
+        }
+    </style>
+  </head>
+  <body>
     <h2>There ain't no Internet, yo!</h2>
-    <button><a href="/"</a>Reload</button>
-</body>
+    <br>
+    <a class="button-right" href="/">Reload</a>
+  </body>
 </html>
