@@ -133,6 +133,7 @@ button {
 }
 .button-home {
   float: left;
+  margin: 0;
   position: relative;
   z-index: 1;
 }
@@ -146,17 +147,19 @@ button {
   border-radius: 18px;
   font-size: large;
   font-weight: 700;
-  height: 24px;
+  line-height: 24px;
+  margin: 2px 0;
   padding: 7px 14px;
 }
 .button-home:hover,
 .button-right:hover {
+  display: block;
   cursor: pointer;
-  transform: scale(1.05);
+  padding: 8px 16px;
 }
 .button-right:hover, .caption:hover {
   filter: drop-shadow(0 0 1rem var(--accent));
-  transform: scale(1.05);
+  padding: 8px 16px;
 }
 .caption {
   cursor: text;
@@ -168,17 +171,17 @@ button {
   opacity: 0.7;
   padding-bottom: 1em;
 }
-.donate {
-  padding: 1em;
-}
 .donate,
 .donate-subpage {
   font-size: small;
   font-weight: 700;
+  line-height: 46px;
 }
 .donate,
 .donate-subpage,
 .tab {
+  display: block;
+  height: 46px;
   overflow-x: scroll;
   text-align: center;
   white-space: nowrap;
@@ -255,9 +258,6 @@ p.li {
 ::selection {
   background: var(--accent-hover);
 }
-.scrollable-text {
-  padding: 0.8em;
-}
 .scrollable-text,
 .scrollable-text-index {
   animation: 10s linear infinite scroll;
@@ -269,12 +269,12 @@ p.li {
 }
 .tab {
   overflow-x: scroll;
-  padding: 0.25em 1em;
 }
 .tab button,
 .tab button.active {
   border-radius: 18px;
   font-size: large;
+  line-height: 24px;
   padding: 7px 14px;
 }
 .tab button.active {
@@ -287,10 +287,12 @@ p.li {
   color: var(--body-color);
   cursor: pointer;
   font-weight: 700;
-  transform: scale(1.05);
+  padding: 8px 16px;
+  margin: -2px;
 }
 .tab-wiggle {
   animation: wiggle 2s;
+  padding: 4px;
 }
 ul {
   padding: 0;

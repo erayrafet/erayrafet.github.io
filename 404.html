@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="initial-scale=1, shrink-to-fit=yes, width=device-width" />
+      <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, shrink-to-fit=yes, width=device-width"/>
     <title>Error 404</title>
     <style>
-          @keyframes fade {
+      @keyframes fade {
         from {
           opacity: 0;
         }
@@ -12,54 +13,55 @@
           opacity: 1;
         }
       }
-          @media (prefers-color-scheme: dark) {
-              body {
-                  background: black;
-                  color: white;
-              }
-          }
-          @media (prefers-color-scheme: light) {
-              body {
-                  background: white;
-                  color: black;
-              }
-          }
-        * {
-            animation: fade 0.5s;
-            background: var(--body-background);
-            border: none;
-            color: var(--body-color);
-            outline: none;
-            text-align: center;
-            text-decoration: none;
-            transition: 0.5s; /*Animate link color on hover*/
-        }
+      @media (prefers-color-scheme: dark) {
         body {
-            padding-top: 15%;
+          background: black;
+          color: white;
         }
-        .button-right {
-            background: #1a73e8;
-            border-radius: 18px;
-            display: inline-block; /*Fix animation on hover*/
-            font-size: large;
-            font-weight: 700;
-            height: 24px;
-            padding: 7px 14px;
-            transition: 0.5s;
+      }
+      @media (prefers-color-scheme: light) {
+        body {
+          background: white;
+          color: black;
         }
-        .button-right:hover {
-            display: inline-block; /*Fix animation on hover*/
-            filter: drop-shadow(0 0 1rem #1a73e8);
-            transform: scale(1.05);
-        }
-        ::selection {
-            background: rgba(26, 115, 232, 0.25);
-        }
+      }
+      .button-right,
+      h1,
+      html {
+        animation: fade 0.5s;
+        background: var(--body-background);
+        border: none;
+        color: var(--body-color);
+        outline: none;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.5s; /*Animate link color on hover*/
+      }
+      html {
+        padding-top: 15%;
+      }
+      .button-right {
+        background: #1a73e8;
+        border-radius: 18px;
+        display: inline-block; /*Fix animation on hover*/
+        font-size: large;
+        font-weight: 700;
+        line-height: 24px;
+        padding: 7px 14px;
+      }
+      .button-right:hover {
+        display: inline-block; /*Fix animation on hover*/
+        filter: drop-shadow(0 0 1rem #1a73e8);
+        padding: 8px 16px;
+      }
+      ::selection {
+        background: rgba(26, 115, 232, 0.25);
+      }
     </style>
   </head>
   <body>
     <h2>There ain't no Internet, yo!</h2>
-    <br>
+    <br />
     <a class="button-right" href="/">Reload</a>
   </body>
 </html>
