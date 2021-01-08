@@ -192,7 +192,6 @@ button {
 .tab {
   align-items: center; /*Fix button transition on hover misalignment*/
   display: flex;
-  text-justify: center;
   height: 46px;
   overflow-x: scroll;
   white-space: nowrap;
