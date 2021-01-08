@@ -156,7 +156,6 @@ button {
 .button-right:hover {
   cursor: pointer;
   display: block;
-  margin: 3px 0px;
   padding: 8px 16px;
 }
 .button-right:hover,
@@ -191,7 +190,7 @@ button {
 .donate,
 .donate-subpage,
 .tab {
-  align-content: center; /*Fix button transition on hover misalignment*/
+  align-items: center; /*Fix button transition on hover misalignment*/
   display: flex;
   text-justify: center;
   height: 46px;
