@@ -60,16 +60,14 @@
         border-radius: 50%;
     }
     img.avatar:hover, img.gallery:hover {
-        transform: scale(1.05);
+        filter: drop-shadow(0 0 1rem var(--accent));
+        transform: scale3d(1.05, 1.05, 1.05);
     }
     img.gallery {
         border-radius: 18px;
     }
-    .gallery-container {
-        padding: 2em 1em 1.25em; 
-    }
     .gallery-item {
-        margin: 0 auto;
+        margin: 2em auto 0;
     }
 </style>
 </head>
@@ -107,24 +105,22 @@
     <div id="photos" class="tabcontent">
         <!images have a resolution of 384x384px>
         <div class="card">
-            <div class="gallery-container">
-                <div class="gallery-item">    
+            <div class="gallery-item">    
     <!avif to webp fallback for Edge & Firefox>
-                    <a href="/photos/profile_photo_2_high_res.avif">
-                        <picture>
-                            <source type="image/webp" srcset="./photos/profile_photo_2.webp">
-                            <img class ="gallery" alt="Profile photo" loading=lazy src="./photos/profile_photo_2.avif">
-                            </img>
-                        </picture>
-                    </a>
-                    <div class="caption">December, 2020</div>
-                </div>
-                <div class="gallery-item">
-                    <a href="/photos/profile_photo_1_high_res.webp">
-                        <img class="gallery" alt="Profile photo" loading=lazy src="./photos/profile_photo_1.webp">
-                    </a>
-                    <div class="caption">July, 2020</div>
-                </div>
+                <a href="/photos/profile_photo_2_high_res.avif">
+                    <picture>
+                        <source type="image/webp" srcset="./photos/profile_photo_2.webp">
+                        <img class ="gallery" alt="Profile photo" loading=lazy src="./photos/profile_photo_2.avif">
+                        </img>
+                    </picture>
+                </a>
+                <div class="caption">December, 2020</div>
+            </div>
+            <div class="gallery-item">
+                <a href="/photos/profile_photo_1_high_res.webp">
+                    <img class="gallery" alt="Profile photo" loading=lazy src="./photos/profile_photo_1.webp">
+                </a>
+                <div class="caption">July, 2020</div>
             </div>
         </div>
     </div>
