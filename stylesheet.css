@@ -44,11 +44,17 @@
     background: black;
     color: white;
   }
+  :root {
+    --button-selection: rgba(0,0,0, 0.5); /*Theme-aware button text background on selection*/
+  }
 }
 @media (prefers-color-scheme: light) {
   body {
     background: white;
     color: black;
+  }
+  :root {
+    --button-selection: rgba(255,255,255, 0.5); /*Theme-aware button text background on selection*/
   }
 }
 @media (min-width: 1024px) {
@@ -60,7 +66,6 @@
   --accent: #1a73e8;
   --accent-bg: rgba(26, 115, 232, 0.15);
   --accent-hover: rgba(26, 115, 232, 0.25);
-  --background: var(--body-background);
 }
 * {
   background: var(--body-background);
@@ -121,12 +126,6 @@ ul {
   box-shadow: 0 0 20px 4px var(--accent);
   transform: scale(1.01);
 }
-img:hover,
-img.small:hover {
-  background: var(--accent-hover);
-  filter: drop-shadow(0 0 1rem var(--accent));
-  }
-}
 button {
   margin-left: 0.5em;
   margin-right: 0.5em;
@@ -157,9 +156,18 @@ button {
   cursor: pointer;
   padding: 8px 16px;
 }
-.button-right:hover, .caption:hover {
+.button-right:hover,
+.caption:hover {
   filter: drop-shadow(0 0 1rem var(--accent));
   padding: 8px 16px;
+}
+/*Theme-aware button text background on selection*/
+.button-home::selection,
+.button-right::selection,
+.caption::selection,
+.tab button.active::selection,
+.tab button:hover::selection {
+  background: var(--button-selection);
 }
 .caption {
   cursor: text;
@@ -180,7 +188,8 @@ button {
 .donate,
 .donate-subpage,
 .tab {
-  display: block;
+  align-items: center; /*Fix button transition on hover misalignment*/
+  display: flex;
   height: 46px;
   overflow-x: scroll;
   text-align: center;

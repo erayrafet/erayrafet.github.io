@@ -18,11 +18,17 @@
           background: black;
           color: white;
         }
+        :root {
+          --button-selection: rgba(0,0,0, 0.5); /*Theme-aware button text background on selection*/
+        }
       }
       @media (prefers-color-scheme: light) {
         body {
           background: white;
           color: black;
+        }
+        :root {
+          --button-selection: rgba(255,255,255, 0.5); /*Theme-aware button text background on selection*/
         }
       }
       .button-right,
@@ -38,7 +44,11 @@
         transition: 0.5s; /*Animate link color on hover*/
       }
       html {
-        padding-top: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        overflow: hidden;
       }
       .button-right {
         background: #1a73e8;
@@ -50,12 +60,14 @@
         padding: 7px 14px;
       }
       .button-right:hover {
-        display: inline-block; /*Fix animation on hover*/
         filter: drop-shadow(0 0 1rem #1a73e8);
         padding: 8px 16px;
       }
       ::selection {
         background: rgba(26, 115, 232, 0.25);
+      }
+     .button-right::selection {
+      background: var(--button-selection);
       }
     </style>
   </head>
