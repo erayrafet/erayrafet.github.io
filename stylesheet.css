@@ -57,6 +57,11 @@
     --button-selection: rgba(255,255,255, 0.5); /*Theme-aware button text background on selection*/
   }
 }
+@media (prefers-reduced-motion) {
+	* {
+		transition: none !important;
+  }
+}
 @media (min-width: 1100px) {
   @keyframes scroll {
     animation-play-state: paused;
