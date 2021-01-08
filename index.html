@@ -69,10 +69,31 @@
     .gallery-item {
         margin: 2em auto 0;
     }
+    .switch {
+        animation: spin 1s;
+        background: linear-gradient(90deg,#1a73e8, var(--accent), #f00);
+        border-radius: 50%;
+        height: 24px;
+        margin: 0.75em 0;
+        position: absolute;
+        right: calc(4% + 8px);
+        width: 24px;
+        z-index: 2;
+    }
+    .switch input {
+        height: 0;
+        opacity: 0;
+        width: 0;
+    }
 </style>
 </head>
 <body>
-    <a href="/"><h1>Eray's Blog</h1></a>
+    <div class="container-title">
+        <label id="switch" class="switch">
+                <input type="checkbox" onchange="toggleTheme()">
+        </label>
+        <a href="/"><h1>Eray's Blog</h1></a>
+    </div>
 
     <div class="tab"><div class="tab-wiggle">
         <button class="tablinks" id="default" onclick="tab(event, 'blog')">Blog</button>
@@ -125,28 +146,28 @@
         </div>
     </div>
     
-    <div id="mygadgets" class="tabcontent"><div class="card">
-    <ul>
-        <li.clean><b>Computing devices:</b>
+    <div id="mygadgets" class="tabcontent">
+        <div class="card">
             <ul>
-                <li><a href="https://support.hp.com/bg-en/document/c06194936">HP Pavilion 13-an0007nu ultrabook running Windows 10 Home</a></li>
-                <li>Samsung NC110 netbook modded & upgraded with an SSD that's booting <a href="https://www.neverware.com/freedownload">CloudReady</a></li>
-                <li>Xiaomi POCOPHONE F1 on Android 11 (<a href="https://download.pixelexperience.org/">Pixel Experience 11 custom ROM</a>)</li>
+                <li.clean><b>Computing devices:</b>
+                    <ul>
+                        <li><a href="https://support.hp.com/bg-en/document/c06194936">HP Pavilion 13-an0007nu ultrabook running Windows 10 Home</a></li>
+                        <li>Samsung NC110 netbook modded & upgraded with an SSD that's booting <a href="https://www.neverware.com/freedownload">CloudReady</a></li>
+                        <li>Xiaomi POCOPHONE F1 on Android 11 (<a href="https://download.pixelexperience.org/">Pixel Experience 11 custom ROM</a>)</li>
+                    </ul>
+                <li.clean><b>Accessories:</b>
+                    <ul>
+                        <li><a href="https://www.sony.com/electronics/headband-headphones/mdr-xb550ap">Sony MDR-XB550AP blue headphones</a></li>
+                        <li><a href="https://www.hama.com/00052377/hama-m2140-bluetooth-mouse-black#technical-details">Hama M2140 Bluetooth mouse</a></li>
+                        <li><a href="http://www.orico.cc/usmobile/product/detail/id/3508">ORICO 2588C3-G2 2.5 inch Type-C 10Gbps hard drive enclosure</a></li>
+                    </ul>
+                <li.clean><b>Home networking device: </b><a href="https://www.tp-link.com/uk/home-networking/wifi-router/archer-c50/">TP-Link Archer C50 V4 Wi-Fi 5 router</a> + <a href="https://www.quad9.net/">Quad9 DNS</a>
+                </li>
             </ul>
-            <li.clean><b>Accessories:</b>
-            <ul>
-                <li><a href="https://www.sony.com/electronics/headband-headphones/mdr-xb550ap">Sony MDR-XB550AP blue headphones</a></li>
-                <li><a href="https://www.hama.com/00052377/hama-m2140-bluetooth-mouse-black#technical-details">Hama M2140 Bluetooth mouse</a></li>
-                <li><a href="http://www.orico.cc/usmobile/product/detail/id/3508">ORICO 2588C3-G2 2.5 inch Type-C 10Gbps hard drive enclosure</a></li>
-            </ul>
-        <li.clean><b>Home networking device: </b><a href="https://www.tp-link.com/uk/home-networking/wifi-router/archer-c50/">TP-Link Archer C50 V4 Wi-Fi 5 router</a> + <a href="https://www.quad9.net/">Quad9 DNS</a></li>
-    </ul>
-
-    </div></div>
+        </div>
+    </div>
 
     <div id="about" class="tabcontent"><div class="card">
-
-
     <a href="/photos/profile_photo_2_high_res.avif">
         <picture>
              <source type="image/webp" srcset="./photos/profile_photo_2.webp">

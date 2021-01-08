@@ -31,6 +31,11 @@
     -webkit-transform: translate3d(-120ch, 0, 0);
   }
 }
+@keyframes spin {
+  100% {
+    transform: rotate(360deg)
+  }
+}
 @keyframes wiggle {
   0% {
     margin-left: 10%;
@@ -75,6 +80,25 @@
   --accent-bg: rgba(26, 115, 232, 0.15);
   --accent-hover: rgba(26, 115, 232, 0.25);
 }
+/*Red theme variables*/
+#:root {
+#  --accent: #f00;
+#  --accent-bg: rgba(255, 0, 0, 0.15);
+#  --accent-hover: rgba(255, 0, 0, 0.25);
+#}
+
+.theme-blue {
+  --accent: #1a73e8;
+  --accent-bg: rgba(26, 115, 232, 0.15);
+  --accent-hover: rgba(26, 115, 232, 0.25);
+}
+.theme-red {
+  --accent: #f00;
+  --accent-bg: rgba(255, 0, 0, 0.15);
+  --accent-hover: rgba(255, 0, 0, 0.25);
+}
+
+
 * {
   background: var(--body-background);
   border: none;
@@ -110,7 +134,10 @@ h1,
 h2,
 h3,
 img,
+img.avatar,
+img.gallery,
 img.small,
+li,
 p,
 ul {
   animation: fade 0.5s;
@@ -223,7 +250,7 @@ h1 {
 }
 h1:hover {
   filter: drop-shadow(0 0 1rem var(--accent));
-  transform: scale3d(1.025, 1.025, 1.025);
+  transform: scale3d(1.05, 1.05, 1.05);
 }
 h2 {
   padding: 0.25% 0 0.15%;

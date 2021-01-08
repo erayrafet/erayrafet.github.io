@@ -46,3 +46,25 @@ self.addEventListener("fetch", (event) => {
     );
   }
 });
+
+// function to set a given theme/color-scheme
+function setTheme(themeName) {
+  localStorage.setItem('theme', themeName);
+  document.documentElement.className = themeName;
+}
+// function to toggle between light and dark theme
+function toggleTheme() {
+ if (localStorage.getItem('theme') === 'theme-blue'){
+     setTheme('theme-red');
+ } else {
+     setTheme('theme-blue');
+ }
+}
+// Immediately invoked function to set the theme on initial load
+(function () {
+ if (localStorage.getItem('theme') === 'theme-blue') {
+     setTheme('theme-blue');
+ } else {
+     setTheme('theme-red');
+ }
+})();
