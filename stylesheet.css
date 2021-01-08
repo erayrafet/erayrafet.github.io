@@ -57,9 +57,12 @@
     --button-selection: rgba(255,255,255, 0.5); /*Theme-aware button text background on selection*/
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
   @keyframes scroll {
     animation-play-state: paused;
+  }
+  .donate, .donate-subpage, .tab {
+    justify-content: center;
   }
 }
 :root {
@@ -131,9 +134,8 @@ button {
   margin-right: 0.5em;
 }
 .button-home {
-  float: left;
-  margin: 0;
-  position: relative;
+  left: calc(4% + 8px);
+  position: absolute;
   z-index: 1;
 }
 .button-right {
@@ -147,13 +149,14 @@ button {
   font-size: large;
   font-weight: 700;
   line-height: 24px;
-  margin: 2px 0;
+  margin: 4px 0;
   padding: 7px 14px;
 }
 .button-home:hover,
 .button-right:hover {
-  display: block;
   cursor: pointer;
+  display: block;
+  margin: 3px 0px;
   padding: 8px 16px;
 }
 .button-right:hover,
@@ -188,11 +191,11 @@ button {
 .donate,
 .donate-subpage,
 .tab {
-  align-items: center; /*Fix button transition on hover misalignment*/
+  align-content: center; /*Fix button transition on hover misalignment*/
   display: flex;
+  text-justify: center;
   height: 46px;
   overflow-x: scroll;
-  text-align: center;
   white-space: nowrap;
 }
 /*Hide horizontal & vertical scrollbars*/
