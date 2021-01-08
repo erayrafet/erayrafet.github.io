@@ -75,18 +75,7 @@
     justify-content: center;
   }
 }
-:root {
-  --accent: #1a73e8;
-  --accent-bg: rgba(26, 115, 232, 0.15);
-  --accent-hover: rgba(26, 115, 232, 0.25);
-}
-/*Red theme variables*/
-#:root {
-#  --accent: #f00;
-#  --accent-bg: rgba(255, 0, 0, 0.15);
-#  --accent-hover: rgba(255, 0, 0, 0.25);
-#}
-
+/*Color theme variables*/
 .theme-blue {
   --accent: #1a73e8;
   --accent-bg: rgba(26, 115, 232, 0.15);
@@ -97,8 +86,6 @@
   --accent-bg: rgba(255, 0, 0, 0.15);
   --accent-hover: rgba(255, 0, 0, 0.25);
 }
-
-
 * {
   background: var(--body-background);
   border: none;
