@@ -8,27 +8,27 @@
 }
 @keyframes pulse {
   0% {
-    transform: scale(1);
+    transform: scale3d(1, 1, 1);
   }
   25% {
-    transform: scale(0.975);
+    transform: scale3d(0.975, 0.975, 0.975);
   }
   50% {
-    transform: scale(1);
+    transform: scale3d(1, 1, 1);
   }
   75% {
-    transform: scale(0.975);
+    transform: scale3d(0.975, 0.975, 0.975);
   }
   100% {
-    transform: scale(1);
+    transform: scale3d(1, 1, 1);
   }
 }
 @keyframes scroll {
   0% {
-    -webkit-transform: translateX(140ch);
+    -webkit-transform: translate3d(140ch, 0, 0);
   }
   100% {
-    -webkit-transform: translateX(-120ch);
+    -webkit-transform: translate3d(-120ch, 0, 0);
   }
 }
 @keyframes wiggle {
@@ -127,7 +127,7 @@ ul {
 .box:hover {
   background: var(--accent-hover);
   box-shadow: 0 0 20px 4px var(--accent);
-  transform: scale(1.01);
+  transform: scale3d(1.01, 1.01, 1.01);
 }
 button {
   margin-left: 0.5em;
@@ -218,7 +218,7 @@ h1 {
 }
 h1:hover {
   filter: drop-shadow(0 0 1rem var(--accent));
-  transform: scale(1.025);
+  transform: scale3d(1.025, 1.025, 1.025);
 }
 h2 {
   padding: 0.25% 0 0.15%;
@@ -249,11 +249,11 @@ img.small {
 /*Zoom-in on images and add top and bottom spacing whilst keeping the centered position intact.*/
 img:hover {
   margin: 4% auto;
-  transform: scale(1.15);
+  transform: scale3d(1.15, 1.15, 1.15);
 }
 img.small:hover {
   margin: 2% auto;
-  transform: scale(1.25);
+  transform: scale3d(1.25, 1.25, 1.25);
 }
 li {
   list-style-type: disc;
