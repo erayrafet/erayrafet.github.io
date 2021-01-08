@@ -154,12 +154,14 @@ button {
 }
 .button-home:hover,
 .button-right:hover {
+  border-radius: 20px;
   cursor: pointer;
   display: block;
   padding: 8px 16px;
 }
 .button-right:hover,
 .caption:hover {
+  border-radius: 20px;
   filter: drop-shadow(0 0 1rem var(--accent));
   padding: 8px 16px;
 }
@@ -295,6 +297,7 @@ p.li {
 .tab button:hover,
 .tab button.active:hover {
   background: var(--accent);
+  border-radius: 20px;
   color: var(--body-color);
   cursor: pointer;
   font-weight: 700;
