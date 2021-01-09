@@ -1,11 +1,11 @@
 /*Adjust image scaling on mobile devices*/
 @media screen and (max-width: 600px) {
   img {
-    margin: 4% auto;
+    margin: 6% auto;
     width: 75%;
   }
   img:hover {
-    margin: 8% auto;
+    margin: 12% auto;
   }
   img.small {
     margin: 3% auto;
