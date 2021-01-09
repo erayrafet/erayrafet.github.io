@@ -1,9 +1,17 @@
 /*Adjust image scaling on mobile devices*/
 @media screen and (max-width: 600px) {
   img {
+    margin: 4% auto;
     width: 75%;
   }
+  img:hover {
+    margin: 8% auto;
+  }
   img.small {
+    margin: 3% auto;
     width: 50%;
+  }
+  img.small:hover {
+    margin: 6% auto;
   }
 }
