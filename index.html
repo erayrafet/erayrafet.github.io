@@ -53,6 +53,9 @@
         img.avatar { float: right; margin: 6em; width: 10%; }
         img.gallery { width: 10%; }
     }
+    .button-right {
+        margin: 2em 0;
+    }
     .date, h3 {
         padding: 0;
     }
@@ -103,7 +106,6 @@
     <div class="tab"><div class="tab-wiggle">
         <button class="tablinks" id="default" onclick="tab(event, 'blog')">Blog</button>
         <button class="tablinks" onclick="tab(event, 'projects')">Projects</button>
-        <button class="tablinks" onclick="tab(event, 'webapps')">Web apps</button>
         <button class="tablinks" onclick="tab(event, 'mygadgets')">My gadgets</button>
         <button class="tablinks" onclick="tab(event, 'about')">About me</button>
         <button class="tablinks" onclick="tab(event, 'support')">Support links</button>
@@ -257,32 +259,57 @@
     <div class="footer"><p>Please, feel free to reach out to me at any given time in case you have an inquiry, or a job offer to make.</p></div>
     </div></div>
     
-    <div id="projects" class="tabcontent"><div class="card">
-    <ul><li.clean><b>Black Pixel browser themes</b></li>
-    <p>Black Pixel is a theme made especially for Google Chrome, but supports Microsoft's new Chromium-based Edge browser as well. It combines the almighty black color with white text/icons and my favorite <b style="color:var(--accent)">#1a73e8</b> blue color (used throughout this website and all my other projects) from Google's past iterations of their Material Design Color Palette.<br>The Mozilla Firefox edition carries over the same color palette, but with a few enhancements to accommodate the differences in UI layout.</p>
-        <ul>
-            <li><a href="https://chrome.google.com/webstore/detail/black-pixel/nfpfolfbmhaemdcmejphhdhjbpmjgknc">Black Pixel for Google Chrome and Chrome OS</a></li>
-            <li><a href="https://github.com/erayrafet/Black-Pixel-Theme">Black Pixel for Microsoft Edge</a></li>
-            <li><a href="https://addons.mozilla.org/en-US/firefox/addon/black-pixel/">Black Pixel for Mozilla Firefox</a></li>
-    </ul>
-    <ul>
-        <li.clean><b><a href="https://t.me/addtheme/bpdesktop">Black Pixel theme for Telegram's official Android and Desktop apps</a></b></li>
-        <p>With Black Pixel for Telegram, my one and only goal is to keep the same minimal UI language style I've grown to love because of Google - absent of dividers and distractions, with vibrant colors here and there, whilst making it easier to focus on the important things first and foremost.</p>
-        <li.clean><b><a href="https://github.com/erayrafet/erayrafet.github.io">erayrafet.github.io</a></b></li>
-        <p>Started as a learning platform, this is my first ever web page / bio.</p>
-        <li.clean><b><a href="https://t.me/poco_mods">Eray's Mods Telegram channel</a></b></li>
-        <p>As I own a Xiaomi POCOPHONE F1, there I mostly do share my self-made Magisk modules, boot logos, and themes for it, aside from general phone stuff every now and then.</p>
-    </ul>
-    </div></div>
+    <div id="projects" class="tabcontent">
+        <div class="card">
+            <ul>
+                <li.clean>
+                    <b>Black Pixel browser themes</b>
+                </li>
+                <p>Black Pixel is a theme made especially for Google Chrome, but supports Microsoft's new Chromium-based Edge browser as well. It combines the almighty black color with white text/icons and my favorite <b style="color:#1a73e8">#1a73e8 blue</b> color (used throughout this website and all my other projects) from Google's past iterations of their Material Design Color Palette.<br>The Mozilla Firefox edition carries over the same color palette, but with a few enhancements to accommodate the differences in UI layout.
+                </p>
+            <ul>
+                <li>
+                    <a href="https://chrome.google.com/webstore/detail/black-pixel/nfpfolfbmhaemdcmejphhdhjbpmjgknc">Black Pixel for Google Chrome and Chrome OS</a>
+                </li>
+                <li>
+                    <a href="https://github.com/erayrafet/Black-Pixel-Theme">Black Pixel for Microsoft Edge</a>
+                </li>
+                <li>
+                    <a href="https://addons.mozilla.org/en-US/firefox/addon/black-pixel/">Black Pixel for Mozilla Firefox</a>
+                </li>
+            </ul>
+            <ul>
+                <li.clean>
+                    <b>
+                        <a href="https://t.me/addtheme/bpdesktop">Black Pixel theme for Telegram's official Android and Desktop apps</a>
+                    </b>
+                </li>
+                <p>With Black Pixel for Telegram, my one and only goal is to keep the same minimal UI language style I've grown to love because of Google - absent of dividers and distractions, with vibrant colors here and there, whilst making it easier to focus on the important things first and foremost.
+                </p>
+                <li.clean>
+                    <b>
+                        <a href="https://github.com/erayrafet/erayrafet.github.io">erayrafet.github.io</a>
+                    </b>
+                </li>
+                <p>Started as a learning platform, this is my first ever web page / bio. Since last year, I've managed to develop my CSS skills to a degree where I feel confident that I can become a front-end web developer / UI designer sometime in the distant future.<br><br>Make sure to check out my newest random-thought-come-to-fruition as the colorful toggle at the top-right that dynamically switches from the defacto <b style="color:#1a73e8">#1a73e8 blue</b> to a plain Jane <b style="color:#f00">red</b> for all accented elements on the site.
+                </p>
+                <li.clean>
+                    <b>Text Writer</b>
+                </li>
+                <a class="button-right" href="/writer.html">Try now</a>
+                    <p>This is a very minimal text writing tool with title and content sections, part of this web app (for now.)
+                    </p>
+                <li.clean>
+                    <b>
+                        <a href="https://t.me/poco_mods">Eray's Mods Telegram channel</a>
+                    </b>
+                </li>
+                <p>As I own a Xiaomi POCOPHONE F1, there I mostly do share my self-made Magisk modules, boot logos, and themes for it, aside from general phone stuff every now and then.
+                </p>
+            </ul>
+        </div>
+    </div>      
 
-    <div id="webapps" class="tabcontent"><div class="card">
-      
-    <ul><li.clean><b>Writer</b></li>
-        <br>
-        <a class="button-right" href="/writer.html">Try now</a>
-        <p>A very minimal text writing page, part of this web app (for now.)</p>
-    </ul>
-    </div></div>
   
     <div id="support" class="tabcontent"><div class="card">
         <ul>
