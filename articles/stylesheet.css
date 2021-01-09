@@ -1,0 +1,9 @@
+/*Adjust image scaling on mobile devices*/
+@media screen and (max-width: 600px) {
+  img {
+    width: 75%;
+  }
+  img.small {
+    width: 50%;
+  }
+}
