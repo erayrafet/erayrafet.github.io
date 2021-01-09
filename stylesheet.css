@@ -267,6 +267,7 @@ img.small {
 }
 /*Zoom-in on images and add top and bottom spacing whilst keeping the centered position intact.*/
 img:hover {
+  display: block;
   filter: drop-shadow(0 0 1rem var(--accent));
   margin: 4% auto;
   transform: scale3d(1.15, 1.15, 1.15);
