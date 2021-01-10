@@ -46,12 +46,18 @@
         img.gallery { width: 50%; }
     }
     @media screen and (min-width: 1200px) {
+        .grid { grid-template-columns: 1fr 1fr; } /*Two columns*/
         img.avatar { float: right; margin: 3em; width: 20%; }
         img.gallery { width: 25%; }
     }
     @media screen and (min-width: 1800px) {
+        .grid { grid-template-columns: 1fr 1fr 1fr; } /*Three columns*/
         img.avatar { float: right; margin: 6em; width: 10%; }
         img.gallery { width: 10%; }
+    }
+    .box {
+        min-width: -webkit-fill-available; /*Maximize width*/
+        padding: 0.15em 1.5em 1em;
     }
     .button-right {
         margin: 2em 0;
@@ -71,12 +77,21 @@
     .gallery-item {
         margin: 2em auto 0;
     }
+    .grid {
+        align-items: normal; /*Maximize box height*/
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-rows: auto;
+        justify-items: center;
+        margin: 1em 0;
+    }
     .theme-blue .switch {
         background: linear-gradient(90deg, var(--accent) 50%, #f00);
     }
     .theme-red .switch{
         background: linear-gradient(90deg, var(--accent) 50%, #1a73e8);
     }
+    /*Custom switch*/
     .switch {
         animation: spin 1s;
         border-radius: 50%;
@@ -88,6 +103,7 @@
         width: 24px;
         z-index: 2;
     }
+/*Hide default switch element*/
     .switch input {
         height: 0;
         opacity: 0;
@@ -116,16 +132,18 @@
     <!Blog post cards go here>
 
     <div id="blog" class="tabcontent">
+        <div class="grid">
 
-        <div class="box"><a href="/articles/the-best-pwas-on-the-internet.html"><h3>The best PWAs on the Internet</h3>
-        <p>Covering the basis on Progressive Web Apps, plus a few tips.</p><div class="date">Publishing date: June 22, 2020</div><div class="date">Last update: September 1, 2020</div></a></div>
+            <div class="box"><a href="/articles/the-best-pwas-on-the-internet.html"><h3>The best PWAs on the Internet</h3>
+            <p>Covering the basis on Progressive Web Apps, plus a few tips.</p><div class="date">Publishing date: June 22, 2020</div><div class="date">Last update: September 1, 2020</div></a></div>
 
-        <div class="box"><a href="/articles/ways-to-minimize-distractions-and-boost-productivity-while-working.html"><h3>Ways to minimize distractions and boost productivity while working</h3>
-        <p>Key methods for limiting distractions and avoiding focus loss.</p><div class="date">Publishing date: July 16, 2020</div></a></div>
+            <div class="box"><a href="/articles/ways-to-minimize-distractions-and-boost-productivity-while-working.html"><h3>Ways to minimize distractions and boost productivity while working</h3>
+            <p>Key methods for limiting distractions and avoiding focus loss.</p><div class="date">Publishing date: July 16, 2020</div></a></div>
     
-        <div class="box"><a href="/articles/top-free-and-speedy-DNS-services-for-home-users-tested-and-the-reason-you-should-use-one.html"><h3>Top free, secure, and speedy DNS services for home users tested and the reason you should use one</h3>
-        <p>Fast and free DNS services for privacy-conscious users.</p><div class="date">Publishing date: June 25, 2020</div></a></div>
-
+            <div class="box"><a href="/articles/top-free-and-speedy-DNS-services-for-home-users-tested-and-the-reason-you-should-use-one.html"><h3>Top free, secure, and speedy DNS services for home users tested and the reason you should use one</h3>
+            <p>Fast and free DNS services for privacy-conscious users.</p><div class="date">Publishing date: June 25, 2020</div></a></div>
+        
+        </div>
     </div>
 
     <!From here and on is everything else>
