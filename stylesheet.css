@@ -331,6 +331,9 @@ p.li {
 ul {
   padding: 0;
 }
+.tab::-webkit-scrollbar {
+  display: none;
+}
 ::-webkit-scrollbar {
   width: 6px;
 }
