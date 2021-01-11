@@ -1,47 +1,25 @@
 const CACHE_NAME = "404";
 const OFFLINE_URL = "404.html";
 
-self.addEventListener("install", (event) => {
+self.addEventListener('install', event => {
   event.waitUntil(
-    (async () => {
-      const cache = await caches.open(CACHE_NAME);
-      await cache.add(new Request(OFFLINE_URL, { cache: "reload" }));
-    })()
+    caches.open(CACHE_NAME)
+    .then(cache => {
+      return cache.add(OFFLINE_URL);
+    })
   );
 });
 
-self.addEventListener("activate", (event) => {
-  event.waitUntil(
-    (async () => {
-      if ("navigationPreload" in self.registration) {
-        await self.registration.navigationPreload.enable();
-      }
-    })()
-  );
-
-  self.clients.claim();
+self.addEventListener('activate', event => {
 });
 
-self.addEventListener("fetch", (event) => {
-  if (event.request.mode === "navigate") {
-    event.respondWith(
-      (async () => {
-        try {
-          const preloadResponse = await event.preloadResponse;
-          if (preloadResponse) {
-            return preloadResponse;
-          }
-
-          const networkResponse = await fetch(event.request);
-          return networkResponse;
-        } catch (error) {
-          console.log("Fetch failed; returning offline page instead.", error);
-
-          const cache = await caches.open(CACHE_NAME);
-          const cachedResponse = await cache.match(OFFLINE_URL);
+self.addEventListener('fetch', event => {
+  event.respondWith(caches.match(event.request)
+    .then(cachedResponse => {
+        if (cachedResponse) {
           return cachedResponse;
         }
-      })()
+        return fetch(event.request);
+      })
     );
-  }
 });
