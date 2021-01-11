@@ -1,13 +1,15 @@
-const OFFLINE_VERSION = "8";
 const CACHE_NAME = "404";
 const OFFLINE_URL = "404.html";
 
-self.addEventListener("install", (event) => {
+/* eslint no-restricted-globals:0 */
+self.addEventListener('install', event => {
+  // Perform install steps
   event.waitUntil(
-    (async () => {
-      const cache = await caches.open(CACHE_NAME);
-      await cache.add(new Request(OFFLINE_URL, { cache: "reload" }));
-    })()
+    caches.open(CACHE_NAME)
+      .then(function(cache) {
+        console.log('Opened cache');
+        return cache.OFFLINE_URL;
+      })
   );
 });
 
@@ -20,7 +22,7 @@ self.addEventListener("activate", (event) => {
     })()
   );
 
-  self.clients.claim();
+self.clients.claim();
 });
 
 self.addEventListener("fetch", (event) => {
@@ -50,6 +52,7 @@ self.addEventListener("fetch", (event) => {
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
   localStorage.setItem('theme', themeName);
+  localStorage.getItem('theme', themeName);
   document.documentElement.className = themeName;
 }
 // function to toggle between light and dark theme
@@ -61,10 +64,10 @@ function toggleTheme() {
  }
 }
 // Immediately invoked function to set the theme on initial load
-(function () {
- if (localStorage.getItem('theme') === 'theme-blue') {
-     setTheme('theme-blue');
- } else {
-     setTheme('theme-red');
- }
+(() => {
+  if (localStorage.getItem('theme') === 'theme-blue') {
+    setTheme('theme-blue');
+  } else {
+    setTheme('theme-red');
+  }
 })();
