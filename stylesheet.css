@@ -152,9 +152,8 @@ button {
   margin-right: 0.5em;
 }
 .button-home {
-  left: calc(4% + 8px);
-  position: absolute;
   z-index: 1;
+  -webkit-touch-callout: none; /*Disable long-press on Safari since the button dimensions break*/
 }
 .button-right {
   float: right;
@@ -205,14 +204,14 @@ button {
 .donate-subpage {
   font-size: small;
   font-weight: 700;
-  line-height: 46px;
+  line-height: 48px;
 }
 .donate,
 .donate-subpage,
 .tab {
   align-items: center; /*Fix button transition on hover misalignment*/
   display: flex;
-  height: 46px;
+  height: 48px;
   overflow-x: scroll;
   white-space: nowrap;
 }
@@ -299,9 +298,6 @@ p.li {
 .tab-wiggle:hover {
   animation-play-state: paused;
 }
-.tab {
-  overflow-x: scroll;
-}
 .tab button,
 .tab button.active {
   border-radius: 18px;
@@ -331,7 +327,8 @@ p.li {
 ul {
   padding: 0;
 }
-.tab::-webkit-scrollbar {
+/*Hide scrollbars in Safari*/
+.donate-subpage::-webkit-scrollbar, .tab::-webkit-scrollbar {
   display: none;
 }
 ::-webkit-scrollbar {
