@@ -1,18 +1,14 @@
 const CACHE_NAME = "404";
 const OFFLINE_URL = "404.html";
 
-/* eslint no-restricted-globals:0 */
-self.addEventListener('install', event => {
-  // Perform install steps
+self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        console.log('Opened cache');
-        return cache.OFFLINE_URL;
-      })
+    (async () => {
+      const cache = await caches.open(CACHE_NAME);
+      await cache.add(new Request(OFFLINE_URL, { cache: "reload" }));
+    })()
   );
 });
-
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     (async () => {
