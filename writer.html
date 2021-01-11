@@ -14,22 +14,23 @@
         position: fixed;
         right: 1em;
       }
+      .textarea-container {
+        align-items: normal; /*Maximize box height*/
+        display: grid;
+      }
       textarea[name="title"] {
         font-size: x-large;
         font-weight: 700;
         text-align: center;
       }
       textarea[name="title"], textarea[name="writer"] {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
         padding: 0.5em 1em;
         resize: none;
-        width: 96%;
       }
     </style>
   </head>
   <body>
+    <div class="textarea-container">
     <textarea
       aria-label="Title"
       autofocus
@@ -39,14 +40,10 @@
       oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
       placeholder="Title goes here..."
     ></textarea>
-    <textarea
-      aria-label="Writer"
-      id="writer"
-      name="writer"
-      oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
-      placeholder="Input text..."
-      rows="16"
-    ></textarea>
+    <textarea aria-label="Writer" id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
+      placeholder="Input text...">
+    </textarea>
+    </div>
     <div class="button-right" onclick="scrollWin()" title="Go to top">
       Top
     </div>
