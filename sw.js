@@ -57,17 +57,17 @@ function setTheme(themeName) {
 }
 // function to toggle between light and dark theme
 function toggleTheme() {
- if (localStorage.getItem('theme') === 'theme-blue'){
-     setTheme('theme-red');
- } else {
+ if (localStorage.getItem('theme') === 'theme-red'){
      setTheme('theme-blue');
+ } else {
+     setTheme('theme-red');
  }
 }
 // Immediately invoked function to set the theme on initial load
 (() => {
-  if (localStorage.getItem('theme') === 'theme-blue') {
-    setTheme('theme-blue');
-  } else {
+  if (localStorage.getItem('theme') === 'theme-red') {
     setTheme('theme-red');
+  } else {
+    setTheme('theme-blue');
   }
 })();
