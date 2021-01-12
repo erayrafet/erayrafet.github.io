@@ -84,29 +84,32 @@
         justify-items: center;
         margin: 1em 0;
     }
-    .theme-blue .switch {
+    .theme-blue .switch-toggle {
         background: linear-gradient(90deg, var(--accent) 50%, #f00);
     }
-    .theme-red .switch{
+    .theme-red .switch-toggle {
         background: linear-gradient(90deg, var(--accent) 50%, #1a73e8);
     }
-    /*Custom switch*/
-    .switch {
+    /*Custom switch icon*/
+    .switch-toggle {
         animation: spin 1s;
         border-radius: 50%;
-        cursor: pointer;
         height: 24px;
-        margin: 0.75em 0;
+        margin: 12px; /*Centered icon inside the container (Do the math!)*/
         position: absolute;
         right: calc(4% + 8px);
         width: 24px;
-        z-index: 2;
     }
-/*Hide default switch element*/
+    /*Touch-friendly switch container*/
     .switch input {
-        height: 0;
-        opacity: 0;
-        width: 0;
+        cursor: pointer;
+        height: 48px;
+        margin: 0;
+        opacity: 0; /*Hide default switch element*/
+        position: absolute;
+        right: calc(4% + 8px);
+        width: 48px;
+        z-index: 1;
     }
 </style>
 </head>
@@ -114,8 +117,9 @@
     <div class="container-title">
         <label id="switch" class="switch">
             <input type="checkbox" onchange="toggleTheme()">
+            <button class="switch-toggle"></button>
         </label>
-        <a href="/"><h1>Eray's Blog</h1></a>
+       <a href="/"><h1>Eray's Blog</h1></a>
     </div>
 
     <div class="tab"><div class="tab-wiggle">
