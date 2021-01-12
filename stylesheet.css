@@ -97,6 +97,12 @@ a {
   text-decoration: none;
   transition: 0.5s; /*Animate link color on hover*/
 }
+/*Disable text/element selection on long-press for touchscreens*/
+a, .button-home, .button-right, .switch, .tab button,
+.tab button.active {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
 a:hover {
   color: var(--accent);
 }
@@ -153,7 +159,6 @@ button {
 }
 .button-home {
   z-index: 1;
-  -webkit-touch-callout: none; /*Disable long-press on Safari since the button dimensions break*/
 }
 .button-right {
   float: right;
