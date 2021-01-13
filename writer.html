@@ -3,51 +3,67 @@
   <head>
     <link rel="manifest" href="/manifest.webmanifest">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"/>
-    <link rel="stylesheet" href="/stylesheet.css"/>
     <meta name="description" content="A simple text writer"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes"/>
+    <link rel="stylesheet" href="/stylesheet.css"/>
+
     <script src="theme.js"></script>
     <title>Writer</title>
     <style>
+      body {
+        width: -webkit-fill-available;
+
+      }
+    html {
+        display: flex;
+        height: -webkit-fill-available;
+      width: -webkit-fill-available;
+        overflow: hidden;
+      }
       .button-right {
         bottom: 1em;
         position: fixed;
         right: 1em;
       }
       .textarea-container {
+        min-height: -webkit-fill-available;
+        min-width: -webkit-fill-available; /*Maximize width*/
+
         align-items: normal; /*Maximize box height*/
         display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
       }
       textarea[name="title"] {
         font-size: x-large;
         font-weight: 700;
-        text-align: center;
-      }
-      textarea[name="title"], textarea[name="writer"] {
+        overflow: hidden;
         padding: 0.5em 1em;
         resize: none;
+        text-align: center;
+      }
+      textarea[name="writer"] {
+        overflow: hidden;
+        resize: none;
+      }
+      .writer {
+        
       }
     </style>
   </head>
   <body>
     <div class="textarea-container">
-    <textarea
-      aria-label="Title"
-      autofocus
-      class="box"
-      id="title"
-      name="title"
-      oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
-      placeholder="Title goes here..."
-    ></textarea>
-    <textarea aria-label="Writer" id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
-      placeholder="Input text...">
-    </textarea>
+    <textarea aria-label="Title" autofocus class="box" id="title" name="title" placeholder="Title goes here..."></textarea>
+
+
+    <textarea aria-label="Writer" rows="24" class="writer" id="writer" name="writer" placeholder="Input text..."></textarea>
     </div>
+
     <div class="button-right" onclick="scrollWin()" title="Go to top">
       Top
     </div>
     <script>
+
       function scrollWin() {
         window.scrollTo(0, 0);
       }
