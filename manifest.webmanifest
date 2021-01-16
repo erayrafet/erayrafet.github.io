@@ -17,6 +17,12 @@
       "sizes": "512x512",
       "src": "/maskable_icon.webp",
       "type": "image/webp"
+    },
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "/maskable_icon.png",
+      "type": "image/png"
     }
   ],
   "lang": "en-US",
