@@ -74,6 +74,10 @@
   .donate, .donate-subpage, .tab {
     justify-content: center;
   }
+  .button-home {
+    position: absolute;
+    left: calc(4% + 8px);
+  }
 }
 /*Color theme variables*/
 .theme-blue {
