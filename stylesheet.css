@@ -162,6 +162,7 @@ button {
   margin-right: 0.5em;
 }
 .button-home {
+  position: fixed;
   z-index: 1;
 }
 .button-right {
