@@ -33,7 +33,7 @@
 }
 @keyframes spin {
   100% {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }
 @keyframes wiggle {
@@ -50,7 +50,12 @@
     color: white;
   }
   :root {
-    --button-selection: rgba(0,0,0, 0.5); /*Theme-aware button text background on selection*/
+    --button-selection: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); /*Theme-aware button text background on selection*/
   }
 }
 @media (prefers-color-scheme: light) {
@@ -59,19 +64,26 @@
     color: black;
   }
   :root {
-    --button-selection: rgba(255,255,255, 0.5); /*Theme-aware button text background on selection*/
+    --button-selection: rgba(
+      255,
+      255,
+      255,
+      0.5
+    ); /*Theme-aware button text background on selection*/
   }
 }
 @media (prefers-reduced-motion) {
-	* {
-		transition: none !important;
+  * {
+    transition: none !important;
   }
 }
 @media (min-width: 1024px) {
   @keyframes scroll {
     animation-play-state: paused;
   }
-  .donate, .donate-subpage, .tab {
+  .donate,
+  .donate-subpage,
+  .tab {
     justify-content: center;
   }
   .button-home {
@@ -90,11 +102,14 @@
   --accent-bg: rgba(255, 0, 0, 0.15);
   --accent-hover: rgba(255, 0, 0, 0.25);
 }
-* {
+
+body {
   background: var(--body-background);
-  border: none;
   color: var(--body-color);
   font-family: "Open Sans";
+}
+* {
+  border: none;
   outline: none;
 }
 a {
@@ -102,7 +117,11 @@ a {
   transition: 0.5s; /*Animate link color on hover*/
 }
 /*Disable text/element selection on long-press for touchscreens*/
-a, .button-home, .button-right, .switch, .tab button,
+a,
+.button-home,
+.button-right,
+.switch,
+.tab button,
 .tab button.active {
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
@@ -338,7 +357,8 @@ ul {
   padding: 0;
 }
 /*Hide scrollbars in Safari*/
-.donate-subpage::-webkit-scrollbar, .tab::-webkit-scrollbar {
+.donate-subpage::-webkit-scrollbar,
+.tab::-webkit-scrollbar {
   display: none;
 }
 ::-webkit-scrollbar {
