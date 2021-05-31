@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="initial-scale=1, shrink-to-fit=yes, width=device-width"/>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, shrink-to-fit=yes, width=device-width"
+    />
     <title>Error 404</title>
     <style>
       @keyframes fade {
@@ -19,7 +22,12 @@
           color: white;
         }
         :root {
-          --button-selection: rgba(0,0,0, 0.5); /*Theme-aware button text background on selection*/
+          --button-selection: rgba(
+            0,
+            0,
+            0,
+            0.5
+          ); /*Theme-aware button text background on selection*/
         }
       }
       @media (prefers-color-scheme: light) {
@@ -28,14 +36,18 @@
           color: black;
         }
         :root {
-          --button-selection: rgba(255,255,255, 0.5); /*Theme-aware button text background on selection*/
+          --button-selection: rgba(
+            255,
+            255,
+            255,
+            0.5
+          ); /*Theme-aware button text background on selection*/
         }
       }
       .button-right,
       h1,
       html {
         animation: fade 0.5s;
-        background: var(--body-background);
         border: none;
         color: var(--body-color);
         outline: none;
@@ -44,9 +56,9 @@
         transition: 0.5s; /*Animate link color on hover*/
       }
       html {
-        display: flex;
         align-items: center;
-        justify-content: center;
+        background: var(--body-background);
+        display: grid;
         height: 100%;
         overflow: hidden;
       }
@@ -66,8 +78,8 @@
       ::selection {
         background: rgba(26, 115, 232, 0.25);
       }
-     .button-right::selection {
-      background: var(--button-selection);
+      .button-right::selection {
+        background: var(--button-selection);
       }
     </style>
   </head>
