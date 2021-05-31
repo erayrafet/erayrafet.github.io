@@ -102,17 +102,12 @@
   --accent-bg: rgba(255, 0, 0, 0.15);
   --accent-hover: rgba(255, 0, 0, 0.25);
 }
-
-body {
-  background: var(--body-background);
-  color: var(--body-color);
-  font-family: "Open Sans";
-}
 * {
   border: none;
   outline: none;
 }
 a {
+  color: var(--body-color);
   text-decoration: none;
   transition: 0.5s; /*Animate link color on hover*/
 }
@@ -177,6 +172,8 @@ ul {
   transform: scale3d(1.01, 1.01, 1.01);
 }
 button {
+  background: var(--body-background);
+  color: var(--body-color);
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
@@ -271,12 +268,15 @@ h2 {
 }
 hr {
   background: var(--accent);
-  border-radius: 4px;
+  border-radius: 8px;
   height: 4px;
   margin-top: 1em;
 }
 html {
+  background: var(--body-background);
   caret-color: var(--accent);
+  color: var(--body-color);
+  font-family: "Open Sans";
   padding: 1% 4%;
   scrollbar-color: var(--accent) transparent;
   scrollbar-width: thin;
@@ -362,6 +362,7 @@ ul {
   display: none;
 }
 ::-webkit-scrollbar {
+  height: 4px;
   width: 4px;
 }
 ::-webkit-scrollbar-thumb {
