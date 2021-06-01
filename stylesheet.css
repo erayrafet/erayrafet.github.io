@@ -71,28 +71,21 @@
   @keyframes scroll {
     animation-play-state: paused;
   }
-  :root {
-    --accent: #1a73e8;
-    --accent-bg: rgba(26, 115, 232, 0.15);
-    --accent-hover: rgba(26, 115, 232, 0.25);
-  }
-  .donate,
-  .donate-subpage,
-  .tab {
-    justify-content: center;
-  }
-  .button-home {
-    position: absolute;
-    left: calc(4% + 8px);
-  }
 }
-/*Color theme variables*/
-.theme-blue {
+
+:root {
+  --accent: #1a73e8;
+  --accent-bg: rgba(26, 115, 232, 0.15);
+  --accent-hover: rgba(26, 115, 232, 0.25);
 }
-.theme-red {
-  --accent: #f00;
-  --accent-bg: rgba(255, 0, 0, 0.15);
-  --accent-hover: rgba(255, 0, 0, 0.25);
+.donate,
+.donate-subpage,
+.tab {
+  justify-content: center;
+}
+.button-home {
+  position: absolute;
+  left: calc(4% + 8px);
 }
 * {
   border: none;
