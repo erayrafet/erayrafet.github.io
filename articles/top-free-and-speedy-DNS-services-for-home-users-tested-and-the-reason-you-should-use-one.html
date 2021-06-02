@@ -28,54 +28,56 @@
         Publishing date: June 25, 2020
     </div>
 
-    <p>Well, I have no expertise in this topic, but for starters, we must know what DNS stands for and how it impacts our web surfing and online privacy.<br>Simply put, the internet runs on IP addresses - 216.58.214.206, perhaps, is for Google.com. Test it by typing it into your address bar.</p>
-    <a href="./images/ping-google.png"><img loading=lazy src="./images/ping-google.png"></a></ul>
-    <p>Sure enough, remembering those is such a hassle, right? That's the reason we need a "phonebook" for the internet in the name of a Domain Name Service, further referred as DNS, to translate website domains into IPs.</p>
-    <p>Most internet service providers (ISPs) have each of their own DNS servers, and potentially they can snoop on which sites their clients visit. The introduction of DNS-over-TLS and DNS-over-HTTPS types of traffic encryption has paved the way for a more secure internet.</p>
+    <div class="card">
+        <p>Well, I have no expertise in this topic, but for starters, we must know what DNS stands for and how it impacts our web surfing and online privacy.<br>Simply put, the internet runs on IP addresses - 216.58.214.206, perhaps, is for Google.com. Test it by typing it into your address bar.</p>
+        <a href="./images/ping-google.png"><img loading=lazy src="./images/ping-google.png"></a></ul>
+        <p>Sure enough, remembering those is such a hassle, right? That's the reason we need a "phonebook" for the internet in the name of a Domain Name Service, further referred as DNS, to translate website domains into IPs.</p>
+        <p>Most internet service providers (ISPs) have each of their own DNS servers, and potentially they can snoop on which sites their clients visit. The introduction of DNS-over-TLS and DNS-over-HTTPS types of traffic encryption has paved the way for a more secure internet.</p>
 
-    <h2>User privacy</h2>
-    <p>DNS-over-TLS (DoT) and DNS-over-HTTPS (DoH) are still sorta new, though they have major importance in having privacy in-check when browsing the internet with the use of modern encryption standards. Unless you are running a secure DNS of the aforementioned types, the website addresses you visit can easily be tracked by your current internet service provider, and anyone in-between.</p>
+        <h2>User privacy</h2>
+            <p>DNS-over-TLS (DoT) and DNS-over-HTTPS (DoH) are still sorta new, though they have major importance in having privacy in-check when browsing the internet with the use of modern encryption standards. Unless you are running a secure DNS of the aforementioned types, the website addresses you visit can easily be tracked by your current internet service provider, and anyone in-between.</p>
 
-    <h2>Speed</h2>
-    <p>It's not strictly about speed, but rather latency, aka, the exact time to establish a connection with a remote server. The use of a crappy Domain Name Service can significantly bog down your latency, which in most situations can hurt competitive online gameplays, though, it's not limited to.</p>
+        <h2>Speed</h2>
+            <p>It's not strictly about speed, but rather latency, aka, the exact time to establish a connection with a remote server. The use of a crappy Domain Name Service can significantly bog down your latency, which in most situations can hurt competitive online gameplays, though, it's not limited to.</p>
 
-    <h2>My first choice</h2>
-    <ul><h3><li>Quad9</li></h3></ul>
-    <p class="li">
-        Primary: 9.9.9.9<br>Secondary: 149.112.112.112<br>DoT: dns.quad9.net<br><br>
+        <h2>My first choice</h2>
+            <ul><h3><li>Quad9</li></h3></ul>
+            <p class="li">
+            Primary: 9.9.9.9<br>Secondary: 149.112.112.112<br>DoT: dns.quad9.net<br><br>
 
-        Quad9 DNS is being run by a US-based non-profit organization and because they can't monetize their product, Quad9 relies solely on donations and is funded by IBM. Their policy strictly states that no user data collection gets recorder, or stored, for that matter. They have over a hundred partner servers over the world to give you the best latency (lower is always better) to the end user.
-    <br><a href="https://www.quad9.net/home/privacy/">Quad9 Privacy Policy</a>
-    </p>
+            Quad9 DNS is being run by a US-based non-profit organization and because they can't monetize their product, Quad9 relies solely on donations and is funded by IBM. Their policy strictly states that no user data collection gets recorder, or stored, for that matter. They have over a hundred partner servers over the world to give you the best latency (lower is always better) to the end user.
+            <br><a href="https://www.quad9.net/home/privacy/">Quad9 Privacy Policy</a>
+            </p>
 
-    <h2>Alternatives</h2>
-    <ul><h3><li>Cloudflare</li></h3></ul>
-    <p class="li">
+        <h2>Alternatives</h2>
+            <ul><h3><li>Cloudflare</li></h3></ul>
+                <p class="li">
         Primary: 1.1.1.1<br>Secondary: 1.0.0.1<br>DoT: 1dot1dot1dot1.cloudflare-dns.com<br>
     `</p>
 
-    <ul><h3><li>Google</li></h3></ul>
-    <p class="li">
-        Primary: 8.8.8.8<br>Secondary: 8.8.4.4<br>DoT: dns.google<br><br>
+        <ul><h3><li>Google</li></h3></ul>
+            <p class="li">
+            Primary: 8.8.8.8<br>Secondary: 8.8.4.4<br>DoT: dns.google<br><br>
         
-        In case you don't trust big names such as Google and Cloudflare because they openly declare their practices at collecting logs and certain types of personal data for debugging reasons, yet, they may still easily outperform at latency Quad9 in select regions of the world due to having larger network infrastructures.
-    </p>
+            In case you don't trust big names such as Google and Cloudflare because they openly declare their practices at collecting logs and certain types of personal data for debugging reasons, yet, they may still easily outperform at latency Quad9 in select regions of the world due to having larger network infrastructures.
+            </p>
 
-    <h2>Configuration</h2>
-    <p>The most straightforward way is to set up your preferred DNS directly through your router. Depending on your router maker, model, and firmware revision, the settings GUIs significantly vary. Make sure to scour through each and every option until you see the <b>DNS server</b> options.</p>
-    <a href="./images/router.png"><img loading=lazy src="./images/router.png"></a>
+            <h2>Configuration</h2>
+                <p>The most straightforward way is to set up your preferred DNS directly through your router. Depending on your router maker, model, and firmware revision, the settings GUIs significantly vary. Make sure to scour through each and every option until you see the <b>DNS server</b> options.</p>
+            <a href="./images/router.png"><img loading=lazy src="./images/router.png"></a>
     
-    <p>Newer versions of Android (9 and above) have built-in support for DNS-over-TLS, which is very easy to set up and there isn't a single reason not to.</p>
-    <br><b>Settings > Network & internet > Advanced > Private DNS</b></p>
-    <img class="small" src="./images/dot-android.jpg">
-    <p>Meanwhile, Google has been testing a custom DoH solution in Chrome for quite some time now, but no word when it officially rolls out to everyone.</p>
-    <br><b><a href="chrome://flags/#dns-over-https">chrome://flags/#dns-over-https</a></b>
-    <a href="./images/doh-chrome.png"><img loading=lazy src="./images/doh-chrome.png"></a>
+            <p>Newer versions of Android (9 and above) have built-in support for DNS-over-TLS, which is very easy to set up and there isn't a single reason not to.</p>
+            <br><b>Settings > Network & internet > Advanced > Private DNS</b></p>
+            <img class="small" src="./images/dot-android.jpg">
+            <p>Meanwhile, Google has been testing a custom DoH solution in Chrome for quite some time now, but no word when it officially rolls out to everyone.</p>
+            <br><b><a href="chrome://flags/#dns-over-https">chrome://flags/#dns-over-https</a></b>
+            <a href="./images/doh-chrome.png"><img loading=lazy src="./images/doh-chrome.png"></a>
 
-    <h2>Closing words</h2>
-    <p>The Internet being a decentralized domain does have its implications as to who can track you and whom do you have to stray as far away as you can (um... Facebook, and other corporate entities). There are, of course, different ways of safety measures users can take, but setting those up, maintenance network performance and reliability may take a toll. VPNs and proxies fall into that category, but often times there is money involved as well as shady practices and bigger issues. Do your search on that note. <a href="https://techlore.tech">Techlore</a> is a great website I can wholeheartedly recommend.</p>
+        <h2>Closing words</h2>
+            <p>The Internet being a decentralized domain does have its implications as to who can track you and whom do you have to stray as far away as you can (um... Facebook, and other corporate entities). There are, of course, different ways of safety measures users can take, but setting those up, maintenance network performance and reliability may take a toll. VPNs and proxies fall into that category, but often times there is money involved as well as shady practices and bigger issues. Do your search on that note. <a href="https://techlore.tech">Techlore</a> is a great website I can wholeheartedly recommend.</p>
+        </div>
 
-    <div class="footer"><hr>
+    <div class="footer">
         <p>® 2020 Eray Rafet Mustafa</p>
         <p>All rights reserved.</p>
     </div>

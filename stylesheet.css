@@ -51,8 +51,9 @@
   }
   :root {
     --accent: #000;
-    --accent-bg: #00000050;
-    --accent-hover: #00000066;
+    --accent-bg: #00000066;
+    --accent-hover-bg: #00000066;
+    --accent-hover-text: #1a73e8;
     --button-selection: #ffffff50; /*Theme-aware button text background on selection*/
   }
 }
@@ -63,8 +64,9 @@
   }
   :root {
     --accent: #fff;
-    --accent-bg: #ffffff50;
-    --accent-hover: #ffffff60;
+    --accent-bg: #ffffff66;
+    --accent-hover-bg: #ffffff66;
+    --accent-hover-text: #fff;
     --button-selection: #00000050; /*Theme-aware button text background on selection*/
   }
 }
@@ -83,7 +85,8 @@
   /* Restore later
   --accent: #1a73e8;
   --accent-bg: rgba(26, 115, 232, 0.15);
-  --accent-hover: rgba(26, 115, 232, 0.25);
+  --accent-hover-bg: rgba(26, 115, 232, 0.25);
+  --accent-hover-text: ;
   */
 }
 .donate,
@@ -115,7 +118,7 @@ a,
   -webkit-tap-highlight-color: transparent;
 }
 a:hover {
-  color: var(--accent);
+  color: var(--accent-hover-text);
 }
 .box:hover a,
 .button-home:hover,
@@ -160,7 +163,7 @@ ul {
   padding: 0.15em 1.5em 1em;
 }
 .box:hover {
-  background: var(--accent-hover);
+  background: var(--accent-hover-bg);
   box-shadow: 0 0 20px 4px var(--accent);
   transform: scale3d(1.01, 1.01, 1.01);
 }
@@ -218,7 +221,7 @@ button {
 .date {
   font-size: small;
   opacity: 0.7;
-  padding-bottom: 1em;
+  padding: 0 1.5em;
 }
 .donate,
 .donate-subpage {
@@ -319,7 +322,7 @@ p.li {
   margin: 0.8em 3em;
 }
 ::selection {
-  background: var(--accent-hover);
+  background: var(--accent-hover-bg);
 }
 .scrollable-text,
 .scrollable-text-index {
