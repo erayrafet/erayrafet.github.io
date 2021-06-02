@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" />
     <meta name="description" content="A simple text writer" />
-    <meta
-      name="viewport"
-      content="initial-scale=1, shrink-to-fit=yes, width=device-width"
-    />
+    <meta name="viewport" content="initial-scale=1, shrink-to-fit=yes, width=device-width" />
     <link rel="stylesheet" href="/stylesheet.css" />
     <script src="theme.js"></script>
     <title>Writer</title>
@@ -52,29 +47,10 @@
   </head>
   <body>
     <div class="textarea-container">
-      <textarea
-        aria-label="Title"
-        rows="1"
-        autofocus
-        class="box"
-        id="title"
-        name="title"
-        oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
-        placeholder="Title goes here..."
-      ></textarea>
-      <textarea
-        aria-label="Writer"
-        rows="24"
-        class="writer"
-        id="writer"
-        name="writer"
-        oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
-        placeholder="Input text..."
-      ></textarea>
+      <textarea aria-label="Title" rows="1" autofocus class="box" id="title" name="title" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Title goes here..."></textarea>
+      <textarea aria-label="Writer" rows="24" class="writer" id="writer" name="writer" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="Input text..."></textarea>
     </div>
-    <div class="button-right" onclick="scrollWin()" title="Go to top">
-      Top
-    </div>
+    <div class="button-right" onclick="scrollWin()" title="Go to top">Top</div>
     <script>
       function scrollWin() {
         window.scrollTo(0, 0);
