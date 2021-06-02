@@ -90,7 +90,7 @@
   */
 }
 .donate,
-.donate-subpage,
+.donate-container,
 .tab {
   justify-content: center;
 }
@@ -153,8 +153,9 @@ ul {
 .box,
 .card,
 .donate,
-.donate-subpage,
+.donate-container,
 .tab {
+  backdrop-filter: blur(8px);
   background: var(--accent-bg);
   border-radius: 18px;
 }
@@ -224,13 +225,13 @@ button {
   padding: 0 1.5em;
 }
 .donate,
-.donate-subpage {
+.donate-container{
   font-size: small;
   font-weight: 700;
   line-height: 48px;
 }
 .donate,
-.donate-subpage,
+.donate-container,
 .tab {
   align-items: center; /*Fix button transition on hover misalignment*/
   display: flex;
@@ -240,7 +241,7 @@ button {
 }
 /*Hide horizontal & vertical scrollbars*/
 .donate::-webkit-scrollbar,
-.donate-subpage::-webkit-scrollbar,
+.donate-container::-webkit-scrollbar,
 .tab::-webkit-scrollbar {
   height: 0;
   width: 0;
@@ -363,7 +364,7 @@ ul {
   padding: 0;
 }
 /*Hide scrollbars in Safari*/
-.donate-subpage::-webkit-scrollbar,
+.donate-container::-webkit-scrollbar,
 .tab::-webkit-scrollbar {
   display: none;
 }
