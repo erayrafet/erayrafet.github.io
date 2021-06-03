@@ -96,7 +96,7 @@
 }
 .button-home {
   position: absolute;
-  left: calc(4% + 8px);
+  left: calc(4% + 12px);
 }
 * {
   border: none;
