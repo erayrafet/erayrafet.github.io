@@ -359,6 +359,7 @@ p.li {
 .tab-wiggle {
   animation: wiggle 2s;
   padding: 4px;
+  width: -webkit-fill-available;
 }
 ul {
   padding: 0;
