@@ -234,7 +234,7 @@ button {
 .donate-container,
 .tab {
   align-items: center; /*Fix button transition on hover misalignment*/
-  display: flex;
+  display: grid;
   height: 48px;
   overflow-x: scroll;
   white-space: nowrap;
@@ -328,6 +328,7 @@ p.li {
 .scrollable-text,
 .scrollable-text-index {
   animation: 10s linear infinite scroll;
+  padding: 0 4px;
 }
 .scrollable-text:hover,
 .scrollable-text-index:hover,
@@ -358,15 +359,15 @@ p.li {
 }
 .tab-wiggle {
   animation: wiggle 2s;
+  overflow: scroll;
   padding: 4px;
-  width: -webkit-fill-available;
 }
 ul {
   padding: 0;
 }
 /*Hide scrollbars in Safari*/
 .donate-container::-webkit-scrollbar,
-.tab::-webkit-scrollbar {
+.tab-wiggle::-webkit-scrollbar {
   display: none;
 }
 ::-webkit-scrollbar {
