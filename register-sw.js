@@ -1,3 +1,4 @@
+/*
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js')
   .then(function(registration) {
@@ -7,3 +8,4 @@ if ('serviceWorker' in navigator) {
     console.log('Service worker registration failed, error:', error);
   });
 }
+*/

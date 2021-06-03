@@ -1,7 +1,7 @@
+/*
 const CACHE_NAME = "404";
 const OFFLINE_URL = "404.html";
 
-/* eslint no-restricted-globals:0 */
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -11,11 +11,9 @@ self.addEventListener('install', event => {
   );
 });
 
-/* eslint no-restricted-globals:0 */
 self.addEventListener('activate', event => {
 });
 
-/* eslint no-restricted-globals:0 */
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request)
@@ -42,4 +40,5 @@ self.addEventListener('fetch', function(event) {
         );
       })
     );
-});
+}); 
+*/
