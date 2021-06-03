@@ -229,6 +229,8 @@ button {
   font-size: small;
   font-weight: 700;
   line-height: 48px;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .donate,
 .donate-container,
@@ -236,7 +238,6 @@ button {
   align-items: center; /*Fix button transition on hover misalignment*/
   display: grid;
   height: 48px;
-  overflow-x: scroll;
   white-space: nowrap;
 }
 /*Hide horizontal & vertical scrollbars*/
@@ -359,7 +360,8 @@ p.li {
 }
 .tab-wiggle {
   animation: wiggle 2s;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
   padding: 4px;
 }
 ul {
@@ -369,6 +371,9 @@ ul {
 .donate-container::-webkit-scrollbar,
 .tab-wiggle::-webkit-scrollbar {
   display: none;
+  scrollbar-width: none;  /* Firefox */
+  height: none;
+  width: none;
 }
 ::-webkit-scrollbar {
   height: 4px;
