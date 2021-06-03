@@ -328,7 +328,7 @@ p.li {
 .scrollable-text,
 .scrollable-text-index {
   animation: 10s linear infinite scroll;
-  padding: 0 4px;
+  padding: 0 8px;
 }
 .scrollable-text:hover,
 .scrollable-text-index:hover,
