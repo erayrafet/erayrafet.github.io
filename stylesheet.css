@@ -231,6 +231,7 @@ button {
   line-height: 48px;
   overflow-x: scroll;
   overflow-y: hidden;
+  scrollbar-width: none;  /* Firefox */
 }
 .donate,
 .donate-container,
@@ -286,7 +287,7 @@ html {
   color: var(--body-color);
   font-family: "Open Sans";
   padding: 1% 4%;
-  scrollbar-color: var(--accent) transparent;
+  scrollbar-color: var(--accent) #ff0018; /*Firefox fix -- Replace later with transparent*/
   scrollbar-width: thin;
   transition: color 0.5s;
 }
@@ -363,6 +364,7 @@ p.li {
   overflow-x: scroll;
   overflow-y: hidden;
   padding: 4px;
+  scrollbar-width: none;  /* Firefox */
 }
 ul {
   padding: 0;
@@ -371,9 +373,6 @@ ul {
 .donate-container::-webkit-scrollbar,
 .tab-wiggle::-webkit-scrollbar {
   display: none;
-  scrollbar-width: none;  /* Firefox */
-  height: none;
-  width: none;
 }
 ::-webkit-scrollbar {
   height: 4px;
