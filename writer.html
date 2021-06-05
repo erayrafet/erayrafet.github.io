@@ -7,12 +7,24 @@
     <meta name="description" content="A simple text writer" />
     <meta name="viewport" content="initial-scale=1, shrink-to-fit=yes, width=device-width" />
     <link rel="stylesheet" href="/stylesheet.css" />
-    <script src="theme.js"></script>
     <title>Writer</title>
     <style>
+      @media (prefers-color-scheme: dark) {
+          body {
+            /*background: black;*/
+            color: white;
+          }
+      }
+      @media (prefers-color-scheme: light) {
+        body {
+          /*background: white;*/
+          color: black;
+        }
+      }
       body,
       html {
         height: -webkit-fill-available; /*Use full window height*/
+        height: -moz-available; /*Firefox workaround*/
         padding: 0; /*Disable padding for webpage set by the main stylesheet to fix .box:hover cutout*/
       }
       .button-right {
@@ -21,7 +33,7 @@
         right: 1em;
       }
       textarea {
-        background: var(--body-background);
+        background: transparent;
         color: var(--body-color);
         font-family: "Open Sans";
         resize: none;
@@ -42,6 +54,9 @@
         overflow: hidden;
         padding: 0.5em 1em;
         text-align: center;
+      }
+      textarea[name="writer"] {
+        filter: drop-shadow(0 0 1rem var(--accent));
       }
     </style>
   </head>
