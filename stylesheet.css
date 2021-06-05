@@ -165,7 +165,7 @@ ul {
 }
 .box:hover {
   background: var(--accent-hover-bg);
-  box-shadow: 0 0 20px 4px var(--accent);
+  box-shadow: 0 0 20px 4px var(--accent-hover-bg);
   transform: scale3d(1.01, 1.01, 1.01);
 }
 button {
@@ -221,8 +221,6 @@ button {
 }
 .date {
   font-size: small;
-  opacity: 0.7;
-  padding: 0 1.5em;
 }
 .donate,
 .donate-container{
@@ -249,6 +247,7 @@ button {
   width: 0;
 }
 .footer {
+  filter: drop-shadow(0 0 1rem var(--accent));
   font-size: small;
   text-align: center;
 }
@@ -256,6 +255,7 @@ h1 {
   animation: pulse 4s;
   animation-delay: 1s;
   color: var(--accent);
+  filter: drop-shadow(0 0 1rem var(--accent-bg));
   padding-bottom: 1%;
   text-align: center;
 }
