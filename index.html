@@ -55,7 +55,7 @@
     }
     .box {
         min-width: -webkit-fill-available;  /*Maximize width*/
-        min-width: -moz-available;
+        min-width: -moz-available; /*Firefox fix*/
         padding: 0.15em 1.5em 1em;
     }
     .button-right {
@@ -63,6 +63,17 @@
     }
     .date {
         opacity: 0.7;
+    }
+    .gallery-item {
+        margin: 2em auto 0;
+    }
+    .grid {
+        align-items: normal; /*Maximize box height*/
+        display: grid;
+        grid-gap: 1em;
+        grid-template-rows: auto;
+        justify-items: center;
+        margin: 1em 0;
     }
     h3 {
         padding: 0;
@@ -75,17 +86,6 @@
     }
     img.gallery {
         border-radius: 18px;
-    }
-    .gallery-item {
-        margin: 2em auto 0;
-    }
-    .grid {
-        align-items: normal; /*Maximize box height*/
-        display: grid;
-        grid-gap: 1em;
-        grid-template-rows: auto;
-        justify-items: center;
-        margin: 1em 0;
     }
 </style>
 </head>

@@ -107,10 +107,11 @@ a {
   text-decoration: none;
   transition: 0.5s; /*Animate link color on hover*/
 }
-/*Disable text/element selection on long-press for touchscreens*/
+/*Disable text/element selection on long-press for touchscreens -- applies for Chrome and Safari.*/
 a,
 .button-home,
 .button-right,
+.caption,
 .switch,
 .tab button,
 .tab button.active {
