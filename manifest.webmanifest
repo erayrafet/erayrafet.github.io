@@ -38,5 +38,6 @@
   ],
   "short_name": "Eray's Blog",
   "start_url": "/",
-  "theme_color": "#000000"
+  "theme_color": "#000000",
+  "theme_color": "#ffffff"
 }
