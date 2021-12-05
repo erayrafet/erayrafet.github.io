@@ -1,26 +1,24 @@
-@media (prefers-color-scheme: dark) {
-  .date {
-    opacity: 0.7;
-  }
-}
 /*Adjust image scaling on mobile devices*/
 @media screen and (max-width: 600px) {
-  img {
-    margin: 6% auto;
-    width: 75%;
-  }
-  img:hover {
-    margin: 12% auto;
-  }
-  img.small {
-    margin: 3% auto;
-    width: 50%;
-  }
-  img.small:hover {
-    margin: 6% auto;
-  }
+	img {
+		margin: 6% auto;
+		width: 75%;
+	}
+	img:hover {
+		margin: 12% auto;
+	}
+	img.small {
+		margin: 3% auto;
+		width: 50%;
+	}
+	img.small:hover {
+		margin: 6% auto;
+	}
 }
 .date {
-  filter: drop-shadow(0 0 1rem var(--accent));
-  padding: 0 1.5em;
+	filter: drop-shadow(0 0 1rem var(--accent));
+	padding: 0 1.5em;
+}
+.pledge-subpage {
+	user-select: none;
 }

@@ -1,100 +1,145 @@
 @keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 @keyframes pulse {
-  0% {
-    transform: scale3d(1, 1, 1);
-  }
-  25% {
-    transform: scale3d(0.975, 0.975, 0.975);
-  }
-  50% {
-    transform: scale3d(1, 1, 1);
-  }
-  75% {
-    transform: scale3d(0.975, 0.975, 0.975);
-  }
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+	25% {
+		transform: scale3d(0.975, 0.975, 0.975);
+	}
+	50% {
+		transform: scale3d(1, 1, 1);
+	}
+	75% {
+		transform: scale3d(0.975, 0.975, 0.975);
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
 }
 @keyframes scroll {
-  0% {
-    -webkit-transform: translate3d(140ch, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(-120ch, 0, 0);
-  }
+	0% {
+		-webkit-transform: translate3d(140ch, 0, 0);
+	}
+	100% {
+		-webkit-transform: translate3d(-120ch, 0, 0);
+	}
 }
 @keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
+	100% {
+		transform: rotate(360deg);
+	}
 }
 @keyframes wiggle {
-  0% {
-    margin-left: 10%;
-  }
-  50% {
-    margin-left: -10%;
-  }
+	0% {
+		margin-left: 10%;
+	}
+	50% {
+		margin-left: -10%;
+	}
 }
 @media (prefers-color-scheme: dark) {
-  body {
-    background: black;
-    color: white;
-  }
-  :root {
-    --button-selection: #ffffff50; /*Theme-aware button text background on selection*/
-  }
+	body {
+		background: black;
+	}
+	:root {
+		--button-selection: #ffffff50; /*Theme-aware button text background on selection*/
+		--color-primary: white;
+		--color-secondary: #aaa;
+	}
 }
 @media (prefers-color-scheme: light) {
-  body {
-    background: white;
-    color: black;
-  }
-  :root {
-    --button-selection: #00000050; /*Theme-aware button text background on selection*/
-  }
+	body {
+		background: white;
+	}
+	:root {
+		--button-selection: #00000050; /*Theme-aware button text background on selection*/
+		--color-primary: black;
+		--color-secondary: #000000cc;
+	}
 }
 @media (prefers-reduced-motion) {
-  * {
-    transition: none !important;
-  }
+	* {
+		transition: none !important;
+	}
 }
 @media (min-width: 1024px) {
-  @keyframes scroll {
-    animation-play-state: paused;
-  }
+	@keyframes scroll {
+		animation-play-state: paused;
+	}
 }
 
 :root {
-  --accent: #1a73e8;
-  --accent-bg: rgba(26, 115, 232, 0.15);
-  --accent-hover-bg: rgba(26, 115, 232, 0.25);
+	--accent: #1a73e8;
+	--accent-bg: rgba(26, 115, 232, 0.15);
+	--accent-hover-bg: rgba(26, 115, 232, 0.25);
 }
-.donate,
-.donate-container,
+
+* {
+	border: none;
+	outline: none;
+}
+/*Theme-aware button text background on selection*/
+.button-home::selection,
+.button-right::selection,
+.caption::selection,
+.tab button.active::selection,
+.tab button:hover::selection {
+	background: var(--button-selection);
+}
+.box,
+.card,
+.pledge,
+.pledge-container,
+.tab,
+.tab button,
+.tab button.active {
+	border-radius: 32px;
+}
+a:hover {
+	color: var(--accent);
+}
+.box:hover a,
+.button-home:hover,
+.button-right:hover {
+	color: var(--color-primary);
+}
+.button-right {
+	float: right;
+}
+.pledge,
+.pledge-container,
 .tab {
-  justify-content: center;
+	justify-content: center;
+}
+ul {
+	padding: 0;
+}
+.btn,
+.button-home,
+.button-right,
+.caption,
+.date,
+.footer,
+img,
+.pledge,
+.tab {
+	user-select: none;
 }
 .button-home {
-  position: absolute;
-  left: calc(4% + 12px);
-}
-* {
-  border: none;
-  outline: none;
+	position: absolute;
+	left: calc(4% + 12px);
 }
 a {
-  color: var(--body-color);
-  text-decoration: none;
-  transition: 0.5s; /*Animate link color on hover*/
+	color: var(--color-primary);
+	text-decoration: none;
+	transition: 0.5s; /*Animate link color on hover*/
 }
 /*Disable text/element selection on long-press for touchscreens -- applies for Chrome and Safari.*/
 a,
@@ -104,20 +149,12 @@ a,
 .switch,
 .tab button,
 .tab button.active {
-  -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: transparent;
-}
-a:hover {
-  color: var(--accent);
-}
-.box:hover a,
-.button-home:hover,
-.button-right:hover {
-  color: var(--body-color);
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: transparent;
 }
 /*Scrollbar transparent background*/
 body {
-  overflow: overlay;
+	overflow: overlay;
 }
 /*Animated elements*/
 .box,
@@ -137,230 +174,217 @@ img.small,
 li,
 p,
 ul {
-  animation: fade 0.5s;
-  transition: 0.5s;
+	animation: fade 0.5s;
+	transition: 0.5s;
 }
 .box,
 .card,
-.donate,
-.donate-container,
+.pledge,
+.pledge-container,
 .tab {
-  backdrop-filter: blur(8px);
-  background: var(--accent-bg);
-  border-radius: 18px;
-  -webkit-backdrop-filter: blur(8px); /*Workaround for Safari -- totally unsupported on Firefox*/
+	backdrop-filter: blur(16px);
+	background: var(--accent-bg);
+	-webkit-backdrop-filter: blur(
+		16px
+	); /*Workaround for Safari -- totally unsupported on Firefox*/
 }
 .card {
-  margin: 1em 0;
-  padding: 0.15em 1.5em 1em;
+	margin: 1em 0;
+	padding: 0.15em 1.5em 1em;
 }
 .box:hover {
-  background: var(--accent-hover-bg);
-  box-shadow: 0 0 20px 4px var(--accent-hover-bg);
-  transform: scale3d(1.01, 1.01, 1.01);
+	background: var(--accent-hover-bg);
+	box-shadow: 0 0 20px 4px var(--accent-hover-bg);
+	transform: scale3d(1.01, 1.01, 1.01);
 }
 button {
-  background: var(--body-background);
-  color: var(--body-color);
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+	background: var(--body-background);
+	color: var(--color-primary);
+	font-family: "Open Sans";
+	margin-left: 0.5em;
+	margin-right: 0.5em;
 }
 .button-home {
-  position: fixed;
-  z-index: 1;
-}
-.button-right {
-  float: right;
+	position: fixed;
+	z-index: 1;
 }
 .button-home,
 .button-right,
 .caption {
-  background: var(--accent);
-  border-radius: 18px;
-  color: var(--body-color);
-  font-size: large;
-  font-weight: 700;
-  line-height: 24px;
-  margin: 4px 0;
-  padding: 7px 14px;
+	background: var(--accent);
+	border-radius: 18px;
+	font-size: large;
+	font-weight: 700;
+	line-height: 24px;
+	margin: 4px 0;
+	padding: 7px 14px;
 }
 .button-home:hover,
 .button-right:hover {
-  border-radius: 20px;
-  cursor: pointer;
-  display: block;
-  padding: 8px 16px;
+	cursor: pointer;
+	display: block;
+	padding: 8px 16px;
 }
 .button-right:hover,
 .caption:hover {
-  border-radius: 20px;
-  filter: drop-shadow(0 0 1rem var(--accent));
-  padding: 8px 16px;
-}
-/*Theme-aware button text background on selection*/
-.button-home::selection,
-.button-right::selection,
-.caption::selection,
-.tab button.active::selection,
-.tab button:hover::selection {
-  background: var(--button-selection);
+	filter: drop-shadow(0 0 1rem var(--accent));
+	padding: 8px 16px;
 }
 .caption {
-  cursor: text;
-  margin: 2em auto;
-  width: max-content; /*Use max-content variable instead of fit-content as a workaround for Firefox.*/
+	cursor: text;
+	margin: 2em auto;
+	width: max-content; /*Use max-content variable instead of fit-content as a workaround for Firefox.*/
 }
 .date {
-  font-size: small;
+	color: var(--color-secondary);
+	font-size: small;
 }
-.donate,
-.donate-container{
-  font-size: small;
-  font-weight: 700;
-  line-height: 48px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  scrollbar-width: none;  /* Firefox */
+.pledge,
+.pledge-container {
+	font-size: small;
+	font-weight: 700;
+	line-height: 48px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	scrollbar-width: none; /* Firefox */
 }
-.donate,
-.donate-container,
+.pledge,
+.pledge-container,
 .tab {
-  align-items: center; /*Fix button transition on hover misalignment*/
-  display: grid;
-  height: 48px;
-  white-space: nowrap;
+	align-items: center; /*Fix button transition on hover misalignment*/
+	display: grid;
+	height: 48px;
+	white-space: nowrap;
 }
 /*Hide horizontal & vertical scrollbars*/
-.donate::-webkit-scrollbar,
-.donate-container::-webkit-scrollbar,
-.tab::-webkit-scrollbar {
-  height: 0;
-  width: 0;
+.pledge-container::-webkit-scrollbar, /*Hide scrollbars in Safari*/
+.tab-wiggle::-webkit-scrollbar, /*Hide scrollbars in Safari*/
+.pledge::-webkit-scrollbar,
+.pledge-container::-webkit-scrollbar,
+.pledge::-webkit-scrollbar {
+	display: none;
 }
 .footer {
-  filter: drop-shadow(0 0 1rem var(--accent));
-  font-size: small;
-  text-align: center;
+	filter: drop-shadow(0 0 1rem var(--accent));
+	font-size: small;
+	text-align: center;
 }
 h1 {
-  animation: pulse 4s;
-  animation-delay: 1s;
-  color: var(--accent);
-  filter: drop-shadow(0 0 1rem var(--accent-bg));
-  padding-bottom: 1%;
-  text-align: center;
+	animation: pulse 4s;
+	animation-delay: 1s;
+	color: var(--accent);
+	filter: drop-shadow(0 0 1rem var(--accent-bg));
+	padding-bottom: 1%;
+	text-align: center;
 }
 h1:hover {
-  filter: drop-shadow(0 0 1rem var(--accent));
-  transform: scale3d(1.05, 1.05, 1.05);
+	filter: drop-shadow(0 0 1rem var(--accent));
+	transform: scale3d(1.05, 1.05, 1.05);
 }
 h2 {
-  padding: 0.25% 0 0.15%;
+	padding: 0.25% 0 0.15%;
 }
 hr {
-  background: var(--accent);
-  border-radius: 8px;
-  height: 4px;
-  margin-top: 1em;
+	background: var(--accent);
+	border-radius: 8px;
+	height: 4px;
+	margin-top: 1em;
 }
 html {
-  background: var(--body-background);
-  caret-color: var(--accent);
-  color: var(--body-color);
-  font-family: "Open Sans";
-  padding: 1% 4%;
-  scrollbar-color: var(--accent) transparent; /*Firefox fix*/
-  scrollbar-width: thin;
-  transition: color 0.5s;
+	background: var(--body-background);
+	caret-color: var(--accent);
+	color: var(--color-primary);
+	font-family: "Open Sans";
+	padding: 1% 4%;
+	scrollbar-color: var(--accent) transparent; /*Firefox fix*/
+	scrollbar-width: thin;
+	transition: color 0.5s;
 }
 img,
 img.small {
-  border-radius: 4px;
-  display: block;
-  margin: 1% auto;
-  width: 50%;
+	display: block;
+	margin: 1% auto;
+	width: 50%;
+}
+img {
+	border-radius: 16px;
 }
 img.small {
-  width: 25%;
+	border-radius: 8px;
+	width: 25%;
 }
 /*Zoom-in on images and add top and bottom spacing whilst keeping the centered position intact.*/
 img:hover {
-  display: block;
-  filter: drop-shadow(0 0 1rem var(--accent));
-  margin: 4% auto;
-  transform: scale3d(1.15, 1.15, 1.15);
+	display: block;
+	filter: drop-shadow(0 0 1rem var(--accent));
+	margin: 4% auto;
+	transform: scale3d(1.15, 1.15, 1.15);
 }
 img.small:hover {
-  margin: 2% auto;
-  transform: scale3d(1.25, 1.25, 1.25);
+	margin: 2% auto;
+	transform: scale3d(1.25, 1.25, 1.25);
 }
 li {
-  list-style-type: disc;
-  margin: 0.8em 2.5em;
+	list-style-type: disc;
+	margin: 0.8em 2.5em;
 }
 li.clean {
-  list-style-position: outside;
-  list-style-type: none;
+	list-style-position: outside;
+	list-style-type: none;
 }
 /*Paragraphs below bullet points*/
 p.li {
-  margin: 0.8em 3em;
+	margin: 0.8em 3em;
 }
 ::selection {
-  background: var(--accent-hover-bg);
+	background: var(--accent-hover-bg);
 }
 .scrollable-text,
 .scrollable-text-index {
-  animation: 10s linear infinite scroll;
-  padding: 0 8px;
+	animation: 10s linear infinite scroll;
+	padding: 0 8px;
 }
 .scrollable-text:hover,
 .scrollable-text-index:hover,
 .tab-wiggle:hover {
-  animation-play-state: paused;
+	animation-play-state: paused;
 }
 .tab button,
 .tab button.active {
-  border-radius: 18px;
-  font-size: large;
-  line-height: 24px;
-  margin: 0px 4px;
-  padding: 7px 14px;
+	font-size: large;
+	line-height: 24px;
+	margin: 0px 4px;
+	padding: 7px 14px;
 }
 .tab button.active {
-  color: var(--accent);
-  font-weight: 700;
+	color: var(--accent);
+	font-weight: 700;
 }
 .tab button:hover,
 .tab button.active:hover {
-  background: var(--accent);
-  border-radius: 20px;
-  color: var(--body-color);
-  cursor: pointer;
-  font-weight: 700;
-  padding: 8px 16px;
-  margin: -2px 4px;
+	background: var(--accent);
+	border-radius: 20px;
+	color: var(--color-primary);
+	cursor: pointer;
+	font-weight: 700;
+	padding: 8px 16px;
+	margin: -2px 4px;
 }
 .tab-wiggle {
-  animation: wiggle 2s;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  padding: 4px;
-  scrollbar-width: none;  /* Firefox */
-}
-ul {
-  padding: 0;
-}
-/*Hide scrollbars in Safari*/
-.donate-container::-webkit-scrollbar,
-.tab-wiggle::-webkit-scrollbar {
-  display: none;
+	animation: wiggle 2s;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	padding: 4px;
+	scrollbar-width: none; /* Firefox */
 }
 ::-webkit-scrollbar {
-  height: 4px;
-  width: 4px;
+	height: 4px;
+	width: 4px;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  border-radius: 8px;
+	background: var(--accent);
+	border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+	margin: 16px;
 }
