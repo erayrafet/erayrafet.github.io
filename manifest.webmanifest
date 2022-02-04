@@ -1,5 +1,7 @@
 {
-  "background_color": "#000000",
+  "background_color": "#ffffff",
+  "dark_mode_background_color": "#000000",
+  "dark_mode_theme_color": "#000000",
   "description": "A simple blog/portfolio website.",
   "display": "standalone",
   "icons": [
@@ -39,6 +41,5 @@
   ],
   "short_name": "Eray's Blog",
   "start_url": "/",
-  "theme_color": "#000000",
   "theme_color": "#ffffff"
 }
