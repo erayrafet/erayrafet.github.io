@@ -16,18 +16,19 @@
       "type": "image/webp"
     },
     {
-      "purpose": "any maskable",
+      "purpose": "maskable",
       "sizes": "512x512",
       "src": "/maskable_icon.webp",
       "type": "image/webp"
     },
     {
-      "purpose": "any maskable",
+      "purpose": "maskable",
       "sizes": "512x512",
       "src": "/maskable_icon.png",
       "type": "image/png"
     }
   ],
+  "id": "/",
   "lang": "en-US",
   "name": "Eray's Blog",
   "orientation": "any",
