@@ -185,9 +185,7 @@ ul {
 .tab {
 	backdrop-filter: blur(16px);
 	background: var(--accent-bg);
-	-webkit-backdrop-filter: blur(
-		16px
-	); /*Workaround for Safari -- totally unsupported on Firefox*/
+	-webkit-backdrop-filter: blur(16px); /*Workaround for Safari -- totally unsupported on Firefox*/
 }
 .card {
 	margin: 1em 0;
