@@ -20,20 +20,14 @@
           background: black;
           color: white;
         }
-        :root {
-          --button-selection: #00000050; /*Theme-aware button text background on selection*/
-        }
       }
       @media (prefers-color-scheme: light) {
         body {
           background: white;
           color: black;
         }
-        :root {
-          --button-selection: #ffffff50; /*Theme-aware button text background on selection*/
-        }
       }
-      .button-right,
+      .button,
       h1,
       html {
         animation: fade 0.5s;
@@ -51,16 +45,17 @@
         height: 100%;
         overflow: hidden;
       }
-      .button-right {
+      .button {
         background: #1a73e8;
-        border-radius: 18px;
+        border-radius: 32px;
         display: inline-block; /*Fix animation on hover*/
         font-size: large;
         font-weight: 700;
         line-height: 24px;
         padding: 7px 14px;
+        user-select: none;
       }
-      .button-right:hover {
+      .button:hover {
         filter: drop-shadow(0 0 1rem #1a73e8);
         margin: -1px;
         padding: 8px 16px;
@@ -68,14 +63,11 @@
       ::selection {
         background: rgba(26, 115, 232, 0.25);
       }
-      .button-right::selection {
-        background: var(--button-selection);
-      }
     </style>
   </head>
   <body>
     <h2>There ain't no Internet, yo!</h2>
     <br />
-    <a class="button-right" href="/">Reload</a>
+    <a class="button" href="/">Reload</a>
   </body>
 </html>
